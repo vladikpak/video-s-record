@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001-create-tracks-table
+      author: student
+      changes:
+        - createTable:
+            tableName: tracks
+            columns:
+              - column: { name: id, type: BIGINT, autoIncrement: true, constraints: { primaryKey: true } }
+              - column: { name: title, type: VARCHAR(200), constraints: { nullable: false } }
+              - column: { name: artist, type: VARCHAR(200), constraints: { nullable: false } }
+              - column: { name: album, type: VARCHAR(200) }
+              - column: { name: genre, type: VARCHAR(100) }
+              - column: { name: duration, type: INT }
+              - column: { name: audio_url, type: VARCHAR(500), constraints: { nullable: false } }
+              - column: { name: cover_url, type: VARCHAR(500) }
+              - column: { name: created_at, type: TIMESTAMP, defaultValueComputed: CURRENT_TIMESTAMP }
