@@ -29,7 +29,7 @@ public class TrackServiceImpl implements TrackService {
 
         String audioUrl = fileService.saveMusicFile(audioFile);
 
-        System.out.println("Аудио URL: " + audioUrl); // отладка
+        System.out.println("Аудио URL: " + audioUrl);
         if (audioUrl == null) {
             throw new RuntimeException("Аудиофайл обязателен");
         }
