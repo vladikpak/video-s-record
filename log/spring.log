@@ -120,3 +120,138 @@
 2026-03-24T00:06:05.766+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/yaml]
 2026-03-24T00:06:05.767+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Mar 24 00:06:05 GMT+06:00 2026, status=404, error=Not Found, path=/favicon.ico}]
 2026-03-24T00:06:05.768+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2026-03-24T00:12:21.846+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/tracks", parameters={}
+2026-03-24T00:12:21.846+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#listTracks(int, Model)
+2026-03-24T00:12:21.849+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-8] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.album,
+        t1_0.artist,
+        t1_0.audio_url,
+        t1_0.cover_url,
+        t1_0.created_at,
+        t1_0.duration,
+        t1_0.genre,
+        t1_0.title 
+    from
+        tracks t1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-03-24T00:12:21.852+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-8] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/list], model {tracks=[TrackDto(id=1, title=dsfds, artist=dsfdsf, album=dsfdfsdf, genre=sdfdsfsf, duration=2222, audioUrl=/uploads/music/1774277072633.mp3, coverUrl=/uploads/covers/1774277072634.webp, createdAt=2026-03-23T20:44:32.634747), TrackDto(id=2, title=fdgdfg, artist=gfdgfd, album=dgfgd, genre=dfgdg, duration=333, audioUrl=/uploads/music/1774278057839.mp3, coverUrl=/uploads/covers/1774278057839.jpg, createdAt=2026-03-23T21:00:57.840489), TrackDto(id=3, title=выаыаы, artist=авыаыва, album=аввыавыа, genre=выаыаыа, duration=1111, audioUrl=/uploads/music/1774278856798.mp3, coverUrl=/uploads/covers/1774278856798.jpg, createdAt=2026-03-23T21:14:16.798026), TrackDto(id=4, title=лопавадп, artist=пвапвып, album=вапыпа, genre=вапв, duration=2222, audioUrl=/uploads/music/1774286281228.mp3, coverUrl=/uploads/covers/1774286281229.jpg, createdAt=2026-03-23T23:18:01.229392)], currentPage=0, totalPages=1}
+2026-03-24T00:12:21.853+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-8] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/list.ftlh]
+2026-03-24T00:12:21.854+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-03-24T00:12:23.026+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/videos", parameters={}
+2026-03-24T00:12:23.027+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#listVideos(Model)
+2026-03-24T00:12:23.028+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-9] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0
+2026-03-24T00:12:23.031+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-9] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/list], model {videos=[VideoDto(id=1, title=апвпав, artist=вапвп, videoUrl=https://www.youtube.com/watch?v=Bxpo2_BC_gg, embedUrl=https://www.youtube.com/embed/Bxpo2_BC_gg, thumbnailUrl=, createdAt=2026-03-23T20:07:37.616962), VideoDto(id=2, title=авпв, artist=пвапвпвпа, videoUrl=https://www.youtube.com/watch?v=Bxpo2_BC_gg, embedUrl=https://www.youtube.com/embed/Bxpo2_BC_gg, thumbnailUrl=https://www.youtube.com/watch?v=Bxpo2_BC_gg, createdAt=2026-03-23T20:07:56.884829), VideoDto(id=3, title=hfghf, artist=gfhdgfh, videoUrl=https://www.youtube.com/watch?v=VBD_qy1yYNA, embedUrl=https://www.youtube.com/embed/VBD_qy1yYNA, thumbnailUrl=https://cdn2.unrealengine.com/hand-on-with-infinity-nikki-a-fashion-forward-open-world-rpg-with-magical-powers-1920x1080-c112f23ba659.jpg, createdAt=2026-03-23T21:11:46.744822)]}
+2026-03-24T00:12:23.031+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-9] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/list.ftlh]
+2026-03-24T00:12:23.033+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-03-24T00:12:24.198+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/tracks/upload", parameters={}
+2026-03-24T00:12:24.199+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#showUploadForm(Model)
+2026-03-24T00:12:24.201+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-6] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/upload], model {trackDto=TrackDto(id=null, title=null, artist=null, album=null, genre=null, duration=null, audioUrl=null, coverUrl=null, createdAt=null), org.springframework.validation.BindingResult.trackDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2026-03-24T00:12:24.201+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-6] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/upload.ftlh]
+2026-03-24T00:12:24.202+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-03-24T00:12:25.000+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/tracks/upload", parameters={}
+2026-03-24T00:12:25.000+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#showUploadForm(Model)
+2026-03-24T00:12:25.001+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-1] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/upload], model {trackDto=TrackDto(id=null, title=null, artist=null, album=null, genre=null, duration=null, audioUrl=null, coverUrl=null, createdAt=null), org.springframework.validation.BindingResult.trackDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2026-03-24T00:12:25.001+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-1] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/upload.ftlh]
+2026-03-24T00:12:25.002+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-03-24T00:12:59.642+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/tracks/upload", parameters={multipart}
+2026-03-24T00:12:59.699+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#uploadTrack(TrackDto, MultipartFile, MultipartFile)
+2026-03-24T00:12:59.705+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-10] org.hibernate.SQL                        : 
+    insert 
+    into
+        tracks
+        (album, artist, audio_url, cover_url, created_at, duration, genre, title, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+2026-03-24T00:12:59.707+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-10] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-03-24T00:12:59.707+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2026-03-24T00:12:59.773+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/tracks", parameters={}
+2026-03-24T00:12:59.773+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#listTracks(int, Model)
+2026-03-24T00:12:59.775+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-2] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.album,
+        t1_0.artist,
+        t1_0.audio_url,
+        t1_0.cover_url,
+        t1_0.created_at,
+        t1_0.duration,
+        t1_0.genre,
+        t1_0.title 
+    from
+        tracks t1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-03-24T00:12:59.777+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-2] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/list], model {tracks=[TrackDto(id=1, title=dsfds, artist=dsfdsf, album=dsfdfsdf, genre=sdfdsfsf, duration=2222, audioUrl=/uploads/music/1774277072633.mp3, coverUrl=/uploads/covers/1774277072634.webp, createdAt=2026-03-23T20:44:32.634747), TrackDto(id=2, title=fdgdfg, artist=gfdgfd, album=dgfgd, genre=dfgdg, duration=333, audioUrl=/uploads/music/1774278057839.mp3, coverUrl=/uploads/covers/1774278057839.jpg, createdAt=2026-03-23T21:00:57.840489), TrackDto(id=3, title=выаыаы, artist=авыаыва, album=аввыавыа, genre=выаыаыа, duration=1111, audioUrl=/uploads/music/1774278856798.mp3, coverUrl=/uploads/covers/1774278856798.jpg, createdAt=2026-03-23T21:14:16.798026), TrackDto(id=4, title=лопавадп, artist=пвапвып, album=вапыпа, genre=вапв, duration=2222, audioUrl=/uploads/music/1774286281228.mp3, coverUrl=/uploads/covers/1774286281229.jpg, createdAt=2026-03-23T23:18:01.229392), TrackDto(id=5, title=fdgdg, artist=dfgdg, album=gdgd, genre=dgfgd, duration=222, audioUrl=/uploads/music/1774289579701.mp3, coverUrl=/uploads/covers/1774289579702.jpg, createdAt=2026-03-24T00:12:59.702313)], currentPage=0, totalPages=1}
+2026-03-24T00:12:59.777+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-2] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/list.ftlh]
+2026-03-24T00:12:59.778+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-03-24T00:12:59.807+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/uploads/covers/1774289579702.jpg", parameters={}
+2026-03-24T00:12:59.807+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/]]
+2026-03-24T00:12:59.811+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-03-24T00:13:01.690+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/tracks/5", parameters={}
+2026-03-24T00:13:01.690+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#playTrack(Long, Model)
+2026-03-24T00:13:01.691+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-3] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.album,
+        t1_0.artist,
+        t1_0.audio_url,
+        t1_0.cover_url,
+        t1_0.created_at,
+        t1_0.duration,
+        t1_0.genre,
+        t1_0.title 
+    from
+        tracks t1_0 
+    where
+        t1_0.id=?
+2026-03-24T00:13:01.694+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/play], model {track=TrackDto(id=5, title=fdgdg, artist=dfgdg, album=gdgd, genre=dgfgd, duration=222, audioUrl=/uploads/music/1774289579701.mp3, coverUrl=/uploads/covers/1774289579702.jpg, createdAt=2026-03-24T00:12:59.702313), org.springframework.validation.BindingResult.track=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2026-03-24T00:13:01.694+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/play.ftlh]
+2026-03-24T00:13:01.695+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-03-24T00:13:01.728+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/uploads/music/1774289579701.mp3", parameters={}
+2026-03-24T00:13:01.729+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/]]
+2026-03-24T00:13:01.734+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-5] o.s.w.s.handler.DisconnectedClient       : Looks like the client has gone away: org.apache.catalina.connector.ClientAbortException: java.io.IOException: Connection reset by peer (For a full stack trace, set the log category 'org.apache.commons.logging.impl.Slf4jLogFactory$Slf4jLocationAwareLog@101f2a4c' to TRACE level.)
+2026-03-24T00:13:01.735+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 206 PARTIAL_CONTENT
+2026-03-24T00:13:02.926+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/uploads/music/1774289579701.mp3", parameters={}
+2026-03-24T00:13:02.926+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-03-24T00:13:02.926+06:00  WARN 12860 --- [video-s-record] [http-nio-8089-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2026-03-24T00:13:02.926+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/]]
+2026-03-24T00:13:02.926+06:00  WARN 12860 --- [video-s-record] [http-nio-8089-exec-7] o.s.web.servlet.PageNotFound             : No endpoint GET /favicon.ico.
+2026-03-24T00:13:02.926+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /favicon.ico.]
+2026-03-24T00:13:02.927+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2026-03-24T00:13:02.927+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-03-24T00:13:02.927+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+2026-03-24T00:13:02.929+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/yaml]
+2026-03-24T00:13:02.929+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Mar 24 00:13:02 GMT+06:00 2026, status=404, error=Not Found, path=/favicon.ico}]
+2026-03-24T00:13:02.930+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2026-03-24T00:13:02.964+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 206 PARTIAL_CONTENT
+2026-03-24T00:13:14.389+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/uploads/music/1774289579701.mp3", parameters={}
+2026-03-24T00:13:14.390+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/]]
+2026-03-24T00:13:14.397+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-6] o.s.w.s.handler.DisconnectedClient       : Looks like the client has gone away: org.apache.catalina.connector.ClientAbortException: java.io.IOException: Connection reset by peer (For a full stack trace, set the log category 'org.apache.commons.logging.impl.Slf4jLogFactory$Slf4jLocationAwareLog@101f2a4c' to TRACE level.)
+2026-03-24T00:13:14.398+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 206 PARTIAL_CONTENT
+2026-03-24T00:13:14.864+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/uploads/music/1774289579701.mp3", parameters={}
+2026-03-24T00:13:14.865+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/]]
+2026-03-24T00:13:14.917+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 206 PARTIAL_CONTENT
+2026-03-24T00:14:23.964+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/uploads/music/1774289579701.mp3", parameters={}
+2026-03-24T00:14:23.965+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/]]
+2026-03-24T00:14:23.994+06:00 DEBUG 12860 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 206 PARTIAL_CONTENT
+2026-03-24T00:25:28.325+06:00  INFO 12860 --- [video-s-record] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-24T00:25:28.329+06:00  INFO 12860 --- [video-s-record] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-24T00:25:28.333+06:00  INFO 12860 --- [video-s-record] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-24T00:25:28.335+06:00  INFO 12860 --- [video-s-record] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-24T00:25:28.337+06:00  INFO 12860 --- [video-s-record] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

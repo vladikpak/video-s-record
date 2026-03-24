@@ -48,12 +48,11 @@ public class VideoServiceImpl implements VideoService {
 
     @Override
     public String getEmbedUrl(String videoUrl) {
-        // YouTube: https://www.youtube.com/watch?v=dQw4w9WgXcQ
         if (videoUrl.contains("youtube.com")) {
             String videoId = extractYouTubeId(videoUrl);
             return "https://www.youtube.com/embed/" + videoId;
         }
-        // Vimeo: https://vimeo.com/123456789
+
         if (videoUrl.contains("vimeo.com")) {
             String videoId = videoUrl.substring(videoUrl.lastIndexOf("/") + 1);
             return "https://player.vimeo.com/video/" + videoId;

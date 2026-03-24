@@ -25,12 +25,12 @@ public class Track {
 
     private String album;
     private String genre;
-    private Integer duration; // в секундах
+    private Integer duration;
 
     @Column(nullable = false)
-    private String audioUrl;   // /uploads/music/123.mp3
+    private String audioUrl;
 
-    private String coverUrl;    // /uploads/covers/123.jpg
+    private String coverUrl;
 
     @Column(name = "created_at")
     private LocalDateTime createdAt;

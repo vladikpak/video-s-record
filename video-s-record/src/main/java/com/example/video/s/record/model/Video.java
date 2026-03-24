@@ -24,7 +24,7 @@ import java.time.LocalDateTime;
         private String artist;
 
         @Column(nullable = false)
-        private String videoUrl;    // https://www.youtube.com/watch?v=...
+        private String videoUrl;
 
         private String thumbnailUrl;
 
