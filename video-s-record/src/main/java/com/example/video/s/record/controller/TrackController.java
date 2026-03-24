@@ -34,7 +34,9 @@ public class TrackController {
     }
 
     @PostMapping("/upload")
-    public String uploadTrack(@ModelAttribute TrackDto trackDto, @RequestParam("audioFile") MultipartFile audioFile, @RequestParam("coverFile") MultipartFile coverFile) {
+    public String uploadTrack(@ModelAttribute TrackDto trackDto,
+                              @RequestParam("audioFile") MultipartFile audioFile,
+                              @RequestParam("coverFile") MultipartFile coverFile) {
         trackService.createTrack(trackDto, audioFile, coverFile);
         return "redirect:/tracks";
     }
