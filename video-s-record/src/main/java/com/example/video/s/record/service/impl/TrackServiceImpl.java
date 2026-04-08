@@ -25,11 +25,8 @@ public class TrackServiceImpl implements TrackService {
     @Transactional
     @Override
     public TrackDto createTrack(TrackDto dto, MultipartFile audioFile, MultipartFile coverFile) {
-        System.out.println("Начало загрузки: " + dto.getTitle());
-
         String audioUrl = fileService.saveMusicFile(audioFile);
 
-        System.out.println("Аудио URL: " + audioUrl);
         if (audioUrl == null) {
             throw new RuntimeException("Аудиофайл обязателен");
         }
@@ -60,7 +57,8 @@ public class TrackServiceImpl implements TrackService {
 
     @Override
     public Page<TrackDto> getAllTracks(Pageable pageable) {
-        return trackRepository.findAll(pageable).map(this::convertToDto);
+        return trackRepository.findAll(pageable)
+                .map(this::convertToDto);
     }
 
     @Override
