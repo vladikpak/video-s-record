@@ -36,6 +36,7 @@ public class FileService {
 
             String originalFilename = file.getOriginalFilename();
             String extension = "";
+
             if (originalFilename != null && originalFilename.contains(".")) {
                 extension = originalFilename.substring(originalFilename.lastIndexOf("."));
             }
