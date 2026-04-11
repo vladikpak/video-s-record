@@ -47,6 +47,18 @@ public class VideoServiceImpl implements VideoService {
     }
 
     @Override
+    public void DeleteById(Long id) {
+        videoRepository.deleteById(id);
+    }
+
+    @Override
+    public List<VideoDto> searchVideo(String name) {
+        return videoRepository.findByTitleContainingIgnoreCase(name).stream()
+                .map(this::convertToDto)
+                .collect(Collectors.toList());
+    }
+
+    @Override
     public String getEmbedUrl(String videoUrl) {
         if (videoUrl.contains("youtube.com")) {
             String videoId = extractYouTubeId(videoUrl);

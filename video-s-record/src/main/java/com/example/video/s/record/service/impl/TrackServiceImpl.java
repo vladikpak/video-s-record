@@ -49,6 +49,11 @@ public class TrackServiceImpl implements TrackService {
     }
 
     @Override
+    public void DeleteById(Long id) {
+        trackRepository.deleteById(id);
+    }
+
+    @Override
     public TrackDto getTrackById(Long id) {
         Track track = trackRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Трек не найден"));
