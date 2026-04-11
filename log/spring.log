@@ -2121,3 +2121,524 @@ This generated password is for development use only. Your security configuration
 2026-04-11T13:51:33.512+06:00  INFO 11320 --- [video-s-record] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-04-11T13:51:33.514+06:00  INFO 11320 --- [video-s-record] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-04-11T13:51:33.515+06:00  INFO 11320 --- [video-s-record] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-11T13:51:39.121+06:00  INFO 10372 --- [video-s-record] [main] com.example.video.s.record.Application   : Starting Application using Java 25.0.2 with PID 10372 (C:\Users\User\Desktop\Project\video-s-record\video-s-record\target\classes started by User in C:\Users\User\Desktop\Project\video-s-record)
+2026-04-11T13:51:39.123+06:00 DEBUG 10372 --- [video-s-record] [main] com.example.video.s.record.Application   : Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-04-11T13:51:39.124+06:00  INFO 10372 --- [video-s-record] [main] com.example.video.s.record.Application   : No active profile set, falling back to 1 default profile: "default"
+2026-04-11T13:51:39.782+06:00  INFO 10372 --- [video-s-record] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-11T13:51:39.836+06:00  INFO 10372 --- [video-s-record] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2026-04-11T13:51:40.276+06:00  INFO 10372 --- [video-s-record] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8089 (http)
+2026-04-11T13:51:40.287+06:00  INFO 10372 --- [video-s-record] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-11T13:51:40.287+06:00  INFO 10372 --- [video-s-record] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-04-11T13:51:40.327+06:00  INFO 10372 --- [video-s-record] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1168 ms
+2026-04-11T13:51:40.364+06:00 DEBUG 10372 --- [video-s-record] [main] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2026-04-11T13:51:40.436+06:00  INFO 10372 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-11T13:51:40.678+06:00  INFO 10372 --- [video-s-record] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2026-04-11T13:51:40.680+06:00  INFO 10372 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-11T13:51:40.722+06:00  INFO 10372 --- [video-s-record] [main] liquibase.database                       : Set default schema name to PUBLIC
+2026-04-11T13:51:41.019+06:00  INFO 10372 --- [video-s-record] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-04-11T13:51:41.063+06:00  INFO 10372 --- [video-s-record] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2026-04-11T13:51:41.064+06:00  INFO 10372 --- [video-s-record] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-04-11T13:51:41.072+06:00  INFO 10372 --- [video-s-record] [main] liquibase.util                           : UPDATE SUMMARY
+2026-04-11T13:51:41.072+06:00  INFO 10372 --- [video-s-record] [main] liquibase.util                           : Run:                          0
+2026-04-11T13:51:41.072+06:00  INFO 10372 --- [video-s-record] [main] liquibase.util                           : Previously run:               2
+2026-04-11T13:51:41.072+06:00  INFO 10372 --- [video-s-record] [main] liquibase.util                           : Filtered out:                 0
+2026-04-11T13:51:41.073+06:00  INFO 10372 --- [video-s-record] [main] liquibase.util                           : -------------------------------
+2026-04-11T13:51:41.073+06:00  INFO 10372 --- [video-s-record] [main] liquibase.util                           : Total change sets:            2
+2026-04-11T13:51:41.073+06:00  INFO 10372 --- [video-s-record] [main] liquibase.util                           : Update summary generated
+2026-04-11T13:51:41.074+06:00  INFO 10372 --- [video-s-record] [main] liquibase.command                        : Command execution complete
+2026-04-11T13:51:42.962+06:00  INFO 10372 --- [video-s-record] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-11T13:51:43.007+06:00  INFO 10372 --- [video-s-record] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-04-11T13:51:43.409+06:00  INFO 10372 --- [video-s-record] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-11T13:51:43.471+06:00  INFO 10372 --- [video-s-record] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:./db/test]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TEST/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-11T13:51:44.203+06:00  INFO 10372 --- [video-s-record] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-11T13:51:44.230+06:00  INFO 10372 --- [video-s-record] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-11T13:51:44.291+06:00  INFO 10372 --- [video-s-record] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-11T13:51:44.533+06:00  WARN 10372 --- [video-s-record] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-11T13:51:44.556+06:00  WARN 10372 --- [video-s-record] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3785ae40-eb86-41eb-b384-87ba5415a27f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-11T13:51:44.562+06:00  INFO 10372 --- [video-s-record] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-04-11T13:51:44.717+06:00 DEBUG 10372 --- [video-s-record] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2026-04-11T13:51:44.735+06:00 DEBUG 10372 --- [video-s-record] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/uploads/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-04-11T13:51:44.775+06:00 DEBUG 10372 --- [video-s-record] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-04-11T13:51:44.839+06:00 DEBUG 10372 --- [video-s-record] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-04-11T13:51:45.032+06:00 DEBUG 10372 --- [video-s-record] [main] o.s.w.s.v.f.FreeMarkerConfigurer         : File system access not preferred: using SpringTemplateLoader
+2026-04-11T13:51:45.147+06:00  INFO 10372 --- [video-s-record] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8089 (http) with context path '/'
+2026-04-11T13:51:45.152+06:00  INFO 10372 --- [video-s-record] [main] com.example.video.s.record.Application   : Started Application in 6.464 seconds (process running for 7.087)
+2026-04-11T13:51:45.155+06:00  WARN 10372 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-04-11T13:51:45.155+06:00  WARN 10372 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-04-11T13:51:50.505+06:00  INFO 10372 --- [video-s-record] [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-11T13:51:50.505+06:00  INFO 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-11T13:51:50.505+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-04-11T13:51:50.505+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-04-11T13:51:50.506+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2c1c3c13
+2026-04-11T13:51:50.506+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1a5df070
+2026-04-11T13:51:50.507+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2026-04-11T13:51:50.507+06:00  INFO 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-11T13:51:50.531+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2026-04-11T13:51:50.541+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.PageController#home()
+2026-04-11T13:51:50.595+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.w.s.view.freemarker.FreeMarkerView   : View name [index], model {}
+2026-04-11T13:51:50.596+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [index.ftlh]
+2026-04-11T13:51:50.610+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:51:51.980+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/videos", parameters={}
+2026-04-11T13:51:51.981+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#listVideos(Model)
+2026-04-11T13:51:52.117+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0
+2026-04-11T13:51:52.203+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/list], model {videos=[VideoDto(id=3, title=hfghf, artist=gfhdgfh, videoUrl=https://www.youtube.com/watch?v=VBD_qy1yYNA, embedUrl=https://www.youtube.com/embed/VBD_qy1yYNA, thumbnailUrl=https://cdn2.unrealengine.com/hand-on-with-infinity-nikki-a-fashion-forward-open-world-rpg-with-magical-powers-1920x1080-c112f23ba659.jpg, createdAt=2026-03-23T21:11:46.744822), VideoDto(id=5, title=dfg, artist=fgdg, videoUrl=https://www.youtube.com/watch?v=gdZLi9oWNZg&list=RDGMEM0s70dY0AfCwh3LqQ-Bv1xgVMP9q7NoOQHIo&index=2, embedUrl=https://www.youtube.com/embed/gdZLi9oWNZg, thumbnailUrl=https://i.ytimg.com/vi/mEYrq4KT2N8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAMP_joNUO55qNrHYYSCHIP6LPFxA, createdAt=2026-04-06T21:25:43.352477), VideoDto(id=6, title=ddsfsa, artist=fdsafsaf, videoUrl=https://www.youtube.com/watch?v=7aOMyEN7AXw, embedUrl=https://www.youtube.com/embed/7aOMyEN7AXw, thumbnailUrl=https://static.hdrezka.ac/i/2023/6/26/f57b8b582423asz79a57n.jpg, createdAt=2026-04-06T23:26:32.046944), VideoDto(id=7, title=dfgdg, artist=dfgdg, videoUrl=https://www.youtube.com/watch?v=nTVQmTRkxN4&list=PLHSjBd7r_0AU1UclA6TqKYW25f-Cs7gVO, embedUrl=https://www.youtube.com/embed/nTVQmTRkxN4, thumbnailUrl=https://cdn-imgix.headout.com/media/images/298045bf76a6461f8cb5690c16aed31c-AdobeStock-274923414.jpeg?w=1041.6000000000001&h=651&crop=faces&auto=compress%2Cformat&fit=min, createdAt=2026-04-06T23:51:43.891826), VideoDto(id=8, title=fgdgdg, artist=dfgdgd, videoUrl=https://www.youtube.com/watch?v=7aOMyEN7AXw&t, embedUrl=https://www.youtube.com/embed/7aOMyEN7AXw, thumbnailUrl=https://i.pinimg.com/1200x/fe/3c/66/fe3c66faa1c89eb60301bc1909e9b185.jpg, createdAt=2026-04-07T22:27:52.730722), VideoDto(id=9, title=도라지, artist=jkhkhsd, videoUrl=https://www.youtube.com/watch?v=fgMz8VLhjBM, embedUrl=https://www.youtube.com/embed/fgMz8VLhjBM, thumbnailUrl=https://i.pinimg.com/originals/3f/8f/bd/3f8fbd77b54d6cc34bcb6107056f7eba.jpg, createdAt=2026-04-09T01:07:31.496861), VideoDto(id=10, title=overdose, artist=japanese, videoUrl=https://www.youtube.com/watch?v=H08YWE4CIFQ, embedUrl=https://www.youtube.com/embed/H08YWE4CIFQ, thumbnailUrl=https://99px.ru/sstorage/53/2024/03/mid_357241_413672.jpg, createdAt=2026-04-09T01:12:53.108383), VideoDto(id=11, title=10-х, artist=мммм, videoUrl=https://www.youtube.com/watch?v=hBDKpHFM9_w, embedUrl=https://www.youtube.com/embed/hBDKpHFM9_w, thumbnailUrl=https://images3.alphacoders.com/104/1042283.png, createdAt=2026-04-09T01:20:37.676264), VideoDto(id=12, title=sdfdsf, artist=dsfsdf, videoUrl=https://www.youtube.com/watch?v=Ir_1tqV9ICk, embedUrl=https://www.youtube.com/embed/Ir_1tqV9ICk, thumbnailUrl=https://i.pinimg.com/736x/34/95/4b/34954b0b73b614e9f365f6d3006cebb7.jpg, createdAt=2026-04-11T00:39:00.994601), VideoDto(id=13, title=ваыа, artist=выавы, videoUrl=https://www.youtube.com/watch?v=5fuy_8hvXQg, embedUrl=https://www.youtube.com/embed/5fuy_8hvXQg, thumbnailUrl=https://ic.pics.livejournal.com/dergachev_va/58474394/3546134/3546134_original.jpg, createdAt=2026-04-11T12:27:37.859718)]}
+2026-04-11T13:51:52.203+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/list.ftlh]
+2026-04-11T13:51:52.215+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:51:53.052+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/videos", parameters={}
+2026-04-11T13:51:53.052+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#listVideos(Model)
+2026-04-11T13:51:53.054+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0
+2026-04-11T13:51:53.057+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/list], model {videos=[VideoDto(id=3, title=hfghf, artist=gfhdgfh, videoUrl=https://www.youtube.com/watch?v=VBD_qy1yYNA, embedUrl=https://www.youtube.com/embed/VBD_qy1yYNA, thumbnailUrl=https://cdn2.unrealengine.com/hand-on-with-infinity-nikki-a-fashion-forward-open-world-rpg-with-magical-powers-1920x1080-c112f23ba659.jpg, createdAt=2026-03-23T21:11:46.744822), VideoDto(id=5, title=dfg, artist=fgdg, videoUrl=https://www.youtube.com/watch?v=gdZLi9oWNZg&list=RDGMEM0s70dY0AfCwh3LqQ-Bv1xgVMP9q7NoOQHIo&index=2, embedUrl=https://www.youtube.com/embed/gdZLi9oWNZg, thumbnailUrl=https://i.ytimg.com/vi/mEYrq4KT2N8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAMP_joNUO55qNrHYYSCHIP6LPFxA, createdAt=2026-04-06T21:25:43.352477), VideoDto(id=6, title=ddsfsa, artist=fdsafsaf, videoUrl=https://www.youtube.com/watch?v=7aOMyEN7AXw, embedUrl=https://www.youtube.com/embed/7aOMyEN7AXw, thumbnailUrl=https://static.hdrezka.ac/i/2023/6/26/f57b8b582423asz79a57n.jpg, createdAt=2026-04-06T23:26:32.046944), VideoDto(id=7, title=dfgdg, artist=dfgdg, videoUrl=https://www.youtube.com/watch?v=nTVQmTRkxN4&list=PLHSjBd7r_0AU1UclA6TqKYW25f-Cs7gVO, embedUrl=https://www.youtube.com/embed/nTVQmTRkxN4, thumbnailUrl=https://cdn-imgix.headout.com/media/images/298045bf76a6461f8cb5690c16aed31c-AdobeStock-274923414.jpeg?w=1041.6000000000001&h=651&crop=faces&auto=compress%2Cformat&fit=min, createdAt=2026-04-06T23:51:43.891826), VideoDto(id=8, title=fgdgdg, artist=dfgdgd, videoUrl=https://www.youtube.com/watch?v=7aOMyEN7AXw&t, embedUrl=https://www.youtube.com/embed/7aOMyEN7AXw, thumbnailUrl=https://i.pinimg.com/1200x/fe/3c/66/fe3c66faa1c89eb60301bc1909e9b185.jpg, createdAt=2026-04-07T22:27:52.730722), VideoDto(id=9, title=도라지, artist=jkhkhsd, videoUrl=https://www.youtube.com/watch?v=fgMz8VLhjBM, embedUrl=https://www.youtube.com/embed/fgMz8VLhjBM, thumbnailUrl=https://i.pinimg.com/originals/3f/8f/bd/3f8fbd77b54d6cc34bcb6107056f7eba.jpg, createdAt=2026-04-09T01:07:31.496861), VideoDto(id=10, title=overdose, artist=japanese, videoUrl=https://www.youtube.com/watch?v=H08YWE4CIFQ, embedUrl=https://www.youtube.com/embed/H08YWE4CIFQ, thumbnailUrl=https://99px.ru/sstorage/53/2024/03/mid_357241_413672.jpg, createdAt=2026-04-09T01:12:53.108383), VideoDto(id=11, title=10-х, artist=мммм, videoUrl=https://www.youtube.com/watch?v=hBDKpHFM9_w, embedUrl=https://www.youtube.com/embed/hBDKpHFM9_w, thumbnailUrl=https://images3.alphacoders.com/104/1042283.png, createdAt=2026-04-09T01:20:37.676264), VideoDto(id=12, title=sdfdsf, artist=dsfsdf, videoUrl=https://www.youtube.com/watch?v=Ir_1tqV9ICk, embedUrl=https://www.youtube.com/embed/Ir_1tqV9ICk, thumbnailUrl=https://i.pinimg.com/736x/34/95/4b/34954b0b73b614e9f365f6d3006cebb7.jpg, createdAt=2026-04-11T00:39:00.994601), VideoDto(id=13, title=ваыа, artist=выавы, videoUrl=https://www.youtube.com/watch?v=5fuy_8hvXQg, embedUrl=https://www.youtube.com/embed/5fuy_8hvXQg, thumbnailUrl=https://ic.pics.livejournal.com/dergachev_va/58474394/3546134/3546134_original.jpg, createdAt=2026-04-11T12:27:37.859718)]}
+2026-04-11T13:51:53.057+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/list.ftlh]
+2026-04-11T13:51:53.059+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:51:54.147+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/videos", parameters={}
+2026-04-11T13:51:54.147+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#listVideos(Model)
+2026-04-11T13:51:54.149+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0
+2026-04-11T13:51:54.152+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/list], model {videos=[VideoDto(id=3, title=hfghf, artist=gfhdgfh, videoUrl=https://www.youtube.com/watch?v=VBD_qy1yYNA, embedUrl=https://www.youtube.com/embed/VBD_qy1yYNA, thumbnailUrl=https://cdn2.unrealengine.com/hand-on-with-infinity-nikki-a-fashion-forward-open-world-rpg-with-magical-powers-1920x1080-c112f23ba659.jpg, createdAt=2026-03-23T21:11:46.744822), VideoDto(id=5, title=dfg, artist=fgdg, videoUrl=https://www.youtube.com/watch?v=gdZLi9oWNZg&list=RDGMEM0s70dY0AfCwh3LqQ-Bv1xgVMP9q7NoOQHIo&index=2, embedUrl=https://www.youtube.com/embed/gdZLi9oWNZg, thumbnailUrl=https://i.ytimg.com/vi/mEYrq4KT2N8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAMP_joNUO55qNrHYYSCHIP6LPFxA, createdAt=2026-04-06T21:25:43.352477), VideoDto(id=6, title=ddsfsa, artist=fdsafsaf, videoUrl=https://www.youtube.com/watch?v=7aOMyEN7AXw, embedUrl=https://www.youtube.com/embed/7aOMyEN7AXw, thumbnailUrl=https://static.hdrezka.ac/i/2023/6/26/f57b8b582423asz79a57n.jpg, createdAt=2026-04-06T23:26:32.046944), VideoDto(id=7, title=dfgdg, artist=dfgdg, videoUrl=https://www.youtube.com/watch?v=nTVQmTRkxN4&list=PLHSjBd7r_0AU1UclA6TqKYW25f-Cs7gVO, embedUrl=https://www.youtube.com/embed/nTVQmTRkxN4, thumbnailUrl=https://cdn-imgix.headout.com/media/images/298045bf76a6461f8cb5690c16aed31c-AdobeStock-274923414.jpeg?w=1041.6000000000001&h=651&crop=faces&auto=compress%2Cformat&fit=min, createdAt=2026-04-06T23:51:43.891826), VideoDto(id=8, title=fgdgdg, artist=dfgdgd, videoUrl=https://www.youtube.com/watch?v=7aOMyEN7AXw&t, embedUrl=https://www.youtube.com/embed/7aOMyEN7AXw, thumbnailUrl=https://i.pinimg.com/1200x/fe/3c/66/fe3c66faa1c89eb60301bc1909e9b185.jpg, createdAt=2026-04-07T22:27:52.730722), VideoDto(id=9, title=도라지, artist=jkhkhsd, videoUrl=https://www.youtube.com/watch?v=fgMz8VLhjBM, embedUrl=https://www.youtube.com/embed/fgMz8VLhjBM, thumbnailUrl=https://i.pinimg.com/originals/3f/8f/bd/3f8fbd77b54d6cc34bcb6107056f7eba.jpg, createdAt=2026-04-09T01:07:31.496861), VideoDto(id=10, title=overdose, artist=japanese, videoUrl=https://www.youtube.com/watch?v=H08YWE4CIFQ, embedUrl=https://www.youtube.com/embed/H08YWE4CIFQ, thumbnailUrl=https://99px.ru/sstorage/53/2024/03/mid_357241_413672.jpg, createdAt=2026-04-09T01:12:53.108383), VideoDto(id=11, title=10-х, artist=мммм, videoUrl=https://www.youtube.com/watch?v=hBDKpHFM9_w, embedUrl=https://www.youtube.com/embed/hBDKpHFM9_w, thumbnailUrl=https://images3.alphacoders.com/104/1042283.png, createdAt=2026-04-09T01:20:37.676264), VideoDto(id=12, title=sdfdsf, artist=dsfsdf, videoUrl=https://www.youtube.com/watch?v=Ir_1tqV9ICk, embedUrl=https://www.youtube.com/embed/Ir_1tqV9ICk, thumbnailUrl=https://i.pinimg.com/736x/34/95/4b/34954b0b73b614e9f365f6d3006cebb7.jpg, createdAt=2026-04-11T00:39:00.994601), VideoDto(id=13, title=ваыа, artist=выавы, videoUrl=https://www.youtube.com/watch?v=5fuy_8hvXQg, embedUrl=https://www.youtube.com/embed/5fuy_8hvXQg, thumbnailUrl=https://ic.pics.livejournal.com/dergachev_va/58474394/3546134/3546134_original.jpg, createdAt=2026-04-11T12:27:37.859718)]}
+2026-04-11T13:51:54.152+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/list.ftlh]
+2026-04-11T13:51:54.155+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:51:54.657+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/tracks", parameters={}
+2026-04-11T13:51:54.657+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#listTracks(int, Model)
+2026-04-11T13:51:54.667+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.album,
+        t1_0.artist,
+        t1_0.audio_url,
+        t1_0.cover_url,
+        t1_0.created_at,
+        t1_0.duration,
+        t1_0.genre,
+        t1_0.title 
+    from
+        tracks t1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-04-11T13:51:54.679+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/list], model {tracks=[TrackDto(id=1, title=dsfds, artist=dsfdsf, album=dsfdfsdf, genre=sdfdsfsf, duration=2222, audioUrl=/uploads/music/1774277072633.mp3, coverUrl=/uploads/covers/1774277072634.webp, createdAt=2026-03-23T20:44:32.634747), TrackDto(id=2, title=fdgdfg, artist=gfdgfd, album=dgfgd, genre=dfgdg, duration=333, audioUrl=/uploads/music/1774278057839.mp3, coverUrl=/uploads/covers/1774278057839.jpg, createdAt=2026-03-23T21:00:57.840489), TrackDto(id=3, title=выаыаы, artist=авыаыва, album=аввыавыа, genre=выаыаыа, duration=1111, audioUrl=/uploads/music/1774278856798.mp3, coverUrl=/uploads/covers/1774278856798.jpg, createdAt=2026-03-23T21:14:16.798026), TrackDto(id=4, title=лопавадп, artist=пвапвып, album=вапыпа, genre=вапв, duration=2222, audioUrl=/uploads/music/1774286281228.mp3, coverUrl=/uploads/covers/1774286281229.jpg, createdAt=2026-03-23T23:18:01.229392), TrackDto(id=5, title=fdgdg, artist=dfgdg, album=gdgd, genre=dgfgd, duration=222, audioUrl=/uploads/music/1774289579701.mp3, coverUrl=/uploads/covers/1774289579702.jpg, createdAt=2026-03-24T00:12:59.702313), TrackDto(id=6, title=anya, artist=anya, album=anya, genre=anya, duration=15, audioUrl=/uploads/music/1775489225209.mp3, coverUrl=/uploads/covers/1775489225210.jpg, createdAt=2026-04-06T21:27:05.210511), TrackDto(id=7, title=fdsfsdfs, artist=dsfdsfds, album=sdfdsf, genre=sdfdsf, duration=100, audioUrl=/uploads/music/1775490571291.mp3, coverUrl=/uploads/covers/1775490571292.jpg, createdAt=2026-04-06T21:49:31.292874), TrackDto(id=9, title=fdgd, artist=gfdgd, album=gfdgdg, genre=fdgd, duration=100, audioUrl=/uploads/music/1775769983079.mp3, coverUrl=/uploads/covers/1775769983080.jpg, createdAt=2026-04-10T03:26:23.080984), TrackDto(id=10, title=ghfhf, artist=fghfh, album=fghfh, genre=fghfh, duration=2232, audioUrl=/uploads/music/1775770036452.mp3, coverUrl=/uploads/covers/1775770036453.webp, createdAt=2026-04-10T03:27:16.453999), TrackDto(id=11, title=выапап, artist=ппапа, album=паапа, genre=аппап, duration=2222, audioUrl=/uploads/music/1775803830269.mp3, coverUrl=/uploads/covers/1775803830272.png, createdAt=2026-04-10T12:50:30.273012)], currentPage=0, totalPages=1}
+2026-04-11T13:51:54.680+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/list.ftlh]
+2026-04-11T13:51:54.683+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:51:54.709+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/uploads/covers/1774277072634.webp", parameters={}
+2026-04-11T13:51:54.710+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/uploads/covers/1774278057839.jpg", parameters={}
+2026-04-11T13:51:54.712+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/uploads/covers/1774278856798.jpg", parameters={}
+2026-04-11T13:51:54.715+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/uploads/covers/1774289579702.jpg", parameters={}
+2026-04-11T13:51:54.715+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/uploads/covers/1774286281229.jpg", parameters={}
+2026-04-11T13:51:54.716+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/uploads/covers/1775489225210.jpg", parameters={}
+2026-04-11T13:51:54.717+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/]]
+2026-04-11T13:51:54.717+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/]]
+2026-04-11T13:51:54.717+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/]]
+2026-04-11T13:51:54.717+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/]]
+2026-04-11T13:51:54.717+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/]]
+2026-04-11T13:51:54.717+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/]]
+2026-04-11T13:51:54.720+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-04-11T13:51:54.720+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-04-11T13:51:54.720+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-04-11T13:51:54.720+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-04-11T13:51:54.720+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-04-11T13:51:54.720+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-04-11T13:51:54.728+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/uploads/covers/1775490571292.jpg", parameters={}
+2026-04-11T13:51:54.728+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/uploads/covers/1775769983080.jpg", parameters={}
+2026-04-11T13:51:54.730+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/]]
+2026-04-11T13:51:54.730+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/]]
+2026-04-11T13:51:54.731+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-04-11T13:51:54.732+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-04-11T13:51:54.736+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/uploads/covers/1775770036453.webp", parameters={}
+2026-04-11T13:51:54.736+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/uploads/covers/1775803830272.png", parameters={}
+2026-04-11T13:51:54.737+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/]]
+2026-04-11T13:51:54.737+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/]]
+2026-04-11T13:51:54.738+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-04-11T13:51:54.739+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-04-11T13:51:55.437+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/videos", parameters={}
+2026-04-11T13:51:55.438+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#listVideos(Model)
+2026-04-11T13:51:55.439+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-6] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0
+2026-04-11T13:51:55.442+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-6] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/list], model {videos=[VideoDto(id=3, title=hfghf, artist=gfhdgfh, videoUrl=https://www.youtube.com/watch?v=VBD_qy1yYNA, embedUrl=https://www.youtube.com/embed/VBD_qy1yYNA, thumbnailUrl=https://cdn2.unrealengine.com/hand-on-with-infinity-nikki-a-fashion-forward-open-world-rpg-with-magical-powers-1920x1080-c112f23ba659.jpg, createdAt=2026-03-23T21:11:46.744822), VideoDto(id=5, title=dfg, artist=fgdg, videoUrl=https://www.youtube.com/watch?v=gdZLi9oWNZg&list=RDGMEM0s70dY0AfCwh3LqQ-Bv1xgVMP9q7NoOQHIo&index=2, embedUrl=https://www.youtube.com/embed/gdZLi9oWNZg, thumbnailUrl=https://i.ytimg.com/vi/mEYrq4KT2N8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAMP_joNUO55qNrHYYSCHIP6LPFxA, createdAt=2026-04-06T21:25:43.352477), VideoDto(id=6, title=ddsfsa, artist=fdsafsaf, videoUrl=https://www.youtube.com/watch?v=7aOMyEN7AXw, embedUrl=https://www.youtube.com/embed/7aOMyEN7AXw, thumbnailUrl=https://static.hdrezka.ac/i/2023/6/26/f57b8b582423asz79a57n.jpg, createdAt=2026-04-06T23:26:32.046944), VideoDto(id=7, title=dfgdg, artist=dfgdg, videoUrl=https://www.youtube.com/watch?v=nTVQmTRkxN4&list=PLHSjBd7r_0AU1UclA6TqKYW25f-Cs7gVO, embedUrl=https://www.youtube.com/embed/nTVQmTRkxN4, thumbnailUrl=https://cdn-imgix.headout.com/media/images/298045bf76a6461f8cb5690c16aed31c-AdobeStock-274923414.jpeg?w=1041.6000000000001&h=651&crop=faces&auto=compress%2Cformat&fit=min, createdAt=2026-04-06T23:51:43.891826), VideoDto(id=8, title=fgdgdg, artist=dfgdgd, videoUrl=https://www.youtube.com/watch?v=7aOMyEN7AXw&t, embedUrl=https://www.youtube.com/embed/7aOMyEN7AXw, thumbnailUrl=https://i.pinimg.com/1200x/fe/3c/66/fe3c66faa1c89eb60301bc1909e9b185.jpg, createdAt=2026-04-07T22:27:52.730722), VideoDto(id=9, title=도라지, artist=jkhkhsd, videoUrl=https://www.youtube.com/watch?v=fgMz8VLhjBM, embedUrl=https://www.youtube.com/embed/fgMz8VLhjBM, thumbnailUrl=https://i.pinimg.com/originals/3f/8f/bd/3f8fbd77b54d6cc34bcb6107056f7eba.jpg, createdAt=2026-04-09T01:07:31.496861), VideoDto(id=10, title=overdose, artist=japanese, videoUrl=https://www.youtube.com/watch?v=H08YWE4CIFQ, embedUrl=https://www.youtube.com/embed/H08YWE4CIFQ, thumbnailUrl=https://99px.ru/sstorage/53/2024/03/mid_357241_413672.jpg, createdAt=2026-04-09T01:12:53.108383), VideoDto(id=11, title=10-х, artist=мммм, videoUrl=https://www.youtube.com/watch?v=hBDKpHFM9_w, embedUrl=https://www.youtube.com/embed/hBDKpHFM9_w, thumbnailUrl=https://images3.alphacoders.com/104/1042283.png, createdAt=2026-04-09T01:20:37.676264), VideoDto(id=12, title=sdfdsf, artist=dsfsdf, videoUrl=https://www.youtube.com/watch?v=Ir_1tqV9ICk, embedUrl=https://www.youtube.com/embed/Ir_1tqV9ICk, thumbnailUrl=https://i.pinimg.com/736x/34/95/4b/34954b0b73b614e9f365f6d3006cebb7.jpg, createdAt=2026-04-11T00:39:00.994601), VideoDto(id=13, title=ваыа, artist=выавы, videoUrl=https://www.youtube.com/watch?v=5fuy_8hvXQg, embedUrl=https://www.youtube.com/embed/5fuy_8hvXQg, thumbnailUrl=https://ic.pics.livejournal.com/dergachev_va/58474394/3546134/3546134_original.jpg, createdAt=2026-04-11T12:27:37.859718)]}
+2026-04-11T13:51:55.443+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-6] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/list.ftlh]
+2026-04-11T13:51:55.445+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:51:58.638+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/videos/search?title=d", parameters={title:[d]}
+2026-04-11T13:51:58.638+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#searchByArtist(String, Model)
+2026-04-11T13:51:58.929+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-9] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0 
+    where
+        upper(v1_0.title) like upper(?) escape '\'
+2026-04-11T13:51:58.934+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-9] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/list], model {videos=[VideoDto(id=5, title=dfg, artist=fgdg, videoUrl=https://www.youtube.com/watch?v=gdZLi9oWNZg&list=RDGMEM0s70dY0AfCwh3LqQ-Bv1xgVMP9q7NoOQHIo&index=2, embedUrl=https://www.youtube.com/embed/gdZLi9oWNZg, thumbnailUrl=https://i.ytimg.com/vi/mEYrq4KT2N8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAMP_joNUO55qNrHYYSCHIP6LPFxA, createdAt=2026-04-06T21:25:43.352477), VideoDto(id=6, title=ddsfsa, artist=fdsafsaf, videoUrl=https://www.youtube.com/watch?v=7aOMyEN7AXw, embedUrl=https://www.youtube.com/embed/7aOMyEN7AXw, thumbnailUrl=https://static.hdrezka.ac/i/2023/6/26/f57b8b582423asz79a57n.jpg, createdAt=2026-04-06T23:26:32.046944), VideoDto(id=7, title=dfgdg, artist=dfgdg, videoUrl=https://www.youtube.com/watch?v=nTVQmTRkxN4&list=PLHSjBd7r_0AU1UclA6TqKYW25f-Cs7gVO, embedUrl=https://www.youtube.com/embed/nTVQmTRkxN4, thumbnailUrl=https://cdn-imgix.headout.com/media/images/298045bf76a6461f8cb5690c16aed31c-AdobeStock-274923414.jpeg?w=1041.6000000000001&h=651&crop=faces&auto=compress%2Cformat&fit=min, createdAt=2026-04-06T23:51:43.891826), VideoDto(id=8, title=fgdgdg, artist=dfgdgd, videoUrl=https://www.youtube.com/watch?v=7aOMyEN7AXw&t, embedUrl=https://www.youtube.com/embed/7aOMyEN7AXw, thumbnailUrl=https://i.pinimg.com/1200x/fe/3c/66/fe3c66faa1c89eb60301bc1909e9b185.jpg, createdAt=2026-04-07T22:27:52.730722), VideoDto(id=10, title=overdose, artist=japanese, videoUrl=https://www.youtube.com/watch?v=H08YWE4CIFQ, embedUrl=https://www.youtube.com/embed/H08YWE4CIFQ, thumbnailUrl=https://99px.ru/sstorage/53/2024/03/mid_357241_413672.jpg, createdAt=2026-04-09T01:12:53.108383), VideoDto(id=12, title=sdfdsf, artist=dsfsdf, videoUrl=https://www.youtube.com/watch?v=Ir_1tqV9ICk, embedUrl=https://www.youtube.com/embed/Ir_1tqV9ICk, thumbnailUrl=https://i.pinimg.com/736x/34/95/4b/34954b0b73b614e9f365f6d3006cebb7.jpg, createdAt=2026-04-11T00:39:00.994601)], searchQuery=d}
+2026-04-11T13:51:58.934+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-9] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/list.ftlh]
+2026-04-11T13:51:58.936+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:52:02.530+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/videos/search?title=df", parameters={title:[df]}
+2026-04-11T13:52:02.530+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#searchByArtist(String, Model)
+2026-04-11T13:52:02.532+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-10] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0 
+    where
+        upper(v1_0.title) like upper(?) escape '\'
+2026-04-11T13:52:02.535+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-10] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/list], model {videos=[VideoDto(id=5, title=dfg, artist=fgdg, videoUrl=https://www.youtube.com/watch?v=gdZLi9oWNZg&list=RDGMEM0s70dY0AfCwh3LqQ-Bv1xgVMP9q7NoOQHIo&index=2, embedUrl=https://www.youtube.com/embed/gdZLi9oWNZg, thumbnailUrl=https://i.ytimg.com/vi/mEYrq4KT2N8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAMP_joNUO55qNrHYYSCHIP6LPFxA, createdAt=2026-04-06T21:25:43.352477), VideoDto(id=7, title=dfgdg, artist=dfgdg, videoUrl=https://www.youtube.com/watch?v=nTVQmTRkxN4&list=PLHSjBd7r_0AU1UclA6TqKYW25f-Cs7gVO, embedUrl=https://www.youtube.com/embed/nTVQmTRkxN4, thumbnailUrl=https://cdn-imgix.headout.com/media/images/298045bf76a6461f8cb5690c16aed31c-AdobeStock-274923414.jpeg?w=1041.6000000000001&h=651&crop=faces&auto=compress%2Cformat&fit=min, createdAt=2026-04-06T23:51:43.891826), VideoDto(id=12, title=sdfdsf, artist=dsfsdf, videoUrl=https://www.youtube.com/watch?v=Ir_1tqV9ICk, embedUrl=https://www.youtube.com/embed/Ir_1tqV9ICk, thumbnailUrl=https://i.pinimg.com/736x/34/95/4b/34954b0b73b614e9f365f6d3006cebb7.jpg, createdAt=2026-04-11T00:39:00.994601)], searchQuery=df}
+2026-04-11T13:52:02.536+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-10] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/list.ftlh]
+2026-04-11T13:52:02.538+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:52:06.970+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/videos/search?title=a", parameters={title:[a]}
+2026-04-11T13:52:06.970+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#searchByArtist(String, Model)
+2026-04-11T13:52:06.972+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0 
+    where
+        upper(v1_0.title) like upper(?) escape '\'
+2026-04-11T13:52:06.976+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/list], model {videos=[VideoDto(id=6, title=ddsfsa, artist=fdsafsaf, videoUrl=https://www.youtube.com/watch?v=7aOMyEN7AXw, embedUrl=https://www.youtube.com/embed/7aOMyEN7AXw, thumbnailUrl=https://static.hdrezka.ac/i/2023/6/26/f57b8b582423asz79a57n.jpg, createdAt=2026-04-06T23:26:32.046944)], searchQuery=a}
+2026-04-11T13:52:06.976+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/list.ftlh]
+2026-04-11T13:52:06.978+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:52:10.764+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/videos/search?title=aaa", parameters={title:[aaa]}
+2026-04-11T13:52:10.765+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#searchByArtist(String, Model)
+2026-04-11T13:52:10.766+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-7] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0 
+    where
+        upper(v1_0.title) like upper(?) escape '\'
+2026-04-11T13:52:10.768+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-7] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/list], model {videos=[], searchQuery=aaa}
+2026-04-11T13:52:10.769+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-7] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/list.ftlh]
+2026-04-11T13:52:10.769+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:52:12.458+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/videos/search?title=a", parameters={title:[a]}
+2026-04-11T13:52:12.458+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#searchByArtist(String, Model)
+2026-04-11T13:52:12.460+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-8] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0 
+    where
+        upper(v1_0.title) like upper(?) escape '\'
+2026-04-11T13:52:12.462+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-8] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/list], model {videos=[VideoDto(id=6, title=ddsfsa, artist=fdsafsaf, videoUrl=https://www.youtube.com/watch?v=7aOMyEN7AXw, embedUrl=https://www.youtube.com/embed/7aOMyEN7AXw, thumbnailUrl=https://static.hdrezka.ac/i/2023/6/26/f57b8b582423asz79a57n.jpg, createdAt=2026-04-06T23:26:32.046944)], searchQuery=a}
+2026-04-11T13:52:12.462+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-8] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/list.ftlh]
+2026-04-11T13:52:12.463+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:52:24.530+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/videos", parameters={}
+2026-04-11T13:52:24.530+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#listVideos(Model)
+2026-04-11T13:52:24.532+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0
+2026-04-11T13:52:24.535+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/list], model {videos=[VideoDto(id=3, title=hfghf, artist=gfhdgfh, videoUrl=https://www.youtube.com/watch?v=VBD_qy1yYNA, embedUrl=https://www.youtube.com/embed/VBD_qy1yYNA, thumbnailUrl=https://cdn2.unrealengine.com/hand-on-with-infinity-nikki-a-fashion-forward-open-world-rpg-with-magical-powers-1920x1080-c112f23ba659.jpg, createdAt=2026-03-23T21:11:46.744822), VideoDto(id=5, title=dfg, artist=fgdg, videoUrl=https://www.youtube.com/watch?v=gdZLi9oWNZg&list=RDGMEM0s70dY0AfCwh3LqQ-Bv1xgVMP9q7NoOQHIo&index=2, embedUrl=https://www.youtube.com/embed/gdZLi9oWNZg, thumbnailUrl=https://i.ytimg.com/vi/mEYrq4KT2N8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAMP_joNUO55qNrHYYSCHIP6LPFxA, createdAt=2026-04-06T21:25:43.352477), VideoDto(id=6, title=ddsfsa, artist=fdsafsaf, videoUrl=https://www.youtube.com/watch?v=7aOMyEN7AXw, embedUrl=https://www.youtube.com/embed/7aOMyEN7AXw, thumbnailUrl=https://static.hdrezka.ac/i/2023/6/26/f57b8b582423asz79a57n.jpg, createdAt=2026-04-06T23:26:32.046944), VideoDto(id=7, title=dfgdg, artist=dfgdg, videoUrl=https://www.youtube.com/watch?v=nTVQmTRkxN4&list=PLHSjBd7r_0AU1UclA6TqKYW25f-Cs7gVO, embedUrl=https://www.youtube.com/embed/nTVQmTRkxN4, thumbnailUrl=https://cdn-imgix.headout.com/media/images/298045bf76a6461f8cb5690c16aed31c-AdobeStock-274923414.jpeg?w=1041.6000000000001&h=651&crop=faces&auto=compress%2Cformat&fit=min, createdAt=2026-04-06T23:51:43.891826), VideoDto(id=8, title=fgdgdg, artist=dfgdgd, videoUrl=https://www.youtube.com/watch?v=7aOMyEN7AXw&t, embedUrl=https://www.youtube.com/embed/7aOMyEN7AXw, thumbnailUrl=https://i.pinimg.com/1200x/fe/3c/66/fe3c66faa1c89eb60301bc1909e9b185.jpg, createdAt=2026-04-07T22:27:52.730722), VideoDto(id=9, title=도라지, artist=jkhkhsd, videoUrl=https://www.youtube.com/watch?v=fgMz8VLhjBM, embedUrl=https://www.youtube.com/embed/fgMz8VLhjBM, thumbnailUrl=https://i.pinimg.com/originals/3f/8f/bd/3f8fbd77b54d6cc34bcb6107056f7eba.jpg, createdAt=2026-04-09T01:07:31.496861), VideoDto(id=10, title=overdose, artist=japanese, videoUrl=https://www.youtube.com/watch?v=H08YWE4CIFQ, embedUrl=https://www.youtube.com/embed/H08YWE4CIFQ, thumbnailUrl=https://99px.ru/sstorage/53/2024/03/mid_357241_413672.jpg, createdAt=2026-04-09T01:12:53.108383), VideoDto(id=11, title=10-х, artist=мммм, videoUrl=https://www.youtube.com/watch?v=hBDKpHFM9_w, embedUrl=https://www.youtube.com/embed/hBDKpHFM9_w, thumbnailUrl=https://images3.alphacoders.com/104/1042283.png, createdAt=2026-04-09T01:20:37.676264), VideoDto(id=12, title=sdfdsf, artist=dsfsdf, videoUrl=https://www.youtube.com/watch?v=Ir_1tqV9ICk, embedUrl=https://www.youtube.com/embed/Ir_1tqV9ICk, thumbnailUrl=https://i.pinimg.com/736x/34/95/4b/34954b0b73b614e9f365f6d3006cebb7.jpg, createdAt=2026-04-11T00:39:00.994601), VideoDto(id=13, title=ваыа, artist=выавы, videoUrl=https://www.youtube.com/watch?v=5fuy_8hvXQg, embedUrl=https://www.youtube.com/embed/5fuy_8hvXQg, thumbnailUrl=https://ic.pics.livejournal.com/dergachev_va/58474394/3546134/3546134_original.jpg, createdAt=2026-04-11T12:27:37.859718)]}
+2026-04-11T13:52:24.535+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/list.ftlh]
+2026-04-11T13:52:24.538+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:52:42.285+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/videos/search?title=%EB%8F%84", parameters={title:[도]}
+2026-04-11T13:52:42.285+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#searchByArtist(String, Model)
+2026-04-11T13:52:42.287+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0 
+    where
+        upper(v1_0.title) like upper(?) escape '\'
+2026-04-11T13:52:42.290+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/list], model {videos=[VideoDto(id=9, title=도라지, artist=jkhkhsd, videoUrl=https://www.youtube.com/watch?v=fgMz8VLhjBM, embedUrl=https://www.youtube.com/embed/fgMz8VLhjBM, thumbnailUrl=https://i.pinimg.com/originals/3f/8f/bd/3f8fbd77b54d6cc34bcb6107056f7eba.jpg, createdAt=2026-04-09T01:07:31.496861)], searchQuery=도}
+2026-04-11T13:52:42.290+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/list.ftlh]
+2026-04-11T13:52:42.291+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:52:45.570+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/videos/search?title=%E3%85%88", parameters={title:[ㅈ]}
+2026-04-11T13:52:45.571+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#searchByArtist(String, Model)
+2026-04-11T13:52:45.573+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0 
+    where
+        upper(v1_0.title) like upper(?) escape '\'
+2026-04-11T13:52:45.574+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/list], model {videos=[], searchQuery=ㅈ}
+2026-04-11T13:52:45.574+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/list.ftlh]
+2026-04-11T13:52:45.575+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:52:48.147+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/videos/search?title=%EC%A7%80", parameters={title:[지]}
+2026-04-11T13:52:48.147+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#searchByArtist(String, Model)
+2026-04-11T13:52:48.149+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0 
+    where
+        upper(v1_0.title) like upper(?) escape '\'
+2026-04-11T13:52:48.152+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/list], model {videos=[VideoDto(id=9, title=도라지, artist=jkhkhsd, videoUrl=https://www.youtube.com/watch?v=fgMz8VLhjBM, embedUrl=https://www.youtube.com/embed/fgMz8VLhjBM, thumbnailUrl=https://i.pinimg.com/originals/3f/8f/bd/3f8fbd77b54d6cc34bcb6107056f7eba.jpg, createdAt=2026-04-09T01:07:31.496861)], searchQuery=지}
+2026-04-11T13:52:48.152+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/list.ftlh]
+2026-04-11T13:52:48.154+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:52:53.348+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/videos", parameters={}
+2026-04-11T13:52:53.348+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#listVideos(Model)
+2026-04-11T13:52:53.350+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-6] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0
+2026-04-11T13:52:53.354+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-6] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/list], model {videos=[VideoDto(id=3, title=hfghf, artist=gfhdgfh, videoUrl=https://www.youtube.com/watch?v=VBD_qy1yYNA, embedUrl=https://www.youtube.com/embed/VBD_qy1yYNA, thumbnailUrl=https://cdn2.unrealengine.com/hand-on-with-infinity-nikki-a-fashion-forward-open-world-rpg-with-magical-powers-1920x1080-c112f23ba659.jpg, createdAt=2026-03-23T21:11:46.744822), VideoDto(id=5, title=dfg, artist=fgdg, videoUrl=https://www.youtube.com/watch?v=gdZLi9oWNZg&list=RDGMEM0s70dY0AfCwh3LqQ-Bv1xgVMP9q7NoOQHIo&index=2, embedUrl=https://www.youtube.com/embed/gdZLi9oWNZg, thumbnailUrl=https://i.ytimg.com/vi/mEYrq4KT2N8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAMP_joNUO55qNrHYYSCHIP6LPFxA, createdAt=2026-04-06T21:25:43.352477), VideoDto(id=6, title=ddsfsa, artist=fdsafsaf, videoUrl=https://www.youtube.com/watch?v=7aOMyEN7AXw, embedUrl=https://www.youtube.com/embed/7aOMyEN7AXw, thumbnailUrl=https://static.hdrezka.ac/i/2023/6/26/f57b8b582423asz79a57n.jpg, createdAt=2026-04-06T23:26:32.046944), VideoDto(id=7, title=dfgdg, artist=dfgdg, videoUrl=https://www.youtube.com/watch?v=nTVQmTRkxN4&list=PLHSjBd7r_0AU1UclA6TqKYW25f-Cs7gVO, embedUrl=https://www.youtube.com/embed/nTVQmTRkxN4, thumbnailUrl=https://cdn-imgix.headout.com/media/images/298045bf76a6461f8cb5690c16aed31c-AdobeStock-274923414.jpeg?w=1041.6000000000001&h=651&crop=faces&auto=compress%2Cformat&fit=min, createdAt=2026-04-06T23:51:43.891826), VideoDto(id=8, title=fgdgdg, artist=dfgdgd, videoUrl=https://www.youtube.com/watch?v=7aOMyEN7AXw&t, embedUrl=https://www.youtube.com/embed/7aOMyEN7AXw, thumbnailUrl=https://i.pinimg.com/1200x/fe/3c/66/fe3c66faa1c89eb60301bc1909e9b185.jpg, createdAt=2026-04-07T22:27:52.730722), VideoDto(id=9, title=도라지, artist=jkhkhsd, videoUrl=https://www.youtube.com/watch?v=fgMz8VLhjBM, embedUrl=https://www.youtube.com/embed/fgMz8VLhjBM, thumbnailUrl=https://i.pinimg.com/originals/3f/8f/bd/3f8fbd77b54d6cc34bcb6107056f7eba.jpg, createdAt=2026-04-09T01:07:31.496861), VideoDto(id=10, title=overdose, artist=japanese, videoUrl=https://www.youtube.com/watch?v=H08YWE4CIFQ, embedUrl=https://www.youtube.com/embed/H08YWE4CIFQ, thumbnailUrl=https://99px.ru/sstorage/53/2024/03/mid_357241_413672.jpg, createdAt=2026-04-09T01:12:53.108383), VideoDto(id=11, title=10-х, artist=мммм, videoUrl=https://www.youtube.com/watch?v=hBDKpHFM9_w, embedUrl=https://www.youtube.com/embed/hBDKpHFM9_w, thumbnailUrl=https://images3.alphacoders.com/104/1042283.png, createdAt=2026-04-09T01:20:37.676264), VideoDto(id=12, title=sdfdsf, artist=dsfsdf, videoUrl=https://www.youtube.com/watch?v=Ir_1tqV9ICk, embedUrl=https://www.youtube.com/embed/Ir_1tqV9ICk, thumbnailUrl=https://i.pinimg.com/736x/34/95/4b/34954b0b73b614e9f365f6d3006cebb7.jpg, createdAt=2026-04-11T00:39:00.994601), VideoDto(id=13, title=ваыа, artist=выавы, videoUrl=https://www.youtube.com/watch?v=5fuy_8hvXQg, embedUrl=https://www.youtube.com/embed/5fuy_8hvXQg, thumbnailUrl=https://ic.pics.livejournal.com/dergachev_va/58474394/3546134/3546134_original.jpg, createdAt=2026-04-11T12:27:37.859718)]}
+2026-04-11T13:52:53.355+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-6] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/list.ftlh]
+2026-04-11T13:52:53.362+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:52:56.399+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/videos/11", parameters={}
+2026-04-11T13:52:56.400+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#watchVideo(Long, Model)
+2026-04-11T13:52:56.410+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0 
+    where
+        v1_0.id=?
+2026-04-11T13:52:56.416+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/watch], model {video=VideoDto(id=11, title=10-х, artist=мммм, videoUrl=https://www.youtube.com/watch?v=hBDKpHFM9_w, embedUrl=https://www.youtube.com/embed/hBDKpHFM9_w, thumbnailUrl=https://images3.alphacoders.com/104/1042283.png, createdAt=2026-04-09T01:20:37.676264), org.springframework.validation.BindingResult.video=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2026-04-11T13:52:56.417+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/watch.ftlh]
+2026-04-11T13:52:56.417+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:52:58.392+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-04-11T13:52:58.393+06:00  WARN 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2026-04-11T13:52:58.399+06:00  WARN 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.PageNotFound             : No endpoint GET /favicon.ico.
+2026-04-11T13:52:58.400+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /favicon.ico.]
+2026-04-11T13:52:58.400+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2026-04-11T13:52:58.404+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-04-11T13:52:58.405+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+2026-04-11T13:52:58.418+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/yaml]
+2026-04-11T13:52:58.421+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sat Apr 11 13:52:58 GMT+06:00 2026, status=404, error=Not Found, path=/favicon.ico}]
+2026-04-11T13:52:58.452+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2026-04-11T13:53:00.748+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/videos", parameters={}
+2026-04-11T13:53:00.748+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#listVideos(Model)
+2026-04-11T13:53:00.750+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0
+2026-04-11T13:53:00.753+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/list], model {videos=[VideoDto(id=3, title=hfghf, artist=gfhdgfh, videoUrl=https://www.youtube.com/watch?v=VBD_qy1yYNA, embedUrl=https://www.youtube.com/embed/VBD_qy1yYNA, thumbnailUrl=https://cdn2.unrealengine.com/hand-on-with-infinity-nikki-a-fashion-forward-open-world-rpg-with-magical-powers-1920x1080-c112f23ba659.jpg, createdAt=2026-03-23T21:11:46.744822), VideoDto(id=5, title=dfg, artist=fgdg, videoUrl=https://www.youtube.com/watch?v=gdZLi9oWNZg&list=RDGMEM0s70dY0AfCwh3LqQ-Bv1xgVMP9q7NoOQHIo&index=2, embedUrl=https://www.youtube.com/embed/gdZLi9oWNZg, thumbnailUrl=https://i.ytimg.com/vi/mEYrq4KT2N8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAMP_joNUO55qNrHYYSCHIP6LPFxA, createdAt=2026-04-06T21:25:43.352477), VideoDto(id=6, title=ddsfsa, artist=fdsafsaf, videoUrl=https://www.youtube.com/watch?v=7aOMyEN7AXw, embedUrl=https://www.youtube.com/embed/7aOMyEN7AXw, thumbnailUrl=https://static.hdrezka.ac/i/2023/6/26/f57b8b582423asz79a57n.jpg, createdAt=2026-04-06T23:26:32.046944), VideoDto(id=7, title=dfgdg, artist=dfgdg, videoUrl=https://www.youtube.com/watch?v=nTVQmTRkxN4&list=PLHSjBd7r_0AU1UclA6TqKYW25f-Cs7gVO, embedUrl=https://www.youtube.com/embed/nTVQmTRkxN4, thumbnailUrl=https://cdn-imgix.headout.com/media/images/298045bf76a6461f8cb5690c16aed31c-AdobeStock-274923414.jpeg?w=1041.6000000000001&h=651&crop=faces&auto=compress%2Cformat&fit=min, createdAt=2026-04-06T23:51:43.891826), VideoDto(id=8, title=fgdgdg, artist=dfgdgd, videoUrl=https://www.youtube.com/watch?v=7aOMyEN7AXw&t, embedUrl=https://www.youtube.com/embed/7aOMyEN7AXw, thumbnailUrl=https://i.pinimg.com/1200x/fe/3c/66/fe3c66faa1c89eb60301bc1909e9b185.jpg, createdAt=2026-04-07T22:27:52.730722), VideoDto(id=9, title=도라지, artist=jkhkhsd, videoUrl=https://www.youtube.com/watch?v=fgMz8VLhjBM, embedUrl=https://www.youtube.com/embed/fgMz8VLhjBM, thumbnailUrl=https://i.pinimg.com/originals/3f/8f/bd/3f8fbd77b54d6cc34bcb6107056f7eba.jpg, createdAt=2026-04-09T01:07:31.496861), VideoDto(id=10, title=overdose, artist=japanese, videoUrl=https://www.youtube.com/watch?v=H08YWE4CIFQ, embedUrl=https://www.youtube.com/embed/H08YWE4CIFQ, thumbnailUrl=https://99px.ru/sstorage/53/2024/03/mid_357241_413672.jpg, createdAt=2026-04-09T01:12:53.108383), VideoDto(id=11, title=10-х, artist=мммм, videoUrl=https://www.youtube.com/watch?v=hBDKpHFM9_w, embedUrl=https://www.youtube.com/embed/hBDKpHFM9_w, thumbnailUrl=https://images3.alphacoders.com/104/1042283.png, createdAt=2026-04-09T01:20:37.676264), VideoDto(id=12, title=sdfdsf, artist=dsfsdf, videoUrl=https://www.youtube.com/watch?v=Ir_1tqV9ICk, embedUrl=https://www.youtube.com/embed/Ir_1tqV9ICk, thumbnailUrl=https://i.pinimg.com/736x/34/95/4b/34954b0b73b614e9f365f6d3006cebb7.jpg, createdAt=2026-04-11T00:39:00.994601), VideoDto(id=13, title=ваыа, artist=выавы, videoUrl=https://www.youtube.com/watch?v=5fuy_8hvXQg, embedUrl=https://www.youtube.com/embed/5fuy_8hvXQg, thumbnailUrl=https://ic.pics.livejournal.com/dergachev_va/58474394/3546134/3546134_original.jpg, createdAt=2026-04-11T12:27:37.859718)]}
+2026-04-11T13:53:00.754+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/list.ftlh]
+2026-04-11T13:53:00.756+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:53:02.129+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/videos/search?title=1", parameters={title:[1]}
+2026-04-11T13:53:02.129+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#searchByArtist(String, Model)
+2026-04-11T13:53:02.132+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0 
+    where
+        upper(v1_0.title) like upper(?) escape '\'
+2026-04-11T13:53:02.134+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/list], model {videos=[VideoDto(id=11, title=10-х, artist=мммм, videoUrl=https://www.youtube.com/watch?v=hBDKpHFM9_w, embedUrl=https://www.youtube.com/embed/hBDKpHFM9_w, thumbnailUrl=https://images3.alphacoders.com/104/1042283.png, createdAt=2026-04-09T01:20:37.676264)], searchQuery=1}
+2026-04-11T13:53:02.134+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/list.ftlh]
+2026-04-11T13:53:02.135+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:53:11.645+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/videos/11", parameters={}
+2026-04-11T13:53:11.646+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#watchVideo(Long, Model)
+2026-04-11T13:53:11.647+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-6] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0 
+    where
+        v1_0.id=?
+2026-04-11T13:53:11.650+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-6] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/watch], model {video=VideoDto(id=11, title=10-х, artist=мммм, videoUrl=https://www.youtube.com/watch?v=hBDKpHFM9_w, embedUrl=https://www.youtube.com/embed/hBDKpHFM9_w, thumbnailUrl=https://images3.alphacoders.com/104/1042283.png, createdAt=2026-04-09T01:20:37.676264), org.springframework.validation.BindingResult.video=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2026-04-11T13:53:11.650+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-6] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/watch.ftlh]
+2026-04-11T13:53:11.651+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:53:13.225+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-04-11T13:53:13.226+06:00  WARN 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2026-04-11T13:53:13.227+06:00  WARN 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.PageNotFound             : No endpoint GET /favicon.ico.
+2026-04-11T13:53:13.228+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /favicon.ico.]
+2026-04-11T13:53:13.228+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2026-04-11T13:53:13.228+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-04-11T13:53:13.229+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+2026-04-11T13:53:13.230+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/yaml]
+2026-04-11T13:53:13.230+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sat Apr 11 13:53:13 GMT+06:00 2026, status=404, error=Not Found, path=/favicon.ico}]
+2026-04-11T13:53:13.231+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2026-04-11T13:57:37.095+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/videos", parameters={}
+2026-04-11T13:57:37.095+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#listVideos(Model)
+2026-04-11T13:57:37.097+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-10] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0
+2026-04-11T13:57:37.101+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-10] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/list], model {videos=[VideoDto(id=3, title=hfghf, artist=gfhdgfh, videoUrl=https://www.youtube.com/watch?v=VBD_qy1yYNA, embedUrl=https://www.youtube.com/embed/VBD_qy1yYNA, thumbnailUrl=https://cdn2.unrealengine.com/hand-on-with-infinity-nikki-a-fashion-forward-open-world-rpg-with-magical-powers-1920x1080-c112f23ba659.jpg, createdAt=2026-03-23T21:11:46.744822), VideoDto(id=5, title=dfg, artist=fgdg, videoUrl=https://www.youtube.com/watch?v=gdZLi9oWNZg&list=RDGMEM0s70dY0AfCwh3LqQ-Bv1xgVMP9q7NoOQHIo&index=2, embedUrl=https://www.youtube.com/embed/gdZLi9oWNZg, thumbnailUrl=https://i.ytimg.com/vi/mEYrq4KT2N8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAMP_joNUO55qNrHYYSCHIP6LPFxA, createdAt=2026-04-06T21:25:43.352477), VideoDto(id=6, title=ddsfsa, artist=fdsafsaf, videoUrl=https://www.youtube.com/watch?v=7aOMyEN7AXw, embedUrl=https://www.youtube.com/embed/7aOMyEN7AXw, thumbnailUrl=https://static.hdrezka.ac/i/2023/6/26/f57b8b582423asz79a57n.jpg, createdAt=2026-04-06T23:26:32.046944), VideoDto(id=7, title=dfgdg, artist=dfgdg, videoUrl=https://www.youtube.com/watch?v=nTVQmTRkxN4&list=PLHSjBd7r_0AU1UclA6TqKYW25f-Cs7gVO, embedUrl=https://www.youtube.com/embed/nTVQmTRkxN4, thumbnailUrl=https://cdn-imgix.headout.com/media/images/298045bf76a6461f8cb5690c16aed31c-AdobeStock-274923414.jpeg?w=1041.6000000000001&h=651&crop=faces&auto=compress%2Cformat&fit=min, createdAt=2026-04-06T23:51:43.891826), VideoDto(id=8, title=fgdgdg, artist=dfgdgd, videoUrl=https://www.youtube.com/watch?v=7aOMyEN7AXw&t, embedUrl=https://www.youtube.com/embed/7aOMyEN7AXw, thumbnailUrl=https://i.pinimg.com/1200x/fe/3c/66/fe3c66faa1c89eb60301bc1909e9b185.jpg, createdAt=2026-04-07T22:27:52.730722), VideoDto(id=9, title=도라지, artist=jkhkhsd, videoUrl=https://www.youtube.com/watch?v=fgMz8VLhjBM, embedUrl=https://www.youtube.com/embed/fgMz8VLhjBM, thumbnailUrl=https://i.pinimg.com/originals/3f/8f/bd/3f8fbd77b54d6cc34bcb6107056f7eba.jpg, createdAt=2026-04-09T01:07:31.496861), VideoDto(id=10, title=overdose, artist=japanese, videoUrl=https://www.youtube.com/watch?v=H08YWE4CIFQ, embedUrl=https://www.youtube.com/embed/H08YWE4CIFQ, thumbnailUrl=https://99px.ru/sstorage/53/2024/03/mid_357241_413672.jpg, createdAt=2026-04-09T01:12:53.108383), VideoDto(id=11, title=10-х, artist=мммм, videoUrl=https://www.youtube.com/watch?v=hBDKpHFM9_w, embedUrl=https://www.youtube.com/embed/hBDKpHFM9_w, thumbnailUrl=https://images3.alphacoders.com/104/1042283.png, createdAt=2026-04-09T01:20:37.676264), VideoDto(id=12, title=sdfdsf, artist=dsfsdf, videoUrl=https://www.youtube.com/watch?v=Ir_1tqV9ICk, embedUrl=https://www.youtube.com/embed/Ir_1tqV9ICk, thumbnailUrl=https://i.pinimg.com/736x/34/95/4b/34954b0b73b614e9f365f6d3006cebb7.jpg, createdAt=2026-04-11T00:39:00.994601), VideoDto(id=13, title=ваыа, artist=выавы, videoUrl=https://www.youtube.com/watch?v=5fuy_8hvXQg, embedUrl=https://www.youtube.com/embed/5fuy_8hvXQg, thumbnailUrl=https://ic.pics.livejournal.com/dergachev_va/58474394/3546134/3546134_original.jpg, createdAt=2026-04-11T12:27:37.859718)]}
+2026-04-11T13:57:37.102+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-10] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/list.ftlh]
+2026-04-11T13:57:37.105+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:57:39.733+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/videos/3", parameters={}
+2026-04-11T13:57:39.733+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#watchVideo(Long, Model)
+2026-04-11T13:57:39.734+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-9] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0 
+    where
+        v1_0.id=?
+2026-04-11T13:57:39.736+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-9] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/watch], model {video=VideoDto(id=3, title=hfghf, artist=gfhdgfh, videoUrl=https://www.youtube.com/watch?v=VBD_qy1yYNA, embedUrl=https://www.youtube.com/embed/VBD_qy1yYNA, thumbnailUrl=https://cdn2.unrealengine.com/hand-on-with-infinity-nikki-a-fashion-forward-open-world-rpg-with-magical-powers-1920x1080-c112f23ba659.jpg, createdAt=2026-03-23T21:11:46.744822), org.springframework.validation.BindingResult.video=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2026-04-11T13:57:39.736+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-9] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/watch.ftlh]
+2026-04-11T13:57:39.737+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:57:41.036+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-04-11T13:57:41.036+06:00  WARN 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2026-04-11T13:57:41.037+06:00  WARN 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.PageNotFound             : No endpoint GET /favicon.ico.
+2026-04-11T13:57:41.037+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /favicon.ico.]
+2026-04-11T13:57:41.037+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2026-04-11T13:57:41.038+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-04-11T13:57:41.038+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+2026-04-11T13:57:41.039+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/yaml]
+2026-04-11T13:57:41.039+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sat Apr 11 13:57:41 GMT+06:00 2026, status=404, error=Not Found, path=/favicon.ico}]
+2026-04-11T13:57:41.041+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2026-04-11T13:58:18.547+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/videos", parameters={}
+2026-04-11T13:58:18.547+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#listVideos(Model)
+2026-04-11T13:58:18.549+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0
+2026-04-11T13:58:18.553+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/list], model {videos=[VideoDto(id=3, title=hfghf, artist=gfhdgfh, videoUrl=https://www.youtube.com/watch?v=VBD_qy1yYNA, embedUrl=https://www.youtube.com/embed/VBD_qy1yYNA, thumbnailUrl=https://cdn2.unrealengine.com/hand-on-with-infinity-nikki-a-fashion-forward-open-world-rpg-with-magical-powers-1920x1080-c112f23ba659.jpg, createdAt=2026-03-23T21:11:46.744822), VideoDto(id=5, title=dfg, artist=fgdg, videoUrl=https://www.youtube.com/watch?v=gdZLi9oWNZg&list=RDGMEM0s70dY0AfCwh3LqQ-Bv1xgVMP9q7NoOQHIo&index=2, embedUrl=https://www.youtube.com/embed/gdZLi9oWNZg, thumbnailUrl=https://i.ytimg.com/vi/mEYrq4KT2N8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAMP_joNUO55qNrHYYSCHIP6LPFxA, createdAt=2026-04-06T21:25:43.352477), VideoDto(id=6, title=ddsfsa, artist=fdsafsaf, videoUrl=https://www.youtube.com/watch?v=7aOMyEN7AXw, embedUrl=https://www.youtube.com/embed/7aOMyEN7AXw, thumbnailUrl=https://static.hdrezka.ac/i/2023/6/26/f57b8b582423asz79a57n.jpg, createdAt=2026-04-06T23:26:32.046944), VideoDto(id=7, title=dfgdg, artist=dfgdg, videoUrl=https://www.youtube.com/watch?v=nTVQmTRkxN4&list=PLHSjBd7r_0AU1UclA6TqKYW25f-Cs7gVO, embedUrl=https://www.youtube.com/embed/nTVQmTRkxN4, thumbnailUrl=https://cdn-imgix.headout.com/media/images/298045bf76a6461f8cb5690c16aed31c-AdobeStock-274923414.jpeg?w=1041.6000000000001&h=651&crop=faces&auto=compress%2Cformat&fit=min, createdAt=2026-04-06T23:51:43.891826), VideoDto(id=8, title=fgdgdg, artist=dfgdgd, videoUrl=https://www.youtube.com/watch?v=7aOMyEN7AXw&t, embedUrl=https://www.youtube.com/embed/7aOMyEN7AXw, thumbnailUrl=https://i.pinimg.com/1200x/fe/3c/66/fe3c66faa1c89eb60301bc1909e9b185.jpg, createdAt=2026-04-07T22:27:52.730722), VideoDto(id=9, title=도라지, artist=jkhkhsd, videoUrl=https://www.youtube.com/watch?v=fgMz8VLhjBM, embedUrl=https://www.youtube.com/embed/fgMz8VLhjBM, thumbnailUrl=https://i.pinimg.com/originals/3f/8f/bd/3f8fbd77b54d6cc34bcb6107056f7eba.jpg, createdAt=2026-04-09T01:07:31.496861), VideoDto(id=10, title=overdose, artist=japanese, videoUrl=https://www.youtube.com/watch?v=H08YWE4CIFQ, embedUrl=https://www.youtube.com/embed/H08YWE4CIFQ, thumbnailUrl=https://99px.ru/sstorage/53/2024/03/mid_357241_413672.jpg, createdAt=2026-04-09T01:12:53.108383), VideoDto(id=11, title=10-х, artist=мммм, videoUrl=https://www.youtube.com/watch?v=hBDKpHFM9_w, embedUrl=https://www.youtube.com/embed/hBDKpHFM9_w, thumbnailUrl=https://images3.alphacoders.com/104/1042283.png, createdAt=2026-04-09T01:20:37.676264), VideoDto(id=12, title=sdfdsf, artist=dsfsdf, videoUrl=https://www.youtube.com/watch?v=Ir_1tqV9ICk, embedUrl=https://www.youtube.com/embed/Ir_1tqV9ICk, thumbnailUrl=https://i.pinimg.com/736x/34/95/4b/34954b0b73b614e9f365f6d3006cebb7.jpg, createdAt=2026-04-11T00:39:00.994601), VideoDto(id=13, title=ваыа, artist=выавы, videoUrl=https://www.youtube.com/watch?v=5fuy_8hvXQg, embedUrl=https://www.youtube.com/embed/5fuy_8hvXQg, thumbnailUrl=https://ic.pics.livejournal.com/dergachev_va/58474394/3546134/3546134_original.jpg, createdAt=2026-04-11T12:27:37.859718)]}
+2026-04-11T13:58:18.554+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/list.ftlh]
+2026-04-11T13:58:18.555+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:58:20.385+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/videos/5", parameters={}
+2026-04-11T13:58:20.385+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#watchVideo(Long, Model)
+2026-04-11T13:58:20.386+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.artist,
+        v1_0.created_at,
+        v1_0.thumbnail_url,
+        v1_0.title,
+        v1_0.video_url 
+    from
+        videos v1_0 
+    where
+        v1_0.id=?
+2026-04-11T13:58:20.388+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/watch], model {video=VideoDto(id=5, title=dfg, artist=fgdg, videoUrl=https://www.youtube.com/watch?v=gdZLi9oWNZg&list=RDGMEM0s70dY0AfCwh3LqQ-Bv1xgVMP9q7NoOQHIo&index=2, embedUrl=https://www.youtube.com/embed/gdZLi9oWNZg, thumbnailUrl=https://i.ytimg.com/vi/mEYrq4KT2N8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAMP_joNUO55qNrHYYSCHIP6LPFxA, createdAt=2026-04-06T21:25:43.352477), org.springframework.validation.BindingResult.video=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2026-04-11T13:58:20.388+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/watch.ftlh]
+2026-04-11T13:58:20.389+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-11T13:58:21.688+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-04-11T13:58:21.690+06:00  WARN 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2026-04-11T13:58:21.691+06:00  WARN 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.PageNotFound             : No endpoint GET /favicon.ico.
+2026-04-11T13:58:21.696+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /favicon.ico.]
+2026-04-11T13:58:21.697+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2026-04-11T13:58:21.697+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-04-11T13:58:21.698+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+2026-04-11T13:58:21.700+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/yaml]
+2026-04-11T13:58:21.700+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sat Apr 11 13:58:21 GMT+06:00 2026, status=404, error=Not Found, path=/favicon.ico}]
+2026-04-11T13:58:21.702+06:00 DEBUG 10372 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
