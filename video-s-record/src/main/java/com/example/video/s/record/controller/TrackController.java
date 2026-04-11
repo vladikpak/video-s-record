@@ -21,6 +21,7 @@ public class TrackController {
     public String listTracks(@RequestParam(defaultValue = "0") int page, Model model) {
         Pageable pageable = PageRequest.of(page, 12);
         Page<TrackDto> tracks = trackService.getAllTracks(pageable);
+
         model.addAttribute("tracks", tracks.getContent());
         model.addAttribute("currentPage", page);
         model.addAttribute("totalPages", tracks.getTotalPages());
@@ -53,5 +54,11 @@ public class TrackController {
         model.addAttribute("tracks", trackService.searchByArtist(artist));
         model.addAttribute("searchQuery", artist);
         return "track/list";
+    }
+
+    @PostMapping("/{id}/delete")
+    public String deleteTrackById(@PathVariable Long id) {
+        trackService.DeleteById(id);
+        return "redirect:/tracks";
     }
 }

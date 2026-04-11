@@ -37,4 +37,17 @@ public class VideoController {
         model.addAttribute("video", video);
         return "video/watch";
     }
+
+    @GetMapping("/search")
+    public String searchByArtist(@RequestParam String title, Model model) {
+        model.addAttribute("videos", videoService.searchVideo(title));
+        model.addAttribute("searchQuery", title);
+        return "video/list";
+    }
+
+    @PostMapping("{id}/delete")
+    public String deleteVideo(@PathVariable Long id) {
+        videoService.DeleteById(id);
+        return "redirect:/videos";
+    }
 }
