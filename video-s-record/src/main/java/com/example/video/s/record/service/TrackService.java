@@ -12,6 +12,8 @@ public interface TrackService {
     @Transactional
     TrackDto createTrack(TrackDto dto, MultipartFile audioFile, MultipartFile coverFile);
 
+    void DeleteById(Long id);
+
     TrackDto getTrackById(Long id);
 
     Page<TrackDto> getAllTracks(Pageable pageable);

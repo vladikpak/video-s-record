@@ -13,5 +13,9 @@ public interface VideoService {
 
     List<VideoDto> getAllVideos();
 
+    void DeleteById(Long id);
+
+    List<VideoDto> searchVideo(String name);
+
     String getEmbedUrl(String videoUrl);
 }
