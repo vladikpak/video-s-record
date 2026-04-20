@@ -20,5 +20,4 @@ public interface TrackService {
 
     List<TrackDto> searchByArtist(String artist);
 
-    List<TrackDto> searchByGenre(String genre);
 }

@@ -73,12 +73,6 @@ public class TrackServiceImpl implements TrackService {
                 .collect(Collectors.toList());
     }
 
-    @Override
-    public List<TrackDto> searchByGenre(String genre) {
-        return trackRepository.findByGenre(genre).stream()
-                .map(this::convertToDto)
-                .collect(Collectors.toList());
-    }
 
     private TrackDto convertToDto(Track track) {
         return TrackDto.builder()

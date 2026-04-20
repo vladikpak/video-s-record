@@ -19,7 +19,7 @@ public class TrackController {
 
     @GetMapping
     public String listTracks(@RequestParam(defaultValue = "0") int page, Model model) {
-        Pageable pageable = PageRequest.of(page, 12);
+        Pageable pageable = PageRequest.of(page, 100);
         Page<TrackDto> tracks = trackService.getAllTracks(pageable);
 
         model.addAttribute("tracks", tracks.getContent());

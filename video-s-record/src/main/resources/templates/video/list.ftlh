@@ -4,7 +4,7 @@
 
     <form action="/videos/search" method="get" class="mb-4">
         <div class="input-group">
-            <input type="text" name="title" class="form-control" placeholder="Поиск по исполнителю...">
+            <input type="text" name="title" class="form-control" placeholder="Поиск по названию...">
             <button type="submit" class="btn btn-primary">Найти</button>
         </div>
     </form>
