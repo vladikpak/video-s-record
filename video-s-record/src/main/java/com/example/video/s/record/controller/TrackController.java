@@ -19,13 +19,15 @@ public class TrackController {
 
     @GetMapping
     public String listTracks(@RequestParam(defaultValue = "0") int page, Model model) {
-        Pageable pageable = PageRequest.of(page, 15);
+        Pageable pageable = PageRequest.of(page, 8);
         Page<TrackDto> tracks = trackService.getAllTracks(pageable);
 
-        model.addAttribute("tracks", tracks.getContent());
-        model.addAttribute("currentPage", page);
-        model.addAttribute("totalPages", tracks.getTotalPages());
-        model.addAttribute("count", trackService.countTrack());
+        model.addAttribute("tracks", tracks.getContent()); // данные
+        model.addAttribute("currentPage", tracks.getNumber()); // текущая страница
+        model.addAttribute("totalPages", tracks.getTotalPages());  // всего записей треков
+        model.addAttribute("Next", tracks.hasNext()); // следующая страница
+        model.addAttribute("Previous", tracks.hasPrevious()); // предыдыщая страница
+        model.addAttribute("count", trackService.countTrack()); // подсчет треков
         return "track/list";
     }
 

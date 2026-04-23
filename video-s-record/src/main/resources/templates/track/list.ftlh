@@ -44,18 +44,23 @@
             </span>
             </div>
 
+<#--        ${tracks?size} - {это текущая страница} -->
+
             <div class="btn-group">
-                <#if currentPage gt 0>
+<#--                <#if currentPage gt 0> - альтернатива hasPrevious() -->
+                <#if Previous>
                     <a href="?page=${currentPage - 1}" class="btn btn-outline-primary">
                         ← Назад
                     </a>
                 </#if>
 
                 <button class="btn btn-primary" disabled>
+<#--                    страница [ 1 / ... ] -->
                     ${currentPage + 1} / ${totalPages}
                 </button>
 
-                <#if currentPage + 1 < totalPages>
+<#--                <#if currentPage + 1 < totalPages> - альтернатива hasNext() -->
+                    <#if Next>
                     <a href="?page=${currentPage + 1}" class="btn btn-outline-primary">
                         Вперёд →
                     </a>
