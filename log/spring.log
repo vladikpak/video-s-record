@@ -4212,3 +4212,199 @@ This generated password is for development use only. Your security configuration
 2026-04-24T02:24:03.783+06:00  INFO 9936 --- [video-s-record] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-04-24T02:24:03.786+06:00  INFO 9936 --- [video-s-record] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-04-24T02:24:03.787+06:00  INFO 9936 --- [video-s-record] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-24T02:24:09.571+06:00  INFO 1316 --- [video-s-record] [main] com.example.video.s.record.Application   : Starting Application using Java 25.0.2 with PID 1316 (C:\Users\User\Desktop\Project\video-s-record\video-s-record\target\classes started by User in C:\Users\User\Desktop\Project\video-s-record)
+2026-04-24T02:24:09.574+06:00 DEBUG 1316 --- [video-s-record] [main] com.example.video.s.record.Application   : Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-04-24T02:24:09.575+06:00  INFO 1316 --- [video-s-record] [main] com.example.video.s.record.Application   : No active profile set, falling back to 1 default profile: "default"
+2026-04-24T02:24:10.332+06:00  INFO 1316 --- [video-s-record] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-24T02:24:10.394+06:00  INFO 1316 --- [video-s-record] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 2 JPA repository interfaces.
+2026-04-24T02:24:10.919+06:00  INFO 1316 --- [video-s-record] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8089 (http)
+2026-04-24T02:24:10.932+06:00  INFO 1316 --- [video-s-record] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-24T02:24:10.932+06:00  INFO 1316 --- [video-s-record] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-04-24T02:24:10.990+06:00  INFO 1316 --- [video-s-record] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1375 ms
+2026-04-24T02:24:11.037+06:00 DEBUG 1316 --- [video-s-record] [main] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2026-04-24T02:24:11.131+06:00  INFO 1316 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-24T02:24:11.431+06:00  INFO 1316 --- [video-s-record] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2026-04-24T02:24:11.433+06:00  INFO 1316 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-24T02:24:11.483+06:00  INFO 1316 --- [video-s-record] [main] liquibase.database                       : Set default schema name to PUBLIC
+2026-04-24T02:24:11.809+06:00  INFO 1316 --- [video-s-record] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-04-24T02:24:11.861+06:00  INFO 1316 --- [video-s-record] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2026-04-24T02:24:11.862+06:00  INFO 1316 --- [video-s-record] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-04-24T02:24:11.870+06:00  INFO 1316 --- [video-s-record] [main] liquibase.util                           : UPDATE SUMMARY
+2026-04-24T02:24:11.870+06:00  INFO 1316 --- [video-s-record] [main] liquibase.util                           : Run:                          0
+2026-04-24T02:24:11.871+06:00  INFO 1316 --- [video-s-record] [main] liquibase.util                           : Previously run:               2
+2026-04-24T02:24:11.871+06:00  INFO 1316 --- [video-s-record] [main] liquibase.util                           : Filtered out:                 0
+2026-04-24T02:24:11.871+06:00  INFO 1316 --- [video-s-record] [main] liquibase.util                           : -------------------------------
+2026-04-24T02:24:11.871+06:00  INFO 1316 --- [video-s-record] [main] liquibase.util                           : Total change sets:            2
+2026-04-24T02:24:11.872+06:00  INFO 1316 --- [video-s-record] [main] liquibase.util                           : Update summary generated
+2026-04-24T02:24:11.873+06:00  INFO 1316 --- [video-s-record] [main] liquibase.command                        : Command execution complete
+2026-04-24T02:24:14.632+06:00  INFO 1316 --- [video-s-record] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-24T02:24:14.693+06:00  INFO 1316 --- [video-s-record] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-04-24T02:24:15.156+06:00  INFO 1316 --- [video-s-record] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-24T02:24:15.231+06:00  INFO 1316 --- [video-s-record] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:./db/test]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TEST/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-24T02:24:16.112+06:00  INFO 1316 --- [video-s-record] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-24T02:24:16.143+06:00  INFO 1316 --- [video-s-record] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-24T02:24:16.226+06:00  INFO 1316 --- [video-s-record] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-24T02:24:16.509+06:00  WARN 1316 --- [video-s-record] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-24T02:24:16.539+06:00  WARN 1316 --- [video-s-record] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0f278d07-20fe-4ab0-94d6-00208655ba4e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-24T02:24:16.547+06:00  INFO 1316 --- [video-s-record] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-04-24T02:24:16.719+06:00 DEBUG 1316 --- [video-s-record] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2026-04-24T02:24:16.744+06:00 DEBUG 1316 --- [video-s-record] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/uploads/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-04-24T02:24:16.791+06:00 DEBUG 1316 --- [video-s-record] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-04-24T02:24:16.857+06:00 DEBUG 1316 --- [video-s-record] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-04-24T02:24:17.072+06:00 DEBUG 1316 --- [video-s-record] [main] o.s.w.s.v.f.FreeMarkerConfigurer         : File system access not preferred: using SpringTemplateLoader
+2026-04-24T02:24:17.193+06:00  INFO 1316 --- [video-s-record] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8089 (http) with context path '/'
+2026-04-24T02:24:17.199+06:00  INFO 1316 --- [video-s-record] [main] com.example.video.s.record.Application   : Started Application in 8.169 seconds (process running for 8.877)
+2026-04-24T02:24:17.202+06:00  WARN 1316 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-04-24T02:24:17.202+06:00  WARN 1316 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-04-24T02:24:20.960+06:00  INFO 1316 --- [video-s-record] [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-24T02:24:20.961+06:00  INFO 1316 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-24T02:24:20.961+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-04-24T02:24:20.961+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-04-24T02:24:20.962+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@40e28324
+2026-04-24T02:24:20.963+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@71adea8d
+2026-04-24T02:24:20.963+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2026-04-24T02:24:20.964+06:00  INFO 1316 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-04-24T02:24:20.979+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2026-04-24T02:24:20.991+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.PageController#home()
+2026-04-24T02:24:21.045+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-1] o.s.w.s.view.freemarker.FreeMarkerView   : View name [index], model {}
+2026-04-24T02:24:21.046+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-1] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [index.ftlh]
+2026-04-24T02:24:21.062+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-24T02:24:22.179+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/tracks", parameters={}
+2026-04-24T02:24:22.179+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#listTracks(int, Model)
+2026-04-24T02:24:22.321+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-2] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.album,
+        t1_0.artist,
+        t1_0.audio_url,
+        t1_0.cover_url,
+        t1_0.created_at,
+        t1_0.duration,
+        t1_0.genre,
+        t1_0.title 
+    from
+        tracks t1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-04-24T02:24:22.353+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-2] org.hibernate.SQL                        : 
+    select
+        count(t1_0.id) 
+    from
+        tracks t1_0
+2026-04-24T02:24:22.527+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-2] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        tracks t1_0
+2026-04-24T02:24:22.573+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-2] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/list], model {tracks=[TrackDto(id=1, title=dsfds, artist=dsfdsf, album=dsfdfsdf, genre=sdfdsfsf, duration=2222, audioUrl=/uploads/music/1774277072633.mp3, coverUrl=/uploads/covers/1774277072634.webp, createdAt=2026-03-23T20:44:32.634747), TrackDto(id=2, title=fdgdfg, artist=gfdgfd, album=dgfgd, genre=dfgdg, duration=333, audioUrl=/uploads/music/1774278057839.mp3, coverUrl=/uploads/covers/1774278057839.jpg, createdAt=2026-03-23T21:00:57.840489), TrackDto(id=3, title=выаыаы, artist=авыаыва, album=аввыавыа, genre=выаыаыа, duration=1111, audioUrl=/uploads/music/1774278856798.mp3, coverUrl=/uploads/covers/1774278856798.jpg, createdAt=2026-03-23T21:14:16.798026), TrackDto(id=5, title=fdgdg, artist=dfgdg, album=gdgd, genre=dgfgd, duration=222, audioUrl=/uploads/music/1774289579701.mp3, coverUrl=/uploads/covers/1774289579702.jpg, createdAt=2026-03-24T00:12:59.702313), TrackDto(id=6, title=anya, artist=anya, album=anya, genre=anya, duration=15, audioUrl=/uploads/music/1775489225209.mp3, coverUrl=/uploads/covers/1775489225210.jpg, createdAt=2026-04-06T21:27:05.210511), TrackDto(id=7, title=fdsfsdfs, artist=dsfdsfds, album=sdfdsf, genre=sdfdsf, duration=100, audioUrl=/uploads/music/1775490571291.mp3, coverUrl=/uploads/covers/1775490571292.jpg, createdAt=2026-04-06T21:49:31.292874), TrackDto(id=9, title=fdgd, artist=gfdgd, album=gfdgdg, genre=fdgd, duration=100, audioUrl=/uploads/music/1775769983079.mp3, coverUrl=/uploads/covers/1775769983080.jpg, createdAt=2026-04-10T03:26:23.080984), TrackDto(id=10, title=ghfhf, artist=fghfh, album=fghfh, genre=fghfh, duration=2232, audioUrl=/uploads/music/1775770036452.mp3, coverUrl=/uploads/covers/1775770036453.webp, createdAt=2026-04-10T03:27:16.453999)], currentPage=0, totalPages=3, Next=true, Previous=false, count=17}
+2026-04-24T02:24:22.574+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-2] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/list.ftlh]
+2026-04-24T02:24:22.588+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-24T02:24:24.720+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/tracks?page=1", parameters={page:[1]}
+2026-04-24T02:24:24.721+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#listTracks(int, Model)
+2026-04-24T02:24:24.723+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-3] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.album,
+        t1_0.artist,
+        t1_0.audio_url,
+        t1_0.cover_url,
+        t1_0.created_at,
+        t1_0.duration,
+        t1_0.genre,
+        t1_0.title 
+    from
+        tracks t1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-04-24T02:24:24.725+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-3] org.hibernate.SQL                        : 
+    select
+        count(t1_0.id) 
+    from
+        tracks t1_0
+2026-04-24T02:24:24.727+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-3] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        tracks t1_0
+2026-04-24T02:24:24.728+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/list], model {tracks=[TrackDto(id=11, title=выапап, artist=ппапа, album=паапа, genre=аппап, duration=2222, audioUrl=/uploads/music/1775803830269.mp3, coverUrl=/uploads/covers/1775803830272.png, createdAt=2026-04-10T12:50:30.273012), TrackDto(id=12, title=감독, artist=온도, album=러시아, genre=10-x, duration=240, audioUrl=/uploads/music/1776522853042.mp3, coverUrl=/uploads/covers/1776522853043.jpg, createdAt=2026-04-18T20:34:13.043775), TrackDto(id=13, title=Никки, artist=розовая , album=женщина, genre=впвп, duration=300, audioUrl=/uploads/music/1776539453856.mp3, coverUrl=/uploads/covers/1776539453856.png, createdAt=2026-04-19T01:10:53.857527), TrackDto(id=14, title=авпвы, artist=павпвы, album=авпвы, genre=пвапвы, duration=200, audioUrl=/uploads/music/1776539527392.mp3, coverUrl=/uploads/covers/1776539527393.png, createdAt=2026-04-19T01:12:07.393042), TrackDto(id=15, title=fdgg, artist=fdgsg, album=fdggds, genre=dfgdsg, duration=200, audioUrl=/uploads/music/1776619923582.mp3, coverUrl=/uploads/covers/1776619923583.jpg, createdAt=2026-04-19T23:32:03.584578), TrackDto(id=16, title=gdfg, artist=fgfdgd, album=fdgdfg, genre=fdgdfg, duration=1100, audioUrl=/uploads/music/1776764097927.mp3, coverUrl=/uploads/covers/1776764097928.jpg, createdAt=2026-04-21T15:34:57.929326), TrackDto(id=17, title=авпып, artist=авпп, album=авп, genre=павпы, duration=199, audioUrl=/uploads/music/1776800913261.mp3, coverUrl=/uploads/covers/1776800913262.jpg, createdAt=2026-04-22T01:48:33.263926), TrackDto(id=18, title=vcbc, artist=vcbc, album=vcbc, genre=cvbc, duration=null, audioUrl=/uploads/music/1776801974825.mp3, coverUrl=/uploads/covers/1776801974826.jpg, createdAt=2026-04-22T02:06:14.827205)], currentPage=1, totalPages=3, Next=true, Previous=true, count=17}
+2026-04-24T02:24:24.729+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/list.ftlh]
+2026-04-24T02:24:24.731+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-24T02:24:25.957+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/tracks?page=2", parameters={page:[2]}
+2026-04-24T02:24:25.958+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#listTracks(int, Model)
+2026-04-24T02:24:25.960+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-4] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.album,
+        t1_0.artist,
+        t1_0.audio_url,
+        t1_0.cover_url,
+        t1_0.created_at,
+        t1_0.duration,
+        t1_0.genre,
+        t1_0.title 
+    from
+        tracks t1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-04-24T02:24:25.962+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-4] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        tracks t1_0
+2026-04-24T02:24:25.964+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-4] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/list], model {tracks=[TrackDto(id=19, title=выаф, artist=выаф, album=выфаф, genre=выаф, duration=null, audioUrl=/uploads/music/1776803468017.mp3, coverUrl=/uploads/covers/1776803468017.jpg, createdAt=2026-04-22T02:31:08.017907)], currentPage=2, totalPages=3, Next=false, Previous=true, count=17}
+2026-04-24T02:24:25.964+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-4] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/list.ftlh]
+2026-04-24T02:24:25.965+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-24T02:24:27.675+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/tracks?page=1", parameters={page:[1]}
+2026-04-24T02:24:27.675+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#listTracks(int, Model)
+2026-04-24T02:24:27.677+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-5] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.album,
+        t1_0.artist,
+        t1_0.audio_url,
+        t1_0.cover_url,
+        t1_0.created_at,
+        t1_0.duration,
+        t1_0.genre,
+        t1_0.title 
+    from
+        tracks t1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-04-24T02:24:27.680+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-5] org.hibernate.SQL                        : 
+    select
+        count(t1_0.id) 
+    from
+        tracks t1_0
+2026-04-24T02:24:27.681+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-5] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        tracks t1_0
+2026-04-24T02:24:27.684+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-5] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/list], model {tracks=[TrackDto(id=11, title=выапап, artist=ппапа, album=паапа, genre=аппап, duration=2222, audioUrl=/uploads/music/1775803830269.mp3, coverUrl=/uploads/covers/1775803830272.png, createdAt=2026-04-10T12:50:30.273012), TrackDto(id=12, title=감독, artist=온도, album=러시아, genre=10-x, duration=240, audioUrl=/uploads/music/1776522853042.mp3, coverUrl=/uploads/covers/1776522853043.jpg, createdAt=2026-04-18T20:34:13.043775), TrackDto(id=13, title=Никки, artist=розовая , album=женщина, genre=впвп, duration=300, audioUrl=/uploads/music/1776539453856.mp3, coverUrl=/uploads/covers/1776539453856.png, createdAt=2026-04-19T01:10:53.857527), TrackDto(id=14, title=авпвы, artist=павпвы, album=авпвы, genre=пвапвы, duration=200, audioUrl=/uploads/music/1776539527392.mp3, coverUrl=/uploads/covers/1776539527393.png, createdAt=2026-04-19T01:12:07.393042), TrackDto(id=15, title=fdgg, artist=fdgsg, album=fdggds, genre=dfgdsg, duration=200, audioUrl=/uploads/music/1776619923582.mp3, coverUrl=/uploads/covers/1776619923583.jpg, createdAt=2026-04-19T23:32:03.584578), TrackDto(id=16, title=gdfg, artist=fgfdgd, album=fdgdfg, genre=fdgdfg, duration=1100, audioUrl=/uploads/music/1776764097927.mp3, coverUrl=/uploads/covers/1776764097928.jpg, createdAt=2026-04-21T15:34:57.929326), TrackDto(id=17, title=авпып, artist=авпп, album=авп, genre=павпы, duration=199, audioUrl=/uploads/music/1776800913261.mp3, coverUrl=/uploads/covers/1776800913262.jpg, createdAt=2026-04-22T01:48:33.263926), TrackDto(id=18, title=vcbc, artist=vcbc, album=vcbc, genre=cvbc, duration=null, audioUrl=/uploads/music/1776801974825.mp3, coverUrl=/uploads/covers/1776801974826.jpg, createdAt=2026-04-22T02:06:14.827205)], currentPage=1, totalPages=3, Next=true, Previous=true, count=17}
+2026-04-24T02:24:27.684+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-5] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/list.ftlh]
+2026-04-24T02:24:27.687+06:00 DEBUG 1316 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
