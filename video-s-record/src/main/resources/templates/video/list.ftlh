@@ -9,6 +9,8 @@
         </div>
     </form>
 
+    <div class="input-group">Найдено ${count!0} шт</div>
+
     <div class="row">
         <#list videos as video>
             <div class="col-md-4 mb-4">

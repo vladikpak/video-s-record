@@ -19,12 +19,13 @@ public class TrackController {
 
     @GetMapping
     public String listTracks(@RequestParam(defaultValue = "0") int page, Model model) {
-        Pageable pageable = PageRequest.of(page, 100);
+        Pageable pageable = PageRequest.of(page, 15);
         Page<TrackDto> tracks = trackService.getAllTracks(pageable);
 
         model.addAttribute("tracks", tracks.getContent());
         model.addAttribute("currentPage", page);
         model.addAttribute("totalPages", tracks.getTotalPages());
+        model.addAttribute("count", trackService.countTrack());
         return "track/list";
     }
 
@@ -53,6 +54,7 @@ public class TrackController {
     public String searchByArtist(@RequestParam String artist, Model model) {
         model.addAttribute("tracks", trackService.searchByArtist(artist));
         model.addAttribute("searchQuery", artist);
+        model.addAttribute("count", trackService.countTrack());
         return "track/list";
     }
 

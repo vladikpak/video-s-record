@@ -20,4 +20,5 @@ public interface TrackService {
 
     List<TrackDto> searchByArtist(String artist);
 
+    long countTrack();
 }

@@ -80,6 +80,11 @@ public class VideoServiceImpl implements VideoService {
         return "";
     }
 
+    @Override
+    public long countTrack() {
+        return videoRepository.count();
+    }
+
     private VideoDto convertToDto(Video video) {
         return VideoDto.builder()
                 .id(video.getId())

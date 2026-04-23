@@ -11,6 +11,5 @@ import java.util.List;
 @Repository
 public interface TrackRepository extends JpaRepository<Track, Long> {
     List<Track> findByArtistContainingIgnoreCase(String artist);
-    List<Track> findByGenre(String genre);
     Page<Track> findAll(Pageable pageable);
 }

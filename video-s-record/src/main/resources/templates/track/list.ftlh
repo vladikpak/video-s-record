@@ -9,6 +9,9 @@
         </div>
     </form>
 
+    <div class="input-group">Найдено ${count!0} шт</div>
+
+
     <div class="row">
         <#list tracks as track>
             <div class="col-md-3 mb-4">
@@ -32,4 +35,33 @@
             </div>
         </#list>
     </div>
+
+    <#if totalPages?? && totalPages gt 1>
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <div>
+            <span class="text-muted">
+                Показано ${tracks?size} из ${count} треков
+            </span>
+            </div>
+
+            <div class="btn-group">
+                <#if currentPage gt 0>
+                    <a href="?page=${currentPage - 1}" class="btn btn-outline-primary">
+                        ← Назад
+                    </a>
+                </#if>
+
+                <button class="btn btn-primary" disabled>
+                    ${currentPage + 1} / ${totalPages}
+                </button>
+
+                <#if currentPage + 1 < totalPages>
+                    <a href="?page=${currentPage + 1}" class="btn btn-outline-primary">
+                        Вперёд →
+                    </a>
+                </#if>
+            </div>
+        </div>
+    </#if>
+
 </@main.layout>

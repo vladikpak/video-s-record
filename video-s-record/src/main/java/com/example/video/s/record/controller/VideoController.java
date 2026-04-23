@@ -16,6 +16,7 @@ public class VideoController {
     @GetMapping
     public String listVideos(Model model) {
         model.addAttribute("videos", videoService.getAllVideos());
+        model.addAttribute("count", videoService.countTrack());
         return "video/list";
     }
 

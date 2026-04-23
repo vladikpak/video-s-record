@@ -24,18 +24,6 @@ spring:
   freemarker:
     expose-session-attributes: true
 
-  mail:
-    host: smtp.gmail.com
-    username: vladikpak30092003@gmail.com
-    password: "rldo jtyh snnm vdir"
-    port: 587
-    properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
-
   jpa:
     hibernate:
       ddl-auto: validate
@@ -66,7 +54,3 @@ logging:
     org.springframework.web.servlet.resource: DEBUG
   file:
     path: log
-
-token:
-  signing:
-    key: ${JWT_SECRET}

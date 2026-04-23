@@ -73,6 +73,11 @@ public class TrackServiceImpl implements TrackService {
                 .collect(Collectors.toList());
     }
 
+    @Override
+    public long countTrack() {
+        return trackRepository.count();
+    }
+
 
     private TrackDto convertToDto(Track track) {
         return TrackDto.builder()

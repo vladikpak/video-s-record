@@ -18,4 +18,6 @@ public interface VideoService {
     List<VideoDto> searchVideo(String name);
 
     String getEmbedUrl(String videoUrl);
+
+    long countTrack();
 }
