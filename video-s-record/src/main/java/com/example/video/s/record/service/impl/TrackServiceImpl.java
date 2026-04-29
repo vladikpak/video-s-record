@@ -67,6 +67,38 @@ public class TrackServiceImpl implements TrackService {
     }
 
     @Override
+    public TrackDto updateTrack(Long id, TrackDto videoDto) {
+        Track video = trackRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Пусто"));
+
+        if (videoDto.getTitle() != null) {
+            video.setTitle(videoDto.getTitle());
+        }
+
+        if (videoDto.getArtist() != null) {
+            video.setArtist(videoDto.getArtist());
+        }
+        if (videoDto.getAlbum() != null) {
+            video.setAlbum(videoDto.getAlbum());
+        }
+        if (videoDto.getGenre() != null) {
+            video.setGenre(videoDto.getGenre());
+        }
+        if (videoDto.getDuration() != null) {
+            video.setDuration(videoDto.getDuration());
+        }
+        if (videoDto.getAudioUrl() != null) {
+            video.setAudioUrl(videoDto.getAudioUrl());
+        }
+        if (videoDto.getCoverUrl() != null) {
+            video.setCoverUrl(videoDto.getCoverUrl());
+        }
+
+        Track saved = trackRepository.save(video);
+        return convertToDto(saved);
+    }
+
+    @Override
     public List<TrackDto> searchByArtist(String artist) {
         return trackRepository.findByArtistContainingIgnoreCase(artist).stream()
                 .map(this::convertToDto)

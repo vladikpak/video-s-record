@@ -20,6 +20,19 @@ public class VideoController {
         return "video/list";
     }
 
+    @GetMapping("/{id}/edit")
+    public String listVideos(Model model, @PathVariable Long id) {
+        VideoDto video = videoService.getVideoById(id);
+        model.addAttribute("video", video);
+        return "video/edit";
+    }
+
+    @PostMapping("/{id}/edit")
+    public String editVideos(@PathVariable Long id, @ModelAttribute VideoDto videoDto) {
+        videoService.updateVideo(id, videoDto);
+        return "redirect:/videos/" + id;
+    }
+
     @GetMapping("/upload")
     public String showUploadForm(Model model) {
         model.addAttribute("videoDto", new VideoDto());

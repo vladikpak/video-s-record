@@ -25,7 +25,7 @@
         </div>
         <div class="mb-3">
             <label>Аудиофайл (MP3)</label>
-            <input type="file" name="audioFile" class="form-control" accept="audio/*" required>
+            <input type="file" name="audioFile" class="form-control" accept="audio/*">
         </div>
         <div class="mb-3">
             <label>Обложка (картинка)</label>

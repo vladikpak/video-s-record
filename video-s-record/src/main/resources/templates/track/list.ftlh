@@ -26,7 +26,7 @@
                         <p class="card-text">${track.artist}</p>
                         <p class="card-text"><small>${track.album!""}</small></p>
                         <a href="/tracks/${track.id}" class="btn btn-primary">Слушать</a>
-
+                        <a href="/tracks/${track.id}/edit" class="btn btn-primary">Редактировать</a>
                         <form action="/tracks/${track.id}/delete" method="post" style="display:inline">
                             <button type="submit" class="btn btn-sm btn-danger">Удалить</button>
                         </form>

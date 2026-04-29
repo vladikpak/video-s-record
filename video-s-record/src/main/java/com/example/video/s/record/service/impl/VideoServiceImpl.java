@@ -59,6 +59,28 @@ public class VideoServiceImpl implements VideoService {
     }
 
     @Override
+    public VideoDto updateVideo(Long id, VideoDto videoDto) {
+        Video video = videoRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Пусто"));
+
+        if (videoDto.getTitle() != null) {
+            video.setTitle(videoDto.getTitle());
+        }
+        if (videoDto.getArtist() != null) {
+            video.setArtist(videoDto.getArtist());
+        }
+        if (videoDto.getVideoUrl() != null) {
+            video.setVideoUrl(videoDto.getVideoUrl());
+        }
+        if (videoDto.getThumbnailUrl() != null) {
+            video.setThumbnailUrl(videoDto.getThumbnailUrl());
+        }
+
+        Video saved = videoRepository.save(video);
+        return convertToDto(saved);
+    }
+
+    @Override
     public String getEmbedUrl(String videoUrl) {
         if (videoUrl.contains("youtube.com")) {
             String videoId = extractYouTubeId(videoUrl);

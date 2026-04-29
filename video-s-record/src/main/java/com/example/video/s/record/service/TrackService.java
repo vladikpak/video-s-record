@@ -18,6 +18,8 @@ public interface TrackService {
 
     Page<TrackDto> getAllTracks(Pageable pageable);
 
+    TrackDto updateTrack(Long id, TrackDto videoDto);
+
     List<TrackDto> searchByArtist(String artist);
 
     long countTrack();

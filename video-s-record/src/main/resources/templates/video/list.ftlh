@@ -24,7 +24,7 @@
                         <h5 class="card-title">${video.title}</h5>
                         <p class="card-text">${video.artist}</p>
                         <a href="/videos/${video.id}" class="btn btn-primary">Смотреть</a>
-
+                        <a href="/tracks/${video.id}/edit" class="btn btn-primary">Редактировать</a>
                         <form action="/videos/${video.id}/delete" method="post" style="display:inline">
                             <button type="submit" class="btn btn-sm btn-danger">Удалить</button>
                         </form>

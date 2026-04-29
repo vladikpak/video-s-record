@@ -1,6 +1,7 @@
 package com.example.video.s.record.controller;
 
 import com.example.video.s.record.dto.TrackDto;
+import com.example.video.s.record.dto.VideoDto;
 import com.example.video.s.record.service.TrackService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -29,6 +30,19 @@ public class TrackController {
         model.addAttribute("Previous", tracks.hasPrevious()); // предыдыщая страница
         model.addAttribute("count", trackService.countTrack()); // подсчет треков
         return "track/list";
+    }
+
+    @GetMapping("/{id}/edit")
+    public String editTrack(@PathVariable Long id, Model model) {
+        TrackDto videoDto = trackService.getTrackById(id);
+        model.addAttribute("track", videoDto);
+        return "track/edit";
+    }
+
+    @PostMapping("/{id}/edit")
+    public String saveTrack(@ModelAttribute TrackDto dto, @PathVariable Long id) {
+        trackService.updateTrack(id, dto);
+        return "redirect:/tracks/" + id;
     }
 
     @GetMapping("/upload")
