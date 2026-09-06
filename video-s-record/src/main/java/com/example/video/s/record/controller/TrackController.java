@@ -27,7 +27,7 @@ public class TrackController {
         model.addAttribute("currentPage", tracks.getNumber()); // текущая страница
         model.addAttribute("totalPages", tracks.getTotalPages());  // всего записей треков
         model.addAttribute("Next", tracks.hasNext()); // следующая страница
-        model.addAttribute("Previous", tracks.hasPrevious()); // предыдыщая страница
+        model.addAttribute("Previous", tracks.hasPrevious()); // предыдущая страница
         model.addAttribute("count", trackService.countTrack()); // подсчет треков
         return "track/list";
     }
