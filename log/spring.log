@@ -2112,3 +2112,69 @@ This generated password is for development use only. Your security configuration
 2026-09-09T20:37:38.485+06:00  INFO 22972 --- [video-s-record] [main] com.example.video.s.record.Application   : Started Application in 12.981 seconds (process running for 14.809)
 2026-09-09T20:37:38.498+06:00  WARN 22972 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
 2026-09-09T20:37:38.498+06:00  WARN 22972 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-09T20:55:18.742+06:00  INFO 22972 --- [video-s-record] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-09T20:55:18.894+06:00  INFO 22972 --- [video-s-record] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-09T20:55:19.041+06:00  INFO 22972 --- [video-s-record] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-09T20:55:19.186+06:00  INFO 22972 --- [video-s-record] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-09T20:55:19.231+06:00  INFO 22972 --- [video-s-record] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-09T20:55:27.694+06:00  INFO 25744 --- [video-s-record] [main] com.example.video.s.record.Application   : Starting Application using Java 26.0.2.1 with PID 25744 (/home/vlad/Desktop/clone/video-s-record/video-s-record/target/classes started by vlad in /home/vlad/Desktop/clone/video-s-record)
+2026-09-09T20:55:27.699+06:00 DEBUG 25744 --- [video-s-record] [main] com.example.video.s.record.Application   : Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-09-09T20:55:27.701+06:00  INFO 25744 --- [video-s-record] [main] com.example.video.s.record.Application   : No active profile set, falling back to 1 default profile: "default"
+2026-09-09T20:55:29.476+06:00  INFO 25744 --- [video-s-record] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-09T20:55:29.552+06:00  INFO 25744 --- [video-s-record] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2026-09-09T20:55:30.421+06:00  INFO 25744 --- [video-s-record] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8089 (http)
+2026-09-09T20:55:30.435+06:00  INFO 25744 --- [video-s-record] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-09T20:55:30.436+06:00  INFO 25744 --- [video-s-record] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-09-09T20:55:30.489+06:00  INFO 25744 --- [video-s-record] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2629 ms
+2026-09-09T20:55:30.547+06:00 DEBUG 25744 --- [video-s-record] [main] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2026-09-09T20:55:30.690+06:00  INFO 25744 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-09T20:55:31.083+06:00  INFO 25744 --- [video-s-record] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2026-09-09T20:55:31.086+06:00  INFO 25744 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-09T20:55:31.174+06:00  INFO 25744 --- [video-s-record] [main] liquibase.database                       : Set default schema name to PUBLIC
+2026-09-09T20:55:31.745+06:00  INFO 25744 --- [video-s-record] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-09-09T20:55:31.822+06:00  INFO 25744 --- [video-s-record] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2026-09-09T20:55:31.824+06:00  INFO 25744 --- [video-s-record] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-09-09T20:55:31.837+06:00  INFO 25744 --- [video-s-record] [main] liquibase.util                           : UPDATE SUMMARY
+2026-09-09T20:55:31.837+06:00  INFO 25744 --- [video-s-record] [main] liquibase.util                           : Run:                          0
+2026-09-09T20:55:31.838+06:00  INFO 25744 --- [video-s-record] [main] liquibase.util                           : Previously run:               2
+2026-09-09T20:55:31.838+06:00  INFO 25744 --- [video-s-record] [main] liquibase.util                           : Filtered out:                 0
+2026-09-09T20:55:31.838+06:00  INFO 25744 --- [video-s-record] [main] liquibase.util                           : -------------------------------
+2026-09-09T20:55:31.839+06:00  INFO 25744 --- [video-s-record] [main] liquibase.util                           : Total change sets:            2
+2026-09-09T20:55:31.840+06:00  INFO 25744 --- [video-s-record] [main] liquibase.util                           : Update summary generated
+2026-09-09T20:55:31.842+06:00  INFO 25744 --- [video-s-record] [main] liquibase.command                        : Command execution complete
+2026-09-09T20:55:34.216+06:00  INFO 25744 --- [video-s-record] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-09T20:55:34.313+06:00  INFO 25744 --- [video-s-record] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-09-09T20:55:35.090+06:00  INFO 25744 --- [video-s-record] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-09T20:55:35.173+06:00  WARN 25744 --- [video-s-record] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-09T20:55:35.195+06:00  INFO 25744 --- [video-s-record] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:./db/test]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TEST/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-09T20:55:36.603+06:00  INFO 25744 --- [video-s-record] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-09T20:55:36.659+06:00  INFO 25744 --- [video-s-record] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-09T20:55:36.822+06:00  INFO 25744 --- [video-s-record] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-09T20:55:37.440+06:00  WARN 25744 --- [video-s-record] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-09T20:55:37.523+06:00  WARN 25744 --- [video-s-record] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e2a250c5-27b4-4fc2-943a-1da66b0dca5a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-09T20:55:37.542+06:00  INFO 25744 --- [video-s-record] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-09T20:55:37.944+06:00 DEBUG 25744 --- [video-s-record] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2026-09-09T20:55:37.984+06:00 DEBUG 25744 --- [video-s-record] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/uploads/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-09-09T20:55:38.045+06:00 DEBUG 25744 --- [video-s-record] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-09-09T20:55:38.185+06:00 DEBUG 25744 --- [video-s-record] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-09-09T20:55:38.598+06:00 DEBUG 25744 --- [video-s-record] [main] o.s.w.s.v.f.FreeMarkerConfigurer         : File system access not preferred: using SpringTemplateLoader
+2026-09-09T20:55:38.892+06:00  INFO 25744 --- [video-s-record] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8089 (http) with context path '/'
+2026-09-09T20:55:38.904+06:00  INFO 25744 --- [video-s-record] [main] com.example.video.s.record.Application   : Started Application in 12.4 seconds (process running for 14.312)
+2026-09-09T20:55:38.910+06:00  WARN 25744 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-09T20:55:38.911+06:00  WARN 25744 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
