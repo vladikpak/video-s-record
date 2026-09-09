@@ -2178,3 +2178,575 @@ This generated password is for development use only. Your security configuration
 2026-09-09T20:55:38.904+06:00  INFO 25744 --- [video-s-record] [main] com.example.video.s.record.Application   : Started Application in 12.4 seconds (process running for 14.312)
 2026-09-09T20:55:38.910+06:00  WARN 25744 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
 2026-09-09T20:55:38.911+06:00  WARN 25744 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-09T21:12:34.662+06:00  INFO 25744 --- [video-s-record] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-09T21:12:34.836+06:00  INFO 25744 --- [video-s-record] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-09T21:12:34.965+06:00  INFO 25744 --- [video-s-record] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-09T21:12:35.157+06:00  INFO 25744 --- [video-s-record] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-09T21:12:35.231+06:00  INFO 25744 --- [video-s-record] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-09T21:12:45.907+06:00  INFO 27684 --- [video-s-record] [main] com.example.video.s.record.Application   : Starting Application using Java 26.0.2.1 with PID 27684 (/home/vlad/Desktop/clone/video-s-record/video-s-record/target/classes started by vlad in /home/vlad/Desktop/clone/video-s-record)
+2026-09-09T21:12:45.914+06:00 DEBUG 27684 --- [video-s-record] [main] com.example.video.s.record.Application   : Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-09-09T21:12:45.917+06:00  INFO 27684 --- [video-s-record] [main] com.example.video.s.record.Application   : No active profile set, falling back to 1 default profile: "default"
+2026-09-09T21:12:47.774+06:00  INFO 27684 --- [video-s-record] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-09T21:12:47.847+06:00  INFO 27684 --- [video-s-record] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces.
+2026-09-09T21:12:49.260+06:00  INFO 27684 --- [video-s-record] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8089 (http)
+2026-09-09T21:12:49.296+06:00  INFO 27684 --- [video-s-record] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-09T21:12:49.297+06:00  INFO 27684 --- [video-s-record] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-09-09T21:12:49.521+06:00  INFO 27684 --- [video-s-record] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3429 ms
+2026-09-09T21:12:49.690+06:00 DEBUG 27684 --- [video-s-record] [main] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2026-09-09T21:12:50.077+06:00  INFO 27684 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-09T21:12:50.697+06:00  INFO 27684 --- [video-s-record] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2026-09-09T21:12:50.702+06:00  INFO 27684 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-09T21:12:50.817+06:00  INFO 27684 --- [video-s-record] [main] liquibase.database                       : Set default schema name to PUBLIC
+2026-09-09T21:12:51.495+06:00  INFO 27684 --- [video-s-record] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-09-09T21:12:51.586+06:00  INFO 27684 --- [video-s-record] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2026-09-09T21:12:51.588+06:00  INFO 27684 --- [video-s-record] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-09-09T21:12:51.603+06:00  INFO 27684 --- [video-s-record] [main] liquibase.util                           : UPDATE SUMMARY
+2026-09-09T21:12:51.603+06:00  INFO 27684 --- [video-s-record] [main] liquibase.util                           : Run:                          0
+2026-09-09T21:12:51.604+06:00  INFO 27684 --- [video-s-record] [main] liquibase.util                           : Previously run:               2
+2026-09-09T21:12:51.604+06:00  INFO 27684 --- [video-s-record] [main] liquibase.util                           : Filtered out:                 0
+2026-09-09T21:12:51.604+06:00  INFO 27684 --- [video-s-record] [main] liquibase.util                           : -------------------------------
+2026-09-09T21:12:51.604+06:00  INFO 27684 --- [video-s-record] [main] liquibase.util                           : Total change sets:            2
+2026-09-09T21:12:51.607+06:00  INFO 27684 --- [video-s-record] [main] liquibase.util                           : Update summary generated
+2026-09-09T21:12:51.609+06:00  INFO 27684 --- [video-s-record] [main] liquibase.command                        : Command execution complete
+2026-09-09T21:12:53.826+06:00  INFO 27684 --- [video-s-record] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-09T21:12:53.922+06:00  INFO 27684 --- [video-s-record] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-09-09T21:12:54.674+06:00  INFO 27684 --- [video-s-record] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-09T21:12:54.754+06:00  WARN 27684 --- [video-s-record] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-09T21:12:54.774+06:00  INFO 27684 --- [video-s-record] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:./db/test]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TEST/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-09T21:12:56.084+06:00  INFO 27684 --- [video-s-record] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-09T21:12:56.125+06:00  INFO 27684 --- [video-s-record] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-09T21:12:56.237+06:00  INFO 27684 --- [video-s-record] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-09T21:12:56.692+06:00  WARN 27684 --- [video-s-record] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-09T21:12:56.736+06:00  WARN 27684 --- [video-s-record] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ab305a25-563b-4fba-86e9-de20c7d60c0e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-09T21:12:56.749+06:00  INFO 27684 --- [video-s-record] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-09T21:12:57.139+06:00 DEBUG 27684 --- [video-s-record] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2026-09-09T21:12:57.168+06:00 DEBUG 27684 --- [video-s-record] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/uploads/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-09-09T21:12:57.222+06:00 DEBUG 27684 --- [video-s-record] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-09-09T21:12:57.312+06:00 DEBUG 27684 --- [video-s-record] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-09-09T21:12:57.761+06:00 DEBUG 27684 --- [video-s-record] [main] o.s.w.s.v.f.FreeMarkerConfigurer         : File system access not preferred: using SpringTemplateLoader
+2026-09-09T21:12:58.042+06:00  INFO 27684 --- [video-s-record] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8089 (http) with context path '/'
+2026-09-09T21:12:58.052+06:00  INFO 27684 --- [video-s-record] [main] com.example.video.s.record.Application   : Started Application in 13.251 seconds (process running for 14.9)
+2026-09-09T21:12:58.058+06:00  WARN 27684 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-09T21:12:58.059+06:00  WARN 27684 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-09T21:13:16.474+06:00  INFO 27684 --- [video-s-record] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-09T21:13:16.493+06:00  INFO 27684 --- [video-s-record] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-09T21:13:16.502+06:00  INFO 27684 --- [video-s-record] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-09T21:13:16.508+06:00  INFO 27684 --- [video-s-record] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-09T21:13:16.512+06:00  INFO 27684 --- [video-s-record] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-09T21:13:31.597+06:00  INFO 27924 --- [video-s-record] [main] com.example.video.s.record.Application   : Starting Application using Java 26.0.2.1 with PID 27924 (/home/vlad/Desktop/clone/video-s-record/video-s-record/target/classes started by vlad in /home/vlad/Desktop/clone/video-s-record)
+2026-09-09T21:13:31.604+06:00 DEBUG 27924 --- [video-s-record] [main] com.example.video.s.record.Application   : Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-09-09T21:13:31.607+06:00  INFO 27924 --- [video-s-record] [main] com.example.video.s.record.Application   : No active profile set, falling back to 1 default profile: "default"
+2026-09-09T21:13:33.432+06:00  INFO 27924 --- [video-s-record] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-09T21:13:33.512+06:00  INFO 27924 --- [video-s-record] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces.
+2026-09-09T21:13:34.439+06:00  INFO 27924 --- [video-s-record] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8089 (http)
+2026-09-09T21:13:34.457+06:00  INFO 27924 --- [video-s-record] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-09T21:13:34.458+06:00  INFO 27924 --- [video-s-record] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-09-09T21:13:34.519+06:00  INFO 27924 --- [video-s-record] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2788 ms
+2026-09-09T21:13:34.573+06:00 DEBUG 27924 --- [video-s-record] [main] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2026-09-09T21:13:34.733+06:00  INFO 27924 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-09T21:13:35.142+06:00  INFO 27924 --- [video-s-record] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2026-09-09T21:13:35.145+06:00  INFO 27924 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-09T21:13:35.224+06:00  INFO 27924 --- [video-s-record] [main] liquibase.database                       : Set default schema name to PUBLIC
+2026-09-09T21:13:40.852+06:00  INFO 27924 --- [video-s-record] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-09-09T21:13:40.950+06:00  INFO 27924 --- [video-s-record] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2026-09-09T21:13:40.953+06:00  INFO 27924 --- [video-s-record] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-09-09T21:13:40.968+06:00  INFO 27924 --- [video-s-record] [main] liquibase.util                           : UPDATE SUMMARY
+2026-09-09T21:13:40.969+06:00  INFO 27924 --- [video-s-record] [main] liquibase.util                           : Run:                          0
+2026-09-09T21:13:40.969+06:00  INFO 27924 --- [video-s-record] [main] liquibase.util                           : Previously run:               2
+2026-09-09T21:13:40.970+06:00  INFO 27924 --- [video-s-record] [main] liquibase.util                           : Filtered out:                 0
+2026-09-09T21:13:40.970+06:00  INFO 27924 --- [video-s-record] [main] liquibase.util                           : -------------------------------
+2026-09-09T21:13:40.971+06:00  INFO 27924 --- [video-s-record] [main] liquibase.util                           : Total change sets:            2
+2026-09-09T21:13:40.972+06:00  INFO 27924 --- [video-s-record] [main] liquibase.util                           : Update summary generated
+2026-09-09T21:13:40.975+06:00  INFO 27924 --- [video-s-record] [main] liquibase.command                        : Command execution complete
+2026-09-09T21:13:42.574+06:00  INFO 27924 --- [video-s-record] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-09T21:13:42.689+06:00  INFO 27924 --- [video-s-record] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-09-09T21:13:43.458+06:00  INFO 27924 --- [video-s-record] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-09T21:13:43.533+06:00  WARN 27924 --- [video-s-record] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-09T21:13:43.550+06:00  INFO 27924 --- [video-s-record] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:./db/test]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TEST/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-09T21:13:44.767+06:00  INFO 27924 --- [video-s-record] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-09T21:13:44.818+06:00  INFO 27924 --- [video-s-record] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-09T21:13:44.959+06:00  INFO 27924 --- [video-s-record] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-09T21:13:45.425+06:00  WARN 27924 --- [video-s-record] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-09T21:13:45.466+06:00  WARN 27924 --- [video-s-record] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e635443c-7dd6-4c32-a065-c222b47a70c9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-09T21:13:45.478+06:00  INFO 27924 --- [video-s-record] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-09T21:13:45.834+06:00 DEBUG 27924 --- [video-s-record] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2026-09-09T21:13:45.868+06:00 DEBUG 27924 --- [video-s-record] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/uploads/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-09-09T21:13:45.934+06:00 DEBUG 27924 --- [video-s-record] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-09-09T21:13:46.026+06:00 DEBUG 27924 --- [video-s-record] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-09-09T21:13:46.391+06:00 DEBUG 27924 --- [video-s-record] [main] o.s.w.s.v.f.FreeMarkerConfigurer         : File system access not preferred: using SpringTemplateLoader
+2026-09-09T21:13:46.666+06:00  INFO 27924 --- [video-s-record] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8089 (http) with context path '/'
+2026-09-09T21:13:46.678+06:00  INFO 27924 --- [video-s-record] [main] com.example.video.s.record.Application   : Started Application in 16.512 seconds (process running for 19.066)
+2026-09-09T21:13:46.684+06:00  WARN 27924 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-09T21:13:46.685+06:00  WARN 27924 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-09T21:15:36.851+06:00  INFO 27924 --- [video-s-record] [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-09T21:15:36.953+06:00  INFO 27924 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-09T21:15:36.992+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-09-09T21:15:37.000+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-09-09T21:15:37.451+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1030ce34
+2026-09-09T21:15:37.465+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@656bd8e
+2026-09-09T21:15:37.477+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2026-09-09T21:15:37.482+06:00  INFO 27924 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 521 ms
+2026-09-09T21:15:38.306+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2026-09-09T21:15:38.579+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.PageController#home()
+2026-09-09T21:15:39.650+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-1] o.s.w.s.view.freemarker.FreeMarkerView   : View name [index], model {}
+2026-09-09T21:15:39.655+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-1] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [index.ftlh]
+2026-09-09T21:15:39.847+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-09T21:15:43.290+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/tracks", parameters={}
+2026-09-09T21:15:43.292+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#listTracks(int, Model)
+2026-09-09T21:15:46.936+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-2] org.hibernate.SQL                        : select t1_0.id,t1_0.album,t1_0.artist,t1_0.audio_url,t1_0.cover_url,t1_0.created_at,t1_0.duration,t1_0.genre,t1_0.title from tracks t1_0 offset ? rows fetch first ? rows only
+2026-09-09T21:15:50.142+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-2] org.hibernate.SQL                        : select count(*) from tracks t1_0
+2026-09-09T21:15:50.564+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-2] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/list], model {tracks=[], currentPage=0, totalPages=0, Next=false, Previous=false, count=0}
+2026-09-09T21:15:50.566+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-2] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/list.ftlh]
+2026-09-09T21:15:50.753+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-09T21:15:52.349+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/videos", parameters={}
+2026-09-09T21:15:52.354+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#listVideos(Model)
+2026-09-09T21:15:52.411+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-3] org.hibernate.SQL                        : select v1_0.id,v1_0.artist,v1_0.created_at,v1_0.thumbnail_url,v1_0.title,v1_0.video_url from videos v1_0
+2026-09-09T21:15:52.517+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-3] org.hibernate.SQL                        : select count(*) from videos v1_0
+2026-09-09T21:15:52.560+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/list], model {videos=[], count=0}
+2026-09-09T21:15:52.562+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/list.ftlh]
+2026-09-09T21:15:52.571+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-09T21:15:53.509+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/tracks/upload", parameters={}
+2026-09-09T21:15:53.511+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#showUploadForm(Model)
+2026-09-09T21:15:53.606+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-4] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/upload], model {trackDto=TrackDto(id=null, title=null, artist=null, album=null, genre=null, duration=null, audioUrl=null, coverUrl=null, createdAt=null), org.springframework.validation.BindingResult.trackDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2026-09-09T21:15:53.610+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-4] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/upload.ftlh]
+2026-09-09T21:15:53.617+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-09T21:15:54.526+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/videos/upload", parameters={}
+2026-09-09T21:15:54.528+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#showUploadForm(Model)
+2026-09-09T21:15:54.556+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-5] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/upload], model {videoDto=VideoDto(id=null, title=null, artist=null, videoUrl=null, embedUrl=null, thumbnailUrl=null, createdAt=null), org.springframework.validation.BindingResult.videoDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2026-09-09T21:15:54.559+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-5] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/upload.ftlh]
+2026-09-09T21:15:54.563+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-09T21:15:57.061+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/tracks/upload", parameters={}
+2026-09-09T21:15:57.062+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#showUploadForm(Model)
+2026-09-09T21:15:57.066+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-6] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/upload], model {trackDto=TrackDto(id=null, title=null, artist=null, album=null, genre=null, duration=null, audioUrl=null, coverUrl=null, createdAt=null), org.springframework.validation.BindingResult.trackDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2026-09-09T21:15:57.067+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-6] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/upload.ftlh]
+2026-09-09T21:15:57.072+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-09T21:16:09.008+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/tracks/upload", parameters={multipart}
+2026-09-09T21:16:09.849+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/tracks/upload", parameters={multipart}
+2026-09-09T21:16:09.857+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#uploadTrack(TrackDto, MultipartFile, MultipartFile)
+2026-09-09T21:16:09.919+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#uploadTrack(TrackDto, MultipartFile, MultipartFile)
+2026-09-09T21:16:10.828+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-8] org.hibernate.SQL                        : insert into tracks (album,artist,audio_url,cover_url,created_at,duration,genre,title,id) values (?,?,?,?,?,?,?,?,default)
+2026-09-09T21:16:10.830+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-7] org.hibernate.SQL                        : insert into tracks (album,artist,audio_url,cover_url,created_at,duration,genre,title,id) values (?,?,?,?,?,?,?,?,default)
+2026-09-09T21:16:11.150+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-8] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-09-09T21:16:11.151+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-7] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-09-09T21:16:11.161+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2026-09-09T21:16:11.161+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2026-09-09T21:16:11.178+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/tracks", parameters={}
+2026-09-09T21:16:11.179+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#listTracks(int, Model)
+2026-09-09T21:16:11.316+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-10] org.hibernate.SQL                        : select t1_0.id,t1_0.album,t1_0.artist,t1_0.audio_url,t1_0.cover_url,t1_0.created_at,t1_0.duration,t1_0.genre,t1_0.title from tracks t1_0 offset ? rows fetch first ? rows only
+2026-09-09T21:16:11.367+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-10] org.hibernate.SQL                        : select count(*) from tracks t1_0
+2026-09-09T21:16:11.376+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-10] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/list], model {tracks=[TrackDto(id=1, title=fdgdg, artist=dfgdg, album=gdfgd, genre=dfgdfg, duration=4535, audioUrl=uploads/music/1788966970276.mp3, coverUrl=uploads/covers/1788966970309.jpg, createdAt=2026-09-09T21:16:10.313877), TrackDto(id=2, title=fdgdg, artist=dfgdg, album=gdfgd, genre=dfgdfg, duration=4535, audioUrl=uploads/music/1788966970276.mp3, coverUrl=uploads/covers/1788966970291.jpg, createdAt=2026-09-09T21:16:10.313877)], currentPage=0, totalPages=1, Next=false, Previous=false, count=2}
+2026-09-09T21:16:11.376+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-10] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/list.ftlh]
+2026-09-09T21:16:11.485+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-09T21:16:11.536+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/uploads/covers/1788966970291.jpg", parameters={}
+2026-09-09T21:16:11.536+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/uploads/covers/1788966970309.jpg", parameters={}
+2026-09-09T21:16:11.607+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:/app/uploads/]]
+2026-09-09T21:16:11.608+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:/app/uploads/]]
+2026-09-09T21:16:11.629+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-09-09T21:16:11.630+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-9] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-09-09T21:16:11.877+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource covers/1788966970309.jpg for request '/uploads/covers/1788966970309.jpg'.]
+2026-09-09T21:16:11.877+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource covers/1788966970291.jpg for request '/uploads/covers/1788966970291.jpg'.]
+2026-09-09T21:16:11.878+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2026-09-09T21:16:11.878+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2026-09-09T21:16:11.941+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-09-09T21:16:11.942+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-09-09T21:16:11.946+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+2026-09-09T21:16:11.946+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+2026-09-09T21:16:12.099+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/yaml]
+2026-09-09T21:16:12.100+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/yaml]
+2026-09-09T21:16:12.106+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Sep 09 21:16:11 GMT+06:00 2026, status=404, error=Not Found, path=/uploads/covers/178 (truncated)...]
+2026-09-09T21:16:12.107+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Sep 09 21:16:11 GMT+06:00 2026, status=404, error=Not Found, path=/uploads/covers/178 (truncated)...]
+2026-09-09T21:16:12.896+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2026-09-09T21:16:12.906+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2026-09-09T21:16:41.864+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/tracks/2/delete", parameters={}
+2026-09-09T21:16:42.268+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#deleteTrackById(Long)
+2026-09-09T21:16:46.417+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-2] org.hibernate.SQL                        : select t1_0.id,t1_0.album,t1_0.artist,t1_0.audio_url,t1_0.cover_url,t1_0.created_at,t1_0.duration,t1_0.genre,t1_0.title from tracks t1_0 where t1_0.id=?
+2026-09-09T21:16:47.593+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-2] org.hibernate.SQL                        : delete from tracks where id=?
+2026-09-09T21:16:47.833+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-09-09T21:16:47.868+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2026-09-09T21:17:02.080+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/tracks", parameters={}
+2026-09-09T21:17:02.087+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#listTracks(int, Model)
+2026-09-09T21:17:02.884+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-3] org.hibernate.SQL                        : select t1_0.id,t1_0.album,t1_0.artist,t1_0.audio_url,t1_0.cover_url,t1_0.created_at,t1_0.duration,t1_0.genre,t1_0.title from tracks t1_0 offset ? rows fetch first ? rows only
+2026-09-09T21:17:02.923+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-3] org.hibernate.SQL                        : select count(*) from tracks t1_0
+2026-09-09T21:17:03.085+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/list], model {tracks=[TrackDto(id=1, title=fdgdg, artist=dfgdg, album=gdfgd, genre=dfgdfg, duration=4535, audioUrl=uploads/music/1788966970276.mp3, coverUrl=uploads/covers/1788966970309.jpg, createdAt=2026-09-09T21:16:10.313877)], currentPage=0, totalPages=1, Next=false, Previous=false, count=1}
+2026-09-09T21:17:03.087+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/list.ftlh]
+2026-09-09T21:17:03.149+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-09T21:17:04.666+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/uploads/covers/1788966970309.jpg", parameters={}
+2026-09-09T21:17:04.705+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:/app/uploads/]]
+2026-09-09T21:17:04.715+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-09-09T21:17:04.735+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource covers/1788966970309.jpg for request '/uploads/covers/1788966970309.jpg'.]
+2026-09-09T21:17:04.735+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2026-09-09T21:17:04.741+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-09-09T21:17:04.748+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+2026-09-09T21:17:04.912+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/yaml]
+2026-09-09T21:17:04.924+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Sep 09 21:17:04 GMT+06:00 2026, status=404, error=Not Found, path=/uploads/covers/178 (truncated)...]
+2026-09-09T21:17:05.042+06:00 DEBUG 27924 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2026-09-09T21:20:44.984+06:00  INFO 27924 --- [video-s-record] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-09T21:20:45.185+06:00  INFO 27924 --- [video-s-record] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-09T21:20:45.401+06:00  INFO 27924 --- [video-s-record] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-09T21:20:45.640+06:00  INFO 27924 --- [video-s-record] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-09T21:20:45.689+06:00  INFO 27924 --- [video-s-record] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-09T21:20:55.986+06:00  INFO 28998 --- [video-s-record] [main] com.example.video.s.record.Application   : Starting Application using Java 26.0.2.1 with PID 28998 (/home/vlad/Desktop/clone/video-s-record/video-s-record/target/classes started by vlad in /home/vlad/Desktop/clone/video-s-record)
+2026-09-09T21:20:55.992+06:00 DEBUG 28998 --- [video-s-record] [main] com.example.video.s.record.Application   : Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-09-09T21:20:55.994+06:00  INFO 28998 --- [video-s-record] [main] com.example.video.s.record.Application   : No active profile set, falling back to 1 default profile: "default"
+2026-09-09T21:20:57.772+06:00  INFO 28998 --- [video-s-record] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-09T21:20:57.858+06:00  INFO 28998 --- [video-s-record] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+2026-09-09T21:20:58.655+06:00  INFO 28998 --- [video-s-record] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8089 (http)
+2026-09-09T21:20:58.669+06:00  INFO 28998 --- [video-s-record] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-09T21:20:58.669+06:00  INFO 28998 --- [video-s-record] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-09-09T21:20:58.724+06:00  INFO 28998 --- [video-s-record] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2580 ms
+2026-09-09T21:20:58.792+06:00 DEBUG 28998 --- [video-s-record] [main] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2026-09-09T21:20:58.975+06:00  INFO 28998 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-09T21:20:59.456+06:00  INFO 28998 --- [video-s-record] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2026-09-09T21:20:59.459+06:00  INFO 28998 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-09T21:20:59.565+06:00  INFO 28998 --- [video-s-record] [main] liquibase.database                       : Set default schema name to PUBLIC
+2026-09-09T21:21:00.634+06:00  INFO 28998 --- [video-s-record] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-09-09T21:21:00.789+06:00  INFO 28998 --- [video-s-record] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2026-09-09T21:21:00.794+06:00  INFO 28998 --- [video-s-record] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-09-09T21:21:00.818+06:00  INFO 28998 --- [video-s-record] [main] liquibase.util                           : UPDATE SUMMARY
+2026-09-09T21:21:00.819+06:00  INFO 28998 --- [video-s-record] [main] liquibase.util                           : Run:                          0
+2026-09-09T21:21:00.819+06:00  INFO 28998 --- [video-s-record] [main] liquibase.util                           : Previously run:               2
+2026-09-09T21:21:00.820+06:00  INFO 28998 --- [video-s-record] [main] liquibase.util                           : Filtered out:                 0
+2026-09-09T21:21:00.821+06:00  INFO 28998 --- [video-s-record] [main] liquibase.util                           : -------------------------------
+2026-09-09T21:21:00.822+06:00  INFO 28998 --- [video-s-record] [main] liquibase.util                           : Total change sets:            2
+2026-09-09T21:21:00.825+06:00  INFO 28998 --- [video-s-record] [main] liquibase.util                           : Update summary generated
+2026-09-09T21:21:00.829+06:00  INFO 28998 --- [video-s-record] [main] liquibase.command                        : Command execution complete
+2026-09-09T21:21:03.077+06:00  INFO 28998 --- [video-s-record] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-09T21:21:03.183+06:00  INFO 28998 --- [video-s-record] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-09-09T21:21:04.215+06:00  INFO 28998 --- [video-s-record] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-09T21:21:04.326+06:00  WARN 28998 --- [video-s-record] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-09T21:21:04.353+06:00  INFO 28998 --- [video-s-record] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:./db/test]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TEST/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-09T21:21:05.880+06:00  INFO 28998 --- [video-s-record] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-09T21:21:05.931+06:00  INFO 28998 --- [video-s-record] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-09T21:21:06.066+06:00  INFO 28998 --- [video-s-record] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-09T21:21:06.621+06:00  WARN 28998 --- [video-s-record] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-09T21:21:06.675+06:00  WARN 28998 --- [video-s-record] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8f1cdf9a-3908-4441-abb0-d9b60a2d21e3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-09T21:21:06.690+06:00  INFO 28998 --- [video-s-record] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-09T21:21:07.116+06:00 DEBUG 28998 --- [video-s-record] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2026-09-09T21:21:07.161+06:00 DEBUG 28998 --- [video-s-record] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/uploads/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-09-09T21:21:07.235+06:00 DEBUG 28998 --- [video-s-record] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-09-09T21:21:07.414+06:00 DEBUG 28998 --- [video-s-record] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-09-09T21:21:07.868+06:00 DEBUG 28998 --- [video-s-record] [main] o.s.w.s.v.f.FreeMarkerConfigurer         : File system access not preferred: using SpringTemplateLoader
+2026-09-09T21:21:08.171+06:00  INFO 28998 --- [video-s-record] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8089 (http) with context path '/'
+2026-09-09T21:21:08.183+06:00  INFO 28998 --- [video-s-record] [main] com.example.video.s.record.Application   : Started Application in 13.274 seconds (process running for 14.942)
+2026-09-09T21:21:08.188+06:00  WARN 28998 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-09T21:21:08.189+06:00  WARN 28998 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-09T21:21:27.865+06:00  INFO 28998 --- [video-s-record] [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-09T21:21:27.911+06:00  INFO 28998 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-09T21:21:27.918+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-09-09T21:21:27.919+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-09-09T21:21:28.048+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@43b45e77
+2026-09-09T21:21:28.050+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@21c8dd3e
+2026-09-09T21:21:28.054+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2026-09-09T21:21:28.055+06:00  INFO 28998 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 143 ms
+2026-09-09T21:21:28.195+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/tracks/upload", parameters={}
+2026-09-09T21:21:28.195+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/tracks/1/delete", parameters={}
+2026-09-09T21:21:28.264+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#deleteTrackById(Long)
+2026-09-09T21:21:28.264+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#showUploadForm(Model)
+2026-09-09T21:21:28.665+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-1] org.hibernate.SQL                        : select t1_0.id,t1_0.album,t1_0.artist,t1_0.audio_url,t1_0.cover_url,t1_0.created_at,t1_0.duration,t1_0.genre,t1_0.title from tracks t1_0 where t1_0.id=?
+2026-09-09T21:21:28.666+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-2] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/upload], model {trackDto=TrackDto(id=null, title=null, artist=null, album=null, genre=null, duration=null, audioUrl=null, coverUrl=null, createdAt=null), org.springframework.validation.BindingResult.trackDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2026-09-09T21:21:28.673+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-2] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/upload.ftlh]
+2026-09-09T21:21:28.741+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-09T21:21:28.871+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-1] org.hibernate.SQL                        : delete from tracks where id=?
+2026-09-09T21:21:28.901+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-09-09T21:21:28.903+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2026-09-09T21:23:22.797+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/tracks/upload", parameters={multipart}
+2026-09-09T21:23:23.960+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#uploadTrack(TrackDto, MultipartFile, MultipartFile)
+2026-09-09T21:23:24.870+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-5] org.hibernate.SQL                        : insert into tracks (album,artist,audio_url,cover_url,created_at,duration,genre,title,id) values (?,?,?,?,?,?,?,?,default)
+2026-09-09T21:23:25.217+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-09-09T21:23:25.229+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2026-09-09T21:23:25.270+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/tracks", parameters={}
+2026-09-09T21:23:25.271+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#listTracks(int, Model)
+2026-09-09T21:23:26.041+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-6] org.hibernate.SQL                        : select t1_0.id,t1_0.album,t1_0.artist,t1_0.audio_url,t1_0.cover_url,t1_0.created_at,t1_0.duration,t1_0.genre,t1_0.title from tracks t1_0 offset ? rows fetch first ? rows only
+2026-09-09T21:23:26.943+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-6] org.hibernate.SQL                        : select count(*) from tracks t1_0
+2026-09-09T21:23:27.187+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-6] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/list], model {tracks=[TrackDto(id=3, title=gfgfdg, artist=gdfgd, album=gfdgd, genre=dfgdg, duration=234, audioUrl=/uploads/music/1788967404597.mp3, coverUrl=/uploads/covers/1788967404613.jpg, createdAt=2026-09-09T21:23:24.617756)], currentPage=0, totalPages=1, Next=false, Previous=false, count=1}
+2026-09-09T21:23:27.190+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-6] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/list.ftlh]
+2026-09-09T21:23:27.305+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-09T21:23:27.472+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/uploads/covers/1788967404613.jpg", parameters={}
+2026-09-09T21:23:27.518+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:/app/uploads/]]
+2026-09-09T21:23:27.536+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-09-09T21:23:27.571+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource covers/1788967404613.jpg for request '/uploads/covers/1788967404613.jpg'.]
+2026-09-09T21:23:27.572+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2026-09-09T21:23:27.614+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-09-09T21:23:27.622+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+2026-09-09T21:23:27.793+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/yaml]
+2026-09-09T21:23:27.800+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Sep 09 21:23:27 GMT+06:00 2026, status=404, error=Not Found, path=/uploads/covers/178 (truncated)...]
+2026-09-09T21:23:28.686+06:00 DEBUG 28998 --- [video-s-record] [http-nio-8089-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2026-09-09T21:25:24.762+06:00  INFO 28998 --- [video-s-record] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-09T21:25:24.959+06:00  INFO 28998 --- [video-s-record] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-09T21:25:25.136+06:00  INFO 28998 --- [video-s-record] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-09T21:25:25.372+06:00  INFO 28998 --- [video-s-record] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-09T21:25:25.424+06:00  INFO 28998 --- [video-s-record] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-09T21:25:36.503+06:00  INFO 29537 --- [video-s-record] [main] com.example.video.s.record.Application   : Starting Application using Java 26.0.2.1 with PID 29537 (/home/vlad/Desktop/clone/video-s-record/video-s-record/target/classes started by vlad in /home/vlad/Desktop/clone/video-s-record)
+2026-09-09T21:25:36.518+06:00 DEBUG 29537 --- [video-s-record] [main] com.example.video.s.record.Application   : Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-09-09T21:25:36.519+06:00  INFO 29537 --- [video-s-record] [main] com.example.video.s.record.Application   : No active profile set, falling back to 1 default profile: "default"
+2026-09-09T21:25:38.470+06:00  INFO 29537 --- [video-s-record] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-09T21:25:38.570+06:00  INFO 29537 --- [video-s-record] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 2 JPA repository interfaces.
+2026-09-09T21:25:39.977+06:00  INFO 29537 --- [video-s-record] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8089 (http)
+2026-09-09T21:25:40.000+06:00  INFO 29537 --- [video-s-record] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-09T21:25:40.001+06:00  INFO 29537 --- [video-s-record] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-09-09T21:25:40.084+06:00  INFO 29537 --- [video-s-record] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3381 ms
+2026-09-09T21:25:40.151+06:00 DEBUG 29537 --- [video-s-record] [main] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2026-09-09T21:25:40.348+06:00  INFO 29537 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-09T21:25:40.841+06:00  INFO 29537 --- [video-s-record] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2026-09-09T21:25:40.843+06:00  INFO 29537 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-09T21:25:40.935+06:00  INFO 29537 --- [video-s-record] [main] liquibase.database                       : Set default schema name to PUBLIC
+2026-09-09T21:25:41.617+06:00  INFO 29537 --- [video-s-record] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-09-09T21:25:41.708+06:00  INFO 29537 --- [video-s-record] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2026-09-09T21:25:41.710+06:00  INFO 29537 --- [video-s-record] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-09-09T21:25:41.723+06:00  INFO 29537 --- [video-s-record] [main] liquibase.util                           : UPDATE SUMMARY
+2026-09-09T21:25:41.724+06:00  INFO 29537 --- [video-s-record] [main] liquibase.util                           : Run:                          0
+2026-09-09T21:25:41.724+06:00  INFO 29537 --- [video-s-record] [main] liquibase.util                           : Previously run:               2
+2026-09-09T21:25:41.725+06:00  INFO 29537 --- [video-s-record] [main] liquibase.util                           : Filtered out:                 0
+2026-09-09T21:25:41.725+06:00  INFO 29537 --- [video-s-record] [main] liquibase.util                           : -------------------------------
+2026-09-09T21:25:41.725+06:00  INFO 29537 --- [video-s-record] [main] liquibase.util                           : Total change sets:            2
+2026-09-09T21:25:41.727+06:00  INFO 29537 --- [video-s-record] [main] liquibase.util                           : Update summary generated
+2026-09-09T21:25:41.729+06:00  INFO 29537 --- [video-s-record] [main] liquibase.command                        : Command execution complete
+2026-09-09T21:25:43.749+06:00  INFO 29537 --- [video-s-record] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-09T21:25:43.872+06:00  INFO 29537 --- [video-s-record] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-09-09T21:25:44.587+06:00  INFO 29537 --- [video-s-record] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-09T21:25:44.679+06:00  WARN 29537 --- [video-s-record] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-09T21:25:44.696+06:00  INFO 29537 --- [video-s-record] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:./db/test]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TEST/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-09T21:25:45.964+06:00  INFO 29537 --- [video-s-record] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-09T21:25:46.004+06:00  INFO 29537 --- [video-s-record] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-09T21:25:46.113+06:00  INFO 29537 --- [video-s-record] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-09T21:25:46.569+06:00  WARN 29537 --- [video-s-record] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-09T21:25:46.617+06:00  WARN 29537 --- [video-s-record] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 23634df7-433d-4d30-86c1-9c753817ea7c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-09T21:25:46.632+06:00  INFO 29537 --- [video-s-record] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-09T21:25:46.982+06:00 DEBUG 29537 --- [video-s-record] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2026-09-09T21:25:47.014+06:00 DEBUG 29537 --- [video-s-record] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/uploads/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-09-09T21:25:47.075+06:00 DEBUG 29537 --- [video-s-record] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-09-09T21:25:47.171+06:00 DEBUG 29537 --- [video-s-record] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-09-09T21:25:47.596+06:00 DEBUG 29537 --- [video-s-record] [main] o.s.w.s.v.f.FreeMarkerConfigurer         : File system access not preferred: using SpringTemplateLoader
+2026-09-09T21:25:47.834+06:00  INFO 29537 --- [video-s-record] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8089 (http) with context path '/'
+2026-09-09T21:25:47.844+06:00  INFO 29537 --- [video-s-record] [main] com.example.video.s.record.Application   : Started Application in 12.704 seconds (process running for 14.455)
+2026-09-09T21:25:47.849+06:00  WARN 29537 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-09T21:25:47.850+06:00  WARN 29537 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-09T21:27:42.896+06:00  INFO 29537 --- [video-s-record] [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-09T21:27:42.948+06:00  INFO 29537 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-09T21:27:42.963+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-09-09T21:27:42.966+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-09-09T21:27:43.141+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@21c8dd3e
+2026-09-09T21:27:43.148+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@db5e88a
+2026-09-09T21:27:43.155+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2026-09-09T21:27:43.156+06:00  INFO 29537 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 206 ms
+2026-09-09T21:27:43.496+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/tracks/3/delete", parameters={}
+2026-09-09T21:27:43.656+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#deleteTrackById(Long)
+2026-09-09T21:27:44.228+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-1] org.hibernate.SQL                        : select t1_0.id,t1_0.album,t1_0.artist,t1_0.audio_url,t1_0.cover_url,t1_0.created_at,t1_0.duration,t1_0.genre,t1_0.title from tracks t1_0 where t1_0.id=?
+2026-09-09T21:27:44.660+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-1] org.hibernate.SQL                        : delete from tracks where id=?
+2026-09-09T21:27:44.803+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-09-09T21:27:44.816+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2026-09-09T21:27:44.869+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/tracks", parameters={}
+2026-09-09T21:27:44.870+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#listTracks(int, Model)
+2026-09-09T21:27:45.393+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-2] org.hibernate.SQL                        : select t1_0.id,t1_0.album,t1_0.artist,t1_0.audio_url,t1_0.cover_url,t1_0.created_at,t1_0.duration,t1_0.genre,t1_0.title from tracks t1_0 offset ? rows fetch first ? rows only
+2026-09-09T21:27:46.094+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-2] org.hibernate.SQL                        : select count(*) from tracks t1_0
+2026-09-09T21:27:46.411+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-2] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/list], model {tracks=[], currentPage=0, totalPages=0, Next=false, Previous=false, count=0}
+2026-09-09T21:27:46.414+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-2] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/list.ftlh]
+2026-09-09T21:27:46.491+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-09T21:27:47.419+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/tracks/upload", parameters={}
+2026-09-09T21:27:47.420+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#showUploadForm(Model)
+2026-09-09T21:27:47.444+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/upload], model {trackDto=TrackDto(id=null, title=null, artist=null, album=null, genre=null, duration=null, audioUrl=null, coverUrl=null, createdAt=null), org.springframework.validation.BindingResult.trackDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2026-09-09T21:27:47.445+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/upload.ftlh]
+2026-09-09T21:27:47.449+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-09T21:28:00.926+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/tracks/upload", parameters={multipart}
+2026-09-09T21:28:01.085+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#uploadTrack(TrackDto, MultipartFile, MultipartFile)
+2026-09-09T21:28:01.186+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-4] org.hibernate.SQL                        : insert into tracks (album,artist,audio_url,cover_url,created_at,duration,genre,title,id) values (?,?,?,?,?,?,?,?,default)
+2026-09-09T21:28:01.218+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-09-09T21:28:01.219+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2026-09-09T21:28:01.227+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/tracks", parameters={}
+2026-09-09T21:28:01.228+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#listTracks(int, Model)
+2026-09-09T21:28:01.233+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-5] org.hibernate.SQL                        : select t1_0.id,t1_0.album,t1_0.artist,t1_0.audio_url,t1_0.cover_url,t1_0.created_at,t1_0.duration,t1_0.genre,t1_0.title from tracks t1_0 offset ? rows fetch first ? rows only
+2026-09-09T21:28:01.237+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-5] org.hibernate.SQL                        : select count(*) from tracks t1_0
+2026-09-09T21:28:01.239+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-5] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/list], model {tracks=[TrackDto(id=4, title=fgd, artist=gdfgdg, album=gdfgd, genre=fdgfd, duration=342, audioUrl=/uploads/music/1788967681139.mp3, coverUrl=/uploads/covers/1788967681141.jpg, createdAt=2026-09-09T21:28:01.142487)], currentPage=0, totalPages=1, Next=false, Previous=false, count=1}
+2026-09-09T21:28:01.240+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-5] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/list.ftlh]
+2026-09-09T21:28:01.278+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-09T21:28:01.335+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/uploads/covers/1788967681141.jpg", parameters={}
+2026-09-09T21:28:01.373+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:/app/uploads/]]
+2026-09-09T21:28:01.382+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-6] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-09-09T21:28:01.409+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource covers/1788967681141.jpg for request '/uploads/covers/1788967681141.jpg'.]
+2026-09-09T21:28:01.409+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2026-09-09T21:28:01.445+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-09-09T21:28:01.452+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+2026-09-09T21:28:01.559+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/yaml]
+2026-09-09T21:28:01.569+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Sep 09 21:28:01 GMT+06:00 2026, status=404, error=Not Found, path=/uploads/covers/178 (truncated)...]
+2026-09-09T21:28:02.008+06:00 DEBUG 29537 --- [video-s-record] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2026-09-09T21:28:41.761+06:00  INFO 29537 --- [video-s-record] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-09T21:28:41.939+06:00  INFO 29537 --- [video-s-record] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-09T21:28:42.080+06:00  INFO 29537 --- [video-s-record] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-09T21:28:42.293+06:00  INFO 29537 --- [video-s-record] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-09T21:28:42.341+06:00  INFO 29537 --- [video-s-record] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-09T21:28:51.523+06:00  INFO 29936 --- [video-s-record] [main] com.example.video.s.record.Application   : Starting Application using Java 26.0.2.1 with PID 29936 (/home/vlad/Desktop/clone/video-s-record/video-s-record/target/classes started by vlad in /home/vlad/Desktop/clone/video-s-record)
+2026-09-09T21:28:51.530+06:00 DEBUG 29936 --- [video-s-record] [main] com.example.video.s.record.Application   : Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-09-09T21:28:51.534+06:00  INFO 29936 --- [video-s-record] [main] com.example.video.s.record.Application   : No active profile set, falling back to 1 default profile: "default"
+2026-09-09T21:28:53.252+06:00  INFO 29936 --- [video-s-record] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-09T21:28:53.331+06:00  INFO 29936 --- [video-s-record] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+2026-09-09T21:28:54.163+06:00  INFO 29936 --- [video-s-record] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8089 (http)
+2026-09-09T21:28:54.182+06:00  INFO 29936 --- [video-s-record] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-09T21:28:54.182+06:00  INFO 29936 --- [video-s-record] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-09-09T21:28:54.261+06:00  INFO 29936 --- [video-s-record] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2551 ms
+2026-09-09T21:28:54.342+06:00 DEBUG 29936 --- [video-s-record] [main] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2026-09-09T21:28:54.547+06:00  INFO 29936 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-09T21:28:55.019+06:00  INFO 29936 --- [video-s-record] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2026-09-09T21:28:55.024+06:00  INFO 29936 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-09T21:28:55.115+06:00  INFO 29936 --- [video-s-record] [main] liquibase.database                       : Set default schema name to PUBLIC
+2026-09-09T21:28:55.740+06:00  INFO 29936 --- [video-s-record] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-09-09T21:28:55.831+06:00  INFO 29936 --- [video-s-record] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2026-09-09T21:28:55.834+06:00  INFO 29936 --- [video-s-record] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-09-09T21:28:55.847+06:00  INFO 29936 --- [video-s-record] [main] liquibase.util                           : UPDATE SUMMARY
+2026-09-09T21:28:55.848+06:00  INFO 29936 --- [video-s-record] [main] liquibase.util                           : Run:                          0
+2026-09-09T21:28:55.848+06:00  INFO 29936 --- [video-s-record] [main] liquibase.util                           : Previously run:               2
+2026-09-09T21:28:55.848+06:00  INFO 29936 --- [video-s-record] [main] liquibase.util                           : Filtered out:                 0
+2026-09-09T21:28:55.848+06:00  INFO 29936 --- [video-s-record] [main] liquibase.util                           : -------------------------------
+2026-09-09T21:28:55.848+06:00  INFO 29936 --- [video-s-record] [main] liquibase.util                           : Total change sets:            2
+2026-09-09T21:28:55.850+06:00  INFO 29936 --- [video-s-record] [main] liquibase.util                           : Update summary generated
+2026-09-09T21:28:55.852+06:00  INFO 29936 --- [video-s-record] [main] liquibase.command                        : Command execution complete
+2026-09-09T21:28:58.285+06:00  INFO 29936 --- [video-s-record] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-09T21:28:58.539+06:00  INFO 29936 --- [video-s-record] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-09-09T21:29:00.242+06:00  INFO 29936 --- [video-s-record] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-09T21:29:00.402+06:00  WARN 29936 --- [video-s-record] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-09T21:29:00.450+06:00  INFO 29936 --- [video-s-record] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:./db/test]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TEST/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-09T21:29:02.157+06:00  INFO 29936 --- [video-s-record] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-09T21:29:02.203+06:00  INFO 29936 --- [video-s-record] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-09T21:29:02.333+06:00  INFO 29936 --- [video-s-record] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-09T21:29:02.871+06:00  WARN 29936 --- [video-s-record] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-09T21:29:02.924+06:00  WARN 29936 --- [video-s-record] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b9fb4250-d536-42e4-b2f6-9599999bdb73
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-09T21:29:02.940+06:00  INFO 29936 --- [video-s-record] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-09T21:29:03.371+06:00 DEBUG 29936 --- [video-s-record] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2026-09-09T21:29:03.407+06:00 DEBUG 29936 --- [video-s-record] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/uploads/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-09-09T21:29:03.481+06:00 DEBUG 29936 --- [video-s-record] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-09-09T21:29:03.622+06:00 DEBUG 29936 --- [video-s-record] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-09-09T21:29:04.055+06:00 DEBUG 29936 --- [video-s-record] [main] o.s.w.s.v.f.FreeMarkerConfigurer         : File system access not preferred: using SpringTemplateLoader
+2026-09-09T21:29:04.329+06:00  INFO 29936 --- [video-s-record] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8089 (http) with context path '/'
+2026-09-09T21:29:04.343+06:00  INFO 29936 --- [video-s-record] [main] com.example.video.s.record.Application   : Started Application in 13.852 seconds (process running for 15.327)
+2026-09-09T21:29:04.350+06:00  WARN 29936 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-09T21:29:04.350+06:00  WARN 29936 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-09T21:30:24.868+06:00  INFO 29936 --- [video-s-record] [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-09T21:30:24.912+06:00  INFO 29936 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-09T21:30:24.928+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-09-09T21:30:24.929+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-09-09T21:30:25.077+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@db5e88a
+2026-09-09T21:30:25.082+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@797bbeae
+2026-09-09T21:30:25.088+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2026-09-09T21:30:25.089+06:00  INFO 29936 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 175 ms
+2026-09-09T21:30:25.297+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/tracks/4/delete", parameters={}
+2026-09-09T21:30:25.418+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#deleteTrackById(Long)
+2026-09-09T21:30:25.930+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-1] org.hibernate.SQL                        : select t1_0.id,t1_0.album,t1_0.artist,t1_0.audio_url,t1_0.cover_url,t1_0.created_at,t1_0.duration,t1_0.genre,t1_0.title from tracks t1_0 where t1_0.id=?
+2026-09-09T21:30:26.532+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-1] org.hibernate.SQL                        : delete from tracks where id=?
+2026-09-09T21:30:26.638+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-09-09T21:30:26.660+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2026-09-09T21:30:26.759+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/tracks", parameters={}
+2026-09-09T21:30:26.760+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#listTracks(int, Model)
+2026-09-09T21:30:27.283+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-2] org.hibernate.SQL                        : select t1_0.id,t1_0.album,t1_0.artist,t1_0.audio_url,t1_0.cover_url,t1_0.created_at,t1_0.duration,t1_0.genre,t1_0.title from tracks t1_0 offset ? rows fetch first ? rows only
+2026-09-09T21:30:28.186+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-2] org.hibernate.SQL                        : select count(*) from tracks t1_0
+2026-09-09T21:30:28.597+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-2] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/list], model {tracks=[], currentPage=0, totalPages=0, Next=false, Previous=false, count=0}
+2026-09-09T21:30:28.599+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-2] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/list.ftlh]
+2026-09-09T21:30:28.734+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-09T21:30:30.759+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/tracks/upload", parameters={}
+2026-09-09T21:30:30.760+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#showUploadForm(Model)
+2026-09-09T21:30:30.789+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/upload], model {trackDto=TrackDto(id=null, title=null, artist=null, album=null, genre=null, duration=null, audioUrl=null, coverUrl=null, createdAt=null), org.springframework.validation.BindingResult.trackDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2026-09-09T21:30:30.790+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-3] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/upload.ftlh]
+2026-09-09T21:30:30.793+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-09T21:30:43.183+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/tracks/upload", parameters={multipart}
+2026-09-09T21:30:43.532+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#uploadTrack(TrackDto, MultipartFile, MultipartFile)
+2026-09-09T21:30:43.959+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-4] org.hibernate.SQL                        : insert into tracks (album,artist,audio_url,cover_url,created_at,duration,genre,title,id) values (?,?,?,?,?,?,?,?,default)
+2026-09-09T21:30:44.159+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-09-09T21:30:44.161+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2026-09-09T21:30:44.182+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/tracks", parameters={}
+2026-09-09T21:30:44.188+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#listTracks(int, Model)
+2026-09-09T21:30:44.400+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-5] org.hibernate.SQL                        : select t1_0.id,t1_0.album,t1_0.artist,t1_0.audio_url,t1_0.cover_url,t1_0.created_at,t1_0.duration,t1_0.genre,t1_0.title from tracks t1_0 offset ? rows fetch first ? rows only
+2026-09-09T21:30:44.464+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-5] org.hibernate.SQL                        : select count(*) from tracks t1_0
+2026-09-09T21:30:44.529+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-5] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/list], model {tracks=[TrackDto(id=5, title=gdg, artist=gdfgd, album=gdfgd, genre=gdfgd, duration=453, audioUrl=/uploads/music/1788967843809.mp3, coverUrl=/uploads/covers/1788967843814.jpg, createdAt=2026-09-09T21:30:43.817748)], currentPage=0, totalPages=1, Next=false, Previous=false, count=1}
+2026-09-09T21:30:44.530+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-5] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/list.ftlh]
+2026-09-09T21:30:45.010+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-09T21:30:45.213+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/uploads/covers/1788967843814.jpg", parameters={}
+2026-09-09T21:30:45.286+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/]]
+2026-09-09T21:30:45.837+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-09T21:30:54.151+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/videos/upload", parameters={}
+2026-09-09T21:30:54.152+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.VideoController#showUploadForm(Model)
+2026-09-09T21:30:54.293+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-7] o.s.w.s.view.freemarker.FreeMarkerView   : View name [video/upload], model {videoDto=VideoDto(id=null, title=null, artist=null, videoUrl=null, embedUrl=null, thumbnailUrl=null, createdAt=null), org.springframework.validation.BindingResult.videoDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2026-09-09T21:30:54.294+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-7] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [video/upload.ftlh]
+2026-09-09T21:30:54.300+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-09T21:30:55.686+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/tracks/upload", parameters={}
+2026-09-09T21:30:55.687+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.video.s.record.controller.TrackController#showUploadForm(Model)
+2026-09-09T21:30:55.692+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-9] o.s.w.s.view.freemarker.FreeMarkerView   : View name [track/upload], model {trackDto=TrackDto(id=null, title=null, artist=null, album=null, genre=null, duration=null, audioUrl=null, coverUrl=null, createdAt=null), org.springframework.validation.BindingResult.trackDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2026-09-09T21:30:55.693+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-9] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [track/upload.ftlh]
+2026-09-09T21:30:55.697+06:00 DEBUG 29936 --- [video-s-record] [http-nio-8089-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
