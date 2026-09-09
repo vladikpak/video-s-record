@@ -26,6 +26,7 @@ public class FileService {
             }
 
             String basePath = System.getProperty("user.dir");
+
             File uploadDir = new File(basePath, dir);
 
 
@@ -35,6 +36,7 @@ public class FileService {
             }
 
             String originalFilename = file.getOriginalFilename();
+
             String extension = "";
 
             if (originalFilename != null && originalFilename.contains(".")) {
