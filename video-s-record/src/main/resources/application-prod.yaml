@@ -12,3 +12,8 @@ spring:
       hibernate:
        dialect: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
+
+  web:
+    resources:
+      static-locations: classpath:/static/,file:uploads/
+      add-mappings: true
