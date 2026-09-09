@@ -8,8 +8,8 @@ import java.io.IOException;
 
 @Service
 public class FileService {
-    private static final String MUSIC_DIR = "uploads/music/";
-    private static final String COVER_DIR = "uploads/covers/";
+    private static final String MUSIC_DIR = "/app/uploads/music/";
+    private static final String COVER_DIR = "/app/uploads/covers/";
 
     public String saveMusicFile(MultipartFile file) {
         return saveFile(file, MUSIC_DIR);
