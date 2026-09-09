@@ -24,7 +24,9 @@ public class Track {
     private String artist;
 
     private String album;
+
     private String genre;
+
     private Integer duration;
 
     @Column(nullable = false)
