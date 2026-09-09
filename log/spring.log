@@ -1029,3 +1029,187 @@ This generated password is for development use only. Your security configuration
 2026-09-09T19:36:07.508+06:00 DEBUG 9797 --- [video-s-record] [http-nio-8089-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/uploads/covers/1788960967318.jpg", parameters={}
 2026-09-09T19:36:07.523+06:00 DEBUG 9797 --- [video-s-record] [http-nio-8089-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/]]
 2026-09-09T19:36:07.542+06:00 DEBUG 9797 --- [video-s-record] [http-nio-8089-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-09T20:00:08.748+06:00  INFO 9797 --- [video-s-record] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-09T20:00:09.181+06:00  INFO 9797 --- [video-s-record] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-09T20:00:09.520+06:00  INFO 9797 --- [video-s-record] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-09T20:00:09.793+06:00  INFO 9797 --- [video-s-record] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-09T20:00:09.864+06:00  INFO 9797 --- [video-s-record] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-09T20:00:41.282+06:00  INFO 15067 --- [video-s-record] [main] com.example.video.s.record.Application   : Starting Application using Java 26.0.2.1 with PID 15067 (/home/vlad/Desktop/clone/video-s-record/video-s-record/target/classes started by vlad in /home/vlad/Desktop/clone/video-s-record)
+2026-09-09T20:00:41.295+06:00 DEBUG 15067 --- [video-s-record] [main] com.example.video.s.record.Application   : Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-09-09T20:00:41.297+06:00  INFO 15067 --- [video-s-record] [main] com.example.video.s.record.Application   : No active profile set, falling back to 1 default profile: "default"
+2026-09-09T20:00:43.467+06:00  INFO 15067 --- [video-s-record] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-09T20:00:43.555+06:00  INFO 15067 --- [video-s-record] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 2 JPA repository interfaces.
+2026-09-09T20:00:44.524+06:00  INFO 15067 --- [video-s-record] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8089 (http)
+2026-09-09T20:00:44.544+06:00  INFO 15067 --- [video-s-record] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-09T20:00:44.545+06:00  INFO 15067 --- [video-s-record] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-09-09T20:00:44.626+06:00  INFO 15067 --- [video-s-record] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3173 ms
+2026-09-09T20:00:44.691+06:00 DEBUG 15067 --- [video-s-record] [main] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2026-09-09T20:00:44.862+06:00  INFO 15067 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-09T20:00:45.248+06:00  INFO 15067 --- [video-s-record] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2026-09-09T20:00:45.251+06:00  INFO 15067 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-09T20:00:45.329+06:00  INFO 15067 --- [video-s-record] [main] liquibase.database                       : Set default schema name to PUBLIC
+2026-09-09T20:00:46.146+06:00  INFO 15067 --- [video-s-record] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-09-09T20:00:46.245+06:00  INFO 15067 --- [video-s-record] [main] liquibase.changelog                      : Change failed validation!
+2026-09-09T20:00:46.250+06:00  INFO 15067 --- [video-s-record] [main] liquibase.command                        : Logging exception.
+2026-09-09T20:00:46.251+06:00  INFO 15067 --- [video-s-record] [main] liquibase.ui                             : ERROR: Exception Details
+2026-09-09T20:00:46.251+06:00  INFO 15067 --- [video-s-record] [main] liquibase.ui                             : ERROR: Exception Primary Class:  ValidationFailedException
+2026-09-09T20:00:46.252+06:00  INFO 15067 --- [video-s-record] [main] liquibase.ui                             : ERROR: Exception Primary Reason:  Validation Failed:
+     1 changesets check sum
+          db/changelog/initial/002-create-video.yaml::002-create-videos-table::student was: 9:0e60098c9a41a9fe5adc9371319a8b4f but is now: 9:dacc04a064d4d7b8c2fd47fc49395756
+
+2026-09-09T20:00:46.252+06:00  INFO 15067 --- [video-s-record] [main] liquibase.ui                             : ERROR: Exception Primary Source:  5.0.1
+2026-09-09T20:00:46.254+06:00  INFO 15067 --- [video-s-record] [main] liquibase.command                        : Command execution complete
+2026-09-09T20:00:48.719+06:00  WARN 15067 --- [video-s-record] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Failed to initialize dependency 'liquibase' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/liquibase/autoconfigure/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/initial/002-create-video.yaml::002-create-videos-table::student was: 9:0e60098c9a41a9fe5adc9371319a8b4f but is now: 9:dacc04a064d4d7b8c2fd47fc49395756
+
+2026-09-09T20:00:48.720+06:00  INFO 15067 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-09T20:00:48.736+06:00  INFO 15067 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-09T20:00:48.743+06:00  INFO 15067 --- [video-s-record] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-09-09T20:00:48.758+06:00  INFO 15067 --- [video-s-record] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-09-09T20:00:48.785+06:00 ERROR 15067 --- [video-s-record] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Failed to initialize dependency 'liquibase' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/liquibase/autoconfigure/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/initial/002-create-video.yaml::002-create-videos-table::student was: 9:0e60098c9a41a9fe5adc9371319a8b4f but is now: 9:dacc04a064d4d7b8c2fd47fc49395756
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.4.jar:4.0.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.0.4.jar:4.0.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.0.4.jar:4.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.4.jar:4.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.4.jar:4.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.4.jar:4.0.4]
+	at com.example.video.s.record.Application.main(Application.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/liquibase/autoconfigure/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/initial/002-create-video.yaml::002-create-videos-table::student was: 9:0e60098c9a41a9fe5adc9371319a8b4f but is now: 9:dacc04a064d4d7b8c2fd47fc49395756
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:309) ~[spring-beans-7.0.6.jar:7.0.6]
+	... 10 common frames omitted
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/initial/002-create-video.yaml::002-create-videos-table::student was: 9:0e60098c9a41a9fe5adc9371319a8b4f but is now: 9:dacc04a064d4d7b8c2fd47fc49395756
+
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:289) ~[liquibase-core-5.0.1.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813) ~[spring-beans-7.0.6.jar:7.0.6]
+	... 17 common frames omitted
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/initial/002-create-video.yaml::002-create-videos-table::student was: 9:0e60098c9a41a9fe5adc9371319a8b4f but is now: 9:dacc04a064d4d7b8c2fd47fc49395756
+
+	at liquibase.command.CommandScope.lambda$execute$6(CommandScope.java:310) ~[liquibase-core-5.0.1.jar:na]
+	at liquibase.Scope.child(Scope.java:223) ~[liquibase-core-5.0.1.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-5.0.1.jar:na]
+	at liquibase.command.CommandScope.execute(CommandScope.java:251) ~[liquibase-core-5.0.1.jar:na]
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:216) ~[liquibase-core-5.0.1.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:214) ~[liquibase-core-5.0.1.jar:na]
+	at liquibase.Scope.child(Scope.java:223) ~[liquibase-core-5.0.1.jar:na]
+	at liquibase.Scope.child(Scope.java:213) ~[liquibase-core-5.0.1.jar:na]
+	at liquibase.Scope.child(Scope.java:192) ~[liquibase-core-5.0.1.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:1366) ~[liquibase-core-5.0.1.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:205) ~[liquibase-core-5.0.1.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:188) ~[liquibase-core-5.0.1.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:327) ~[liquibase-core-5.0.1.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:279) ~[liquibase-core-5.0.1.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:214) ~[liquibase-core-5.0.1.jar:na]
+	at liquibase.Scope.child(Scope.java:223) ~[liquibase-core-5.0.1.jar:na]
+	at liquibase.Scope.child(Scope.java:213) ~[liquibase-core-5.0.1.jar:na]
+	at liquibase.Scope.child(Scope.java:192) ~[liquibase-core-5.0.1.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:272) ~[liquibase-core-5.0.1.jar:na]
+	... 19 common frames omitted
+Caused by: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/initial/002-create-video.yaml::002-create-videos-table::student was: 9:0e60098c9a41a9fe5adc9371319a8b4f but is now: 9:dacc04a064d4d7b8c2fd47fc49395756
+
+	at liquibase.changelog.DatabaseChangeLog.validate(DatabaseChangeLog.java:392) ~[liquibase-core-5.0.1.jar:na]
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(DatabaseChangelogCommandStep.java:89) ~[liquibase-core-5.0.1.jar:na]
+	at liquibase.command.CommandScope.lambda$execute$6(CommandScope.java:263) ~[liquibase-core-5.0.1.jar:na]
+	... 37 common frames omitted
+
+2026-09-09T20:01:15.137+06:00  INFO 15347 --- [video-s-record] [main] com.example.video.s.record.Application   : Starting Application using Java 26.0.2.1 with PID 15347 (/home/vlad/Desktop/clone/video-s-record/video-s-record/target/classes started by vlad in /home/vlad/Desktop/clone/video-s-record)
+2026-09-09T20:01:15.146+06:00 DEBUG 15347 --- [video-s-record] [main] com.example.video.s.record.Application   : Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-09-09T20:01:15.148+06:00  INFO 15347 --- [video-s-record] [main] com.example.video.s.record.Application   : No active profile set, falling back to 1 default profile: "default"
+2026-09-09T20:01:17.255+06:00  INFO 15347 --- [video-s-record] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-09T20:01:17.343+06:00  INFO 15347 --- [video-s-record] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 2 JPA repository interfaces.
+2026-09-09T20:01:18.332+06:00  INFO 15347 --- [video-s-record] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8089 (http)
+2026-09-09T20:01:18.351+06:00  INFO 15347 --- [video-s-record] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-09T20:01:18.352+06:00  INFO 15347 --- [video-s-record] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-09-09T20:01:18.436+06:00  INFO 15347 --- [video-s-record] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3154 ms
+2026-09-09T20:01:18.503+06:00 DEBUG 15347 --- [video-s-record] [main] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2026-09-09T20:01:18.720+06:00  INFO 15347 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-09T20:01:19.177+06:00  INFO 15347 --- [video-s-record] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2026-09-09T20:01:19.180+06:00  INFO 15347 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-09T20:01:19.265+06:00  INFO 15347 --- [video-s-record] [main] liquibase.database                       : Set default schema name to PUBLIC
+2026-09-09T20:01:19.940+06:00  INFO 15347 --- [video-s-record] [main] liquibase.changelog                      : Creating database changelog table with name: PUBLIC.DATABASECHANGELOG
+2026-09-09T20:01:20.136+06:00  INFO 15347 --- [video-s-record] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-09-09T20:01:20.183+06:00  INFO 15347 --- [video-s-record] [main] liquibase.snapshot                       : Creating snapshot
+2026-09-09T20:01:20.346+06:00  INFO 15347 --- [video-s-record] [main] liquibase.lockservice                    : Successfully acquired change log lock
+2026-09-09T20:01:20.347+06:00  INFO 15347 --- [video-s-record] [main] liquibase.command                        : Using deploymentId: 8962478688
+2026-09-09T20:01:20.350+06:00  INFO 15347 --- [video-s-record] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-09-09T20:01:20.474+06:00  INFO 15347 --- [video-s-record] [main] liquibase.ui                             : Running Changeset: db/changelog/initial/001-create-track.yaml::001-create-tracks-table::student
+2026-09-09T20:01:20.492+06:00  INFO 15347 --- [video-s-record] [main] liquibase.changelog                      : Table tracks created
+2026-09-09T20:01:20.496+06:00  INFO 15347 --- [video-s-record] [main] liquibase.changelog                      : ChangeSet db/changelog/initial/001-create-track.yaml::001-create-tracks-table::student ran successfully in 20ms
+2026-09-09T20:01:20.514+06:00  INFO 15347 --- [video-s-record] [main] liquibase.ui                             : Running Changeset: db/changelog/initial/002-create-video.yaml::002-create-videos-table::student
+2026-09-09T20:01:20.522+06:00  INFO 15347 --- [video-s-record] [main] liquibase.changelog                      : Table videos created
+2026-09-09T20:01:20.523+06:00  INFO 15347 --- [video-s-record] [main] liquibase.changelog                      : ChangeSet db/changelog/initial/002-create-video.yaml::002-create-videos-table::student ran successfully in 8ms
+2026-09-09T20:01:20.540+06:00  INFO 15347 --- [video-s-record] [main] liquibase.util                           : UPDATE SUMMARY
+2026-09-09T20:01:20.540+06:00  INFO 15347 --- [video-s-record] [main] liquibase.util                           : Run:                          2
+2026-09-09T20:01:20.541+06:00  INFO 15347 --- [video-s-record] [main] liquibase.util                           : Previously run:               0
+2026-09-09T20:01:20.541+06:00  INFO 15347 --- [video-s-record] [main] liquibase.util                           : Filtered out:                 0
+2026-09-09T20:01:20.541+06:00  INFO 15347 --- [video-s-record] [main] liquibase.util                           : -------------------------------
+2026-09-09T20:01:20.541+06:00  INFO 15347 --- [video-s-record] [main] liquibase.util                           : Total change sets:            2
+2026-09-09T20:01:20.543+06:00  INFO 15347 --- [video-s-record] [main] liquibase.util                           : Update summary generated
+2026-09-09T20:01:20.548+06:00  INFO 15347 --- [video-s-record] [main] liquibase.command                        : Update command completed successfully.
+2026-09-09T20:01:20.548+06:00  INFO 15347 --- [video-s-record] [main] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 0
+2026-09-09T20:01:20.552+06:00  INFO 15347 --- [video-s-record] [main] liquibase.lockservice                    : Successfully released change log lock
+2026-09-09T20:01:20.554+06:00  INFO 15347 --- [video-s-record] [main] liquibase.command                        : Command execution complete
+2026-09-09T20:01:23.497+06:00  INFO 15347 --- [video-s-record] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-09T20:01:24.172+06:00  INFO 15347 --- [video-s-record] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-09-09T20:01:27.002+06:00  INFO 15347 --- [video-s-record] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-09T20:01:27.158+06:00  WARN 15347 --- [video-s-record] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-09T20:01:27.196+06:00  INFO 15347 --- [video-s-record] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:./db/test]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TEST/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-09T20:01:30.492+06:00  INFO 15347 --- [video-s-record] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-09T20:01:30.578+06:00  INFO 15347 --- [video-s-record] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-09T20:01:30.843+06:00  INFO 15347 --- [video-s-record] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-09T20:01:32.010+06:00  WARN 15347 --- [video-s-record] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-09T20:01:32.108+06:00  WARN 15347 --- [video-s-record] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7c1436c5-f32e-43a6-b2bd-d99f5c2632aa
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-09T20:01:32.123+06:00  INFO 15347 --- [video-s-record] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-09T20:01:32.866+06:00 DEBUG 15347 --- [video-s-record] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2026-09-09T20:01:32.907+06:00 DEBUG 15347 --- [video-s-record] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/uploads/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-09-09T20:01:32.979+06:00 DEBUG 15347 --- [video-s-record] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-09-09T20:01:33.254+06:00 DEBUG 15347 --- [video-s-record] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-09-09T20:01:34.150+06:00 DEBUG 15347 --- [video-s-record] [main] o.s.w.s.v.f.FreeMarkerConfigurer         : File system access not preferred: using SpringTemplateLoader
+2026-09-09T20:01:34.990+06:00  INFO 15347 --- [video-s-record] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8089 (http) with context path '/'
+2026-09-09T20:01:35.013+06:00  INFO 15347 --- [video-s-record] [main] com.example.video.s.record.Application   : Started Application in 21.208 seconds (process running for 23.359)
+2026-09-09T20:01:35.020+06:00  WARN 15347 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-09T20:01:35.020+06:00  WARN 15347 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
