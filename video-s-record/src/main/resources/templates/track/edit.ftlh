@@ -25,11 +25,11 @@
         </div>
         <div class="mb-3">
             <label>Аудиофайл (MP3)</label>
-            <input type="file" name="audioFile" class="form-control" accept="audio/*" >
+            <input type="file" name="audioFile" class="form-control" accept="audio/*" value="${track.audioUrl}">
         </div>
         <div class="mb-3">
             <label>Обложка (картинка)</label>
-            <input type="file" name="coverFile" class="form-control" accept="image/*">
+            <input type="file" name="coverFile" class="form-control" accept="image/*" value="${track.coverUrl}>
         </div>
         <button type="submit" class="btn btn-primary">Сохранить</button>
         <a href="/tracks" class="btn btn-secondary">Отмена</a>
