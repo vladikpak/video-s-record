@@ -8,49 +8,49 @@ import java.io.IOException;
 
 @Service
 public class FileService {
-    private static final String MUSIC_DIR = "uploads/music/";
-    private static final String COVER_DIR = "uploads/covers/";
+
+    private static final String UPLOAD_DIR = "uploads/";
+
+    private String getBasePath() {
+        String userDir = System.getProperty("user.dir");
+        if (userDir.equals("/app")) {
+            return "/app/uploads/";
+        }
+        return System.getProperty("user.dir") + "/" + UPLOAD_DIR;
+    }
 
     public String saveMusicFile(MultipartFile file) {
-        return saveFile(file, MUSIC_DIR);
+        return saveFile(file, getBasePath() + "music/");
     }
 
     public String saveCoverFile(MultipartFile file) {
-        return saveFile(file, COVER_DIR);
+        return saveFile(file, getBasePath() + "covers/");
     }
 
     private String saveFile(MultipartFile file, String dir) {
         try {
-            if (file == null || file.isEmpty()) {
-                return null;
-            }
+            if (file == null || file.isEmpty()) return null;
 
-            String basePath = System.getProperty("user.dir");
-
-            File uploadDir = new File(basePath, dir);
-
-
+            File uploadDir = new File(dir);
             if (!uploadDir.exists()) {
                 boolean created = uploadDir.mkdirs();
-                System.out.println("Создана папка: " + created);
+                System.out.println("Создана папка: " + uploadDir.getAbsolutePath() + " -> " + created);
             }
 
             String originalFilename = file.getOriginalFilename();
-
             String extension = "";
-
             if (originalFilename != null && originalFilename.contains(".")) {
                 extension = originalFilename.substring(originalFilename.lastIndexOf("."));
             }
 
             String fileName = System.currentTimeMillis() + extension;
-
             File dest = new File(uploadDir, fileName);
 
             file.transferTo(dest);
+            System.out.println("Файл сохранён: " + dest.getAbsolutePath());
 
-            String webPath = "/" + dir + fileName;
-
+            // Web-путь
+            String webPath = "/uploads/" + dir.replace(getBasePath(), "") + fileName;
             return webPath;
 
         } catch (IOException e) {
