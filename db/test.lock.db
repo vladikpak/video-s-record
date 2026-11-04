@@ -1,6 +1,6 @@
 #FileLock
-#Fri Sep 11 05:06:06 GMT+06:00 2026
-hostName=viaeq
-id=1a08d92369e817dc4fd510c39ccdde8c66a260efceb
+#Wed Nov 04 20:55:36 GMT+06:00 2026
+hostName=DESKTOP-3P1JDR7.mshome.net
+id=1a1a70ee7d9058880a4eb2fde16c58e290305c0e278
 method=file
-server=127.0.1.1\:40441
+server=172.30.112.1\:51875

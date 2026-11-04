@@ -574,3 +574,64 @@ This generated password is for development use only. Your security configuration
 2026-09-11T05:06:14.225+06:00 DEBUG 9600 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/uploads/covers/1789081566978.jpg", parameters={}
 2026-09-11T05:06:14.227+06:00 DEBUG 9600 --- [video-s-record] [http-nio-8089-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:/home/vlad/Desktop/clone/video-s-record/uploads/]]
 2026-09-11T05:06:14.235+06:00 DEBUG 9600 --- [video-s-record] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-11-04T20:55:30.873+06:00  INFO 15940 --- [video-s-record] [main] com.example.video.s.record.Application   : Starting Application using Java 26.0.2.1 with PID 15940 (C:\Users\User\Desktop\Project\video-s-record\video-s-record\target\classes started by User in C:\Users\User\Desktop\Project\video-s-record)
+2026-11-04T20:55:30.877+06:00 DEBUG 15940 --- [video-s-record] [main] com.example.video.s.record.Application   : Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-11-04T20:55:30.878+06:00  INFO 15940 --- [video-s-record] [main] com.example.video.s.record.Application   : No active profile set, falling back to 1 default profile: "default"
+2026-11-04T20:55:31.933+06:00  INFO 15940 --- [video-s-record] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-04T20:55:32.004+06:00  INFO 15940 --- [video-s-record] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2026-11-04T20:55:32.540+06:00  INFO 15940 --- [video-s-record] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8089 (http)
+2026-11-04T20:55:32.553+06:00  INFO 15940 --- [video-s-record] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-04T20:55:32.553+06:00  INFO 15940 --- [video-s-record] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-11-04T20:55:32.625+06:00  INFO 15940 --- [video-s-record] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1673 ms
+2026-11-04T20:55:32.680+06:00 DEBUG 15940 --- [video-s-record] [main] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2026-11-04T20:55:32.796+06:00  INFO 15940 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-04T20:55:36.648+06:00  INFO 15940 --- [video-s-record] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2026-11-04T20:55:36.652+06:00  INFO 15940 --- [video-s-record] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-04T20:55:36.718+06:00  INFO 15940 --- [video-s-record] [main] liquibase.database                       : Set default schema name to PUBLIC
+2026-11-04T20:55:37.177+06:00  INFO 15940 --- [video-s-record] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-11-04T20:55:37.254+06:00  INFO 15940 --- [video-s-record] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2026-11-04T20:55:37.257+06:00  INFO 15940 --- [video-s-record] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-11-04T20:55:37.273+06:00  INFO 15940 --- [video-s-record] [main] liquibase.util                           : UPDATE SUMMARY
+2026-11-04T20:55:37.273+06:00  INFO 15940 --- [video-s-record] [main] liquibase.util                           : Run:                          0
+2026-11-04T20:55:37.273+06:00  INFO 15940 --- [video-s-record] [main] liquibase.util                           : Previously run:               2
+2026-11-04T20:55:37.273+06:00  INFO 15940 --- [video-s-record] [main] liquibase.util                           : Filtered out:                 0
+2026-11-04T20:55:37.274+06:00  INFO 15940 --- [video-s-record] [main] liquibase.util                           : -------------------------------
+2026-11-04T20:55:37.274+06:00  INFO 15940 --- [video-s-record] [main] liquibase.util                           : Total change sets:            2
+2026-11-04T20:55:37.276+06:00  INFO 15940 --- [video-s-record] [main] liquibase.util                           : Update summary generated
+2026-11-04T20:55:37.278+06:00  INFO 15940 --- [video-s-record] [main] liquibase.command                        : Command execution complete
+2026-11-04T20:55:38.736+06:00  INFO 15940 --- [video-s-record] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-04T20:55:38.825+06:00  INFO 15940 --- [video-s-record] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-11-04T20:55:39.439+06:00  INFO 15940 --- [video-s-record] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-04T20:55:39.510+06:00  WARN 15940 --- [video-s-record] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-04T20:55:39.526+06:00  INFO 15940 --- [video-s-record] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:./db/test]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TEST/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-04T20:55:40.749+06:00  INFO 15940 --- [video-s-record] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-04T20:55:40.790+06:00  INFO 15940 --- [video-s-record] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-04T20:55:40.888+06:00  INFO 15940 --- [video-s-record] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-04T20:55:41.194+06:00  WARN 15940 --- [video-s-record] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-11-04T20:55:41.221+06:00  WARN 15940 --- [video-s-record] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: fe517aad-8863-4512-947c-cb5bb13c029e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-11-04T20:55:41.228+06:00  INFO 15940 --- [video-s-record] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-11-04T20:55:41.415+06:00 DEBUG 15940 --- [video-s-record] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2026-11-04T20:55:41.444+06:00 DEBUG 15940 --- [video-s-record] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/uploads/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-11-04T20:55:41.503+06:00 DEBUG 15940 --- [video-s-record] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-11-04T20:55:41.564+06:00 DEBUG 15940 --- [video-s-record] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-11-04T20:55:41.829+06:00 DEBUG 15940 --- [video-s-record] [main] o.s.w.s.v.f.FreeMarkerConfigurer         : File system access not preferred: using SpringTemplateLoader
+2026-11-04T20:55:41.964+06:00  INFO 15940 --- [video-s-record] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8089 (http) with context path '/'
+2026-11-04T20:55:41.971+06:00  INFO 15940 --- [video-s-record] [main] com.example.video.s.record.Application   : Started Application in 12.44 seconds (process running for 13.671)
+2026-11-04T20:55:41.974+06:00  WARN 15940 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-11-04T20:55:41.975+06:00  WARN 15940 --- [video-s-record] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
