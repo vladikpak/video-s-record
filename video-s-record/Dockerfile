@@ -2,7 +2,7 @@ FROM eclipse-temurin:26-jdk-alpine AS build
 WORKDIR /app
 COPY . .
 RUN chmod +x mvnw
-RUN ./mvnw clean package -DskipTests
+RUN ./mvnw clean package -DskipTests -s settings.xml
 
 FROM eclipse-temurin:26-jdk-alpine
 WORKDIR /app
