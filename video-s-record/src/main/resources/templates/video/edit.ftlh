@@ -13,7 +13,7 @@
         </div>
         <div class="mb-3">
             <label>Ссылка на видео (YouTube / Vimeo)</label>
-            <input type="url" name="videoUrl" class="form-control" placeholder="https://www.youtube.com/watch?v=...">
+            <input type="url" name="videoUrl" class="form-control" placeholder="https://www.youtube.com/watch?v=..." value="${video.videoUrl}">
         </div>
         <div class="mb-3">
             <label>Ссылка на обложку (опционально)</label>

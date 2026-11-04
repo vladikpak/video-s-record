@@ -26,6 +26,7 @@ import java.time.LocalDateTime;
         @Column(nullable = false)
         private String videoUrl;
 
+        @Column(nullable = false, length = 2000)
         private String thumbnailUrl;
 
         @Column(name = "created_at")

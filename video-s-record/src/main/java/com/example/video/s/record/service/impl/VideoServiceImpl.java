@@ -29,6 +29,7 @@ public class VideoServiceImpl implements VideoService {
                 .build();
 
         Video saved = videoRepository.save(video);
+
         return convertToDto(saved);
     }
 
@@ -36,6 +37,7 @@ public class VideoServiceImpl implements VideoService {
     public VideoDto getVideoById(Long id) {
         Video video = videoRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Видео не найдено"));
+
         return convertToDto(video);
     }
 
@@ -66,17 +68,21 @@ public class VideoServiceImpl implements VideoService {
         if (videoDto.getTitle() != null) {
             video.setTitle(videoDto.getTitle());
         }
+
         if (videoDto.getArtist() != null) {
             video.setArtist(videoDto.getArtist());
         }
+
         if (videoDto.getVideoUrl() != null) {
             video.setVideoUrl(videoDto.getVideoUrl());
         }
+
         if (videoDto.getThumbnailUrl() != null) {
             video.setThumbnailUrl(videoDto.getThumbnailUrl());
         }
 
         Video saved = videoRepository.save(video);
+
         return convertToDto(saved);
     }
 
@@ -91,14 +97,17 @@ public class VideoServiceImpl implements VideoService {
             String videoId = videoUrl.substring(videoUrl.lastIndexOf("/") + 1);
             return "https://player.vimeo.com/video/" + videoId;
         }
+
         return videoUrl;
     }
 
     private String extractYouTubeId(String url) {
         String[] parts = url.split("v=");
+
         if (parts.length > 1) {
             return parts[1].split("&")[0];
         }
+
         return "";
     }
 

@@ -10,5 +10,5 @@ databaseChangeLog:
             - column: { name: title, type: VARCHAR(200), constraints: { nullable: false } }
             - column: { name: artist, type: VARCHAR(200), constraints: { nullable: false } }
             - column: { name: video_url, type: VARCHAR(500), constraints: { nullable: false } }
-            - column: { name: thumbnail_url, type: VARCHAR(500) }
+            - column: { name: thumbnail_url, type: VARCHAR(2000), constraints: { nullable: false } }
             - column: { name: created_at, type: TIMESTAMP, defaultValueComputed: CURRENT_TIMESTAMP }

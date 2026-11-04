@@ -9,10 +9,11 @@ spring:
     name: video-s-record
 
   datasource:
-    url: jdbc:h2:./db/test;AUTO_SERVER=TRUE
-    username: root
-    password: qwerty
-    driver-class-name: org.h2.Driver
+      url: jdbc:h2:./db/test;AUTO_SERVER=TRUE
+      username: root
+      password: qwerty
+      driver-class-name: org.h2.Driver
+
 
   liquibase:
     change-log: classpath:/db/changelog/db.changelog-master.yaml
@@ -27,11 +28,10 @@ spring:
   jpa:
     hibernate:
       ddl-auto: validate
-    show-sql: true
     properties:
       hibernate:
-        format_sql: true
-
+        dialect: org.hibernate.dialect.H2Dialect
+    show-sql: true
 
   servlet:
     multipart:
